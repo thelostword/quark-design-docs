@@ -21,7 +21,7 @@
             <a class="transition-colors hover:text-gray-700 dark:hover:text-gray-400"
                 :class="isActive('pages') ? 'text-gray-900 dark:text-gray-400 111' : 'text-gray-400 dark:text-gray-500'"
                 :href="`${isZhLang ? `#/zh-CN/pages/otherdocs` : `#/en-US/pages/otherdocs`}`">
-                {{ isZhLang ? '其它技术文档': 'otherdocs' }}
+                {{ isZhLang ? '其它技术文档': 'Other documents' }}
               </a>
           </div>
 
