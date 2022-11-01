@@ -18,7 +18,7 @@ import { useState } from 'react';
 import { Radio, RadioGroup } from '@quarkd/quark-react';
 
 export default () => {
-  const [value1, setValue1] = useState('apple');
+  const [value, setValue] = useState('apple');
   const handleChange = ({ detail }) => {
     setValue(() => detail.value)
   }
@@ -42,7 +42,7 @@ import { useState } from 'react';
 import { Radio, RadioGroup } from '@quarkd/quark-react';
 
 export default () => {
-  const [value1, setValue1] = useState('apple');
+  const [value, setValue] = useState('apple');
   const handleChange = ({ detail }) => {
     setValue(() => detail.value)
   }
