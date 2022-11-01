@@ -17,8 +17,8 @@
   <div class="mx-auto dark:bg-gray-900">
     <div class="px-4 py-16 sm:px-6 lg:px-8">
       <footer class="flex items-center space-x-2 border-t border-gray-800 pt-10">
-        <p class="text-xs font-semibold uppercase leading-5 tracking-wide text-gray-400">A project by</p>
-        <div class="text-xs text-gray-400"><a href="/">QuarkLand</a></div>
+        <p class="text-xs text-gray-400">A project by</p>
+        <div class="text-xs text-gray-400"><a href="/">Quark Design</a></div>
       </footer>
     </div>
   </div>

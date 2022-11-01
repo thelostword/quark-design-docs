@@ -1,6 +1,9 @@
 <template>
-  <div v-if="isShowSideBar()" class="doc-nav w-[260px] border-r border-solid border-gray-200 dark:border-gray-800 overflow-auto fixed left-0 bottom-0 z-10 transition-all" :class="{ 'fixed-class': fixed }">
-
+  <div
+    v-if="isShowSideBar()"
+    class="doc-nav w-[260px] border-r border-solid border-gray-200 dark:border-gray-800 overflow-auto fixed left-0 bottom-0 z-10 transition-all"
+    :class="{ 'fixed-class': fixed }">
+    
     <!-- Doc‘s Switch -->
     <div class="sticky bg-white dark:bg-gray-900 top-0 pt-4 px-2 z-[1]">
       <div v-if="isShow()" class="grid items-center justify-between h-[40px] rounded bg-zinc-100 dark:bg-gray-700 px-1 grid-cols-2">
@@ -73,11 +76,14 @@ import { nav, docs } from "@/config";
 
 export default defineComponent({
   name: "DocNav",
+  props: {
+    fixed: Boolean,
+  },
   setup() {
     const route = useRoute();
     const router = useRouter();
     const state = reactive({
-      fixed: false,
+      // fixed: false,
       isGuideNav: false,
     });
 
@@ -141,17 +147,7 @@ export default defineComponent({
 
     onMounted(() => {
       if (route.path) getIsGuaid(route.path);
-      document.addEventListener("scroll", scrollNav);
     });
-
-    const scrollNav = () => {
-      let top = document.documentElement.scrollTop;
-      if (top > 64) {
-        state.fixed = true;
-      } else {
-        state.fixed = false;
-      }
-    };
 
     const getIsGuaid = (path: string) => {
       state.isGuideNav = path.indexOf("guide") > -1 ? true : false;

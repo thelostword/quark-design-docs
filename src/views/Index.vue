@@ -1,44 +1,19 @@
 <template>
   <doc-header></doc-header>
 
-  <doc-nav></doc-nav>
+  <doc-nav :fixed="fixed"></doc-nav>
 
   <div class="flex flex-col ml-[260px] doc-content" id="doc-content">
-    <div class="w-full h-[130px] z-10" v-if="isShow()">
-      <div class="
-        doc-title-position
-        dark:text-slate-200
-        flex
-        top-0
-        justify-between
-        align-center
-        transition-all
-        px-[40px]
-        py-[24px]
-        bg-white
-        dark:bg-gray-900
-        opacity-100
-        border-b
-        border-solid
-        border-gray-200
-        dark:border-gray-800
-        visible" 
-        :class="{ 'fixed': fixed, 'hidden opacity-0': hidden }">
-        <div class="title">
-          {{ componentName.name }}&nbsp;{{isZhLang ? componentName.cName : ""}}
-        </div>
-      </div>
-    </div>
-
-    <div class="min-h-[800px] bg-white dark:bg-gray-900 doc-content-document" :class="{ isComponent: isShow(), full: !isShow() }">
+    <div class="min-h-[800px] bg-white dark:bg-gray-900 doc-content-document" >
       <router-view />
     </div>
 
     <doc-demo-preview
       v-show="isShow()"
       :url="demoUrl"
-      type="vue"
       :class="{ 'fixed': fixed }"
+      :fixed="fixed"
+      type="vue"
     ></doc-demo-preview>
   </div>
 </template>
@@ -173,7 +148,7 @@ export default defineComponent({
 </script>
 <style lang="scss" scoped>
 .doc-content {
-  height: calc(100vh - 68px);
+  /* height: calc(100vh - 68px); */
   overflow: auto;
   margin-left: 290px;
   display: flex;
@@ -184,7 +159,7 @@ export default defineComponent({
   min-height: 800px;
     flex-shrink: 0;
 }
-.doc-title-position {
+/* .doc-title-position {
   &.fixed {
     width: calc(100% - 290px);
     .title {
@@ -197,5 +172,5 @@ export default defineComponent({
     font-size: 40px;
     font-weight: bold;
   }
-}
+} */
 </style>

@@ -1,33 +1,32 @@
 <template>
-  <div class="doc-demo-preview rounded-xl overflow-hidden absolute right-[30px] top-[240px] w-[375px] min-h-[620px] drop-shadow-xl">
+  <div
+    class="doc-demo-preview transition-all rounded-xl overflow-hidden right-[30px] top-[88px] w-[360px] min-h-[620px] fixed drop-shadow-xl"
+    :class="{ 'fixed-class': fixed }">
     <iframe :src="url" id="quark-demo" frameborder="0"></iframe>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, reactive, onMounted, toRefs } from "vue";
 
 export default defineComponent({
   name: "DocDemoPreview",
   props: {
     url: String,
     type: String,
+    fixed: Boolean,
   },
 });
 </script>
 
 <style lang="scss" scoped>
 .doc-demo-preview {
-  height: calc(100vh - 300px);
-
-  &.fixed {
-    position: fixed;
-    top: 120px;
-  }
-
   iframe {
-    height: 100%;
+    height: 590px;
     width: 100%;
   }
+}
+.fixed-class {
+  top: 20px;
 }
 </style>
