@@ -33,6 +33,10 @@ In order to improve the development experience, we have [Reactify (Reactify)](ht
 npm i @quarkd/quark-react
 ```
 
+Sample code:
+
+![image](https://user-images.githubusercontent.com/14307551/199666645-f3f59cb2-1694-4c9f-9ecf-16d781ff2e9d.png)
+
 
 ## Usage
 
