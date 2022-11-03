@@ -2,7 +2,7 @@ const fs = require('fs-extra');
 const pkg = require("../package.json");
 const sh = require('shelljs');
 
-const nowPath = `./dist/fat/${pkg.version}`
+const nowPath = `./dist/${pkg.version}`
 
 const targetPath = '../quark-design.github.io'
 
@@ -22,7 +22,7 @@ const start = async() => {
     console.error(error)
   }
 }
-sh.exec('npm run build',  function(code, stdout, stderr) {
+sh.exec('yarn build',  function(code, stdout, stderr) {
   console.log('Exit code:', code);
   console.log('Program output:', stdout);
   console.log('Program stderr:', stderr);

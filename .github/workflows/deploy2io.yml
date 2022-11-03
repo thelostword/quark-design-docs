@@ -1,4 +1,4 @@
-name: sync to docs
+name: sync to github.io
 
 on:
   push:
@@ -14,12 +14,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2 
       - run: yarn install
-      - run: yarn build
+      - run: yarn push2GithubWebsite
       - name : Sync 
         uses : JamesIves/github-pages-deploy-action@4.1.7 
         with :
-          branch : main # action 应该部署到的分支 。
-          folder : dist # 操作应该部署的文件夹 。
+          branch : main # action 应该部署到的分支。
+          folder : dist # 操作应该部署的文件夹。
           clean: false
           repository-name: hellof2e/quark-design.github.io
           token: ${{ secrets.GIT_ACTION }}
