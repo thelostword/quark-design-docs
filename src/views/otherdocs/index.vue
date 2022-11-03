@@ -61,7 +61,7 @@
   import "quarkd/lib/tab";
 
   export default defineComponent({
-    name: "quickstart",
+    name: "other-docs",
     components: {
       CodeDemo,
     },

@@ -4,7 +4,6 @@ import Index from "@/views/Index.vue";
 import Main from "@/views/Main.vue";
 import Guide from "@/views/Guide.vue";
 import Component from "@/views/Component.vue";
-import QuickStart from "@/views/quickStart/index.vue";
 import OtherDocs from "@/views/otherdocs/index.vue";
 
 const pagesRouter: Array<RouteRecordRaw> = [];
@@ -73,7 +72,7 @@ for (const path in modulesDocs) {
 
   guideRouters.push({
     path: `/zh-CN/guide/${name}`,
-    component: name === 'quickstart' ? QuickStart : modulesDocs[path],
+    component: modulesDocs[path],
     name: `zh-CN/guide/${name}`,
   });
 }
@@ -83,7 +82,7 @@ for (const path in modulesEnDocs) {
 
   guideEnRouters.push({
     path: `/en-US/guide/${name}`,
-    component: name === 'quickstart' ? QuickStart : modulesEnDocs[path],
+    component: modulesEnDocs[path],
     name: `en-US/guide/${name}`,
   });
 }

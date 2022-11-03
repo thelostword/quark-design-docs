@@ -148,29 +148,13 @@ export default defineComponent({
 </script>
 <style lang="scss" scoped>
 .doc-content {
-  /* height: calc(100vh - 68px); */
   overflow: auto;
-  margin-left: 290px;
   display: flex;
   flex-direction: column;
 }
 
 .doc-content-document {
   min-height: 800px;
-    flex-shrink: 0;
+  flex-shrink: 0;
 }
-/* .doc-title-position {
-  &.fixed {
-    width: calc(100% - 290px);
-    .title {
-      font-size: 24px;
-      font-weight: bold;
-    }
-  }
-
-  .title {
-    font-size: 40px;
-    font-weight: bold;
-  }
-} */
 </style>
