@@ -1,30 +1,45 @@
-const fs = require('fs-extra');
-const pkg = require("../package.json");
-const sh = require('shelljs');
+const fse = require('fs-extra');
+const path = require('path');
+const targetBaseUrl = `${process.cwd()}/site_docs`;
+// const changeLogUrl = `${process.cwd()}/changelog`;
 
-const nowPath = `./dist/fat/${pkg.version}`
+const copyFile = (from, to) => {
+  fse
+    .copy(from, to)
+    .then(() => {
+      console.log('success >>>>', to);
+    })
+    .catch((err) => {
+      console.error(err);
+    });
+};
 
-const targetPath = '../quark-design.github.io'
+const removeFile = async (url) => {
+  return new Promise((res, rej) => {
+    fse.remove(url, (err) => {
+      if (err) {
+        throw err;
+      }
+      res(true);
+    });
+  });
+};
 
-const mkdirPath = (path) => fs.ensureDir(path);
+const copy = async () => {
+  const quarkPath = path.resolve(__dirname, '../packages/quark');
 
-const copyPath = (nowPath, targetPath) => fs.copy(nowPath, targetPath)
+  // 判断 site_docs 文件是否存在根路径中
+  const existsRoot = await fse.pathExists(targetBaseUrl);
+  if (existsRoot) await removeFile(targetBaseUrl);
 
-const start = async() => {
-  try {
-    const res = await fs.pathExists(nowPath)
-    if(res) console.log('website打包产物存在')
-    else console.log('website打包产物不存在，请先执行打包命令')
-    await mkdirPath(targetPath)
-    await copyPath(nowPath, targetPath)
-    console.log('复制成功')
-  } catch (error) {
-    console.error(error)
-  }
-}
-sh.exec('npm run build',  function(code, stdout, stderr) {
-  console.log('Exit code:', code);
-  console.log('Program output:', stdout);
-  console.log('Program stderr:', stderr);
-  start();
-});
+  // 复制changelog
+  // await fse.copyFileSync(changelogPath, `${changeLogUrl}/changelog.md`);
+  // fse.readFile(changelogPath, (err, data) => {
+  //   if (!err) {
+  //     copyFile(changelogPath, `${changeLogUrl}/changelog.md`);
+  //   }
+  // });
+  // await fse.copyFileSync(changelogPath, `${changeLogUrl}/changelog.en-US.md`);
+};
+
+copy();

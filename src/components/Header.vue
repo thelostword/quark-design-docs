@@ -131,7 +131,7 @@
       const isActive = computed(() => {
         return function (name: string) {
           const lName = name.toLowerCase();
-          if (lName === "component") {
+          if (lName === "components") {
             return route.path.includes("component");
           } else if (lName === 'pages') {
             return route.path.includes("pages");

@@ -3,7 +3,7 @@
 
   <doc-nav :fixed="fixed"></doc-nav>
 
-  <div class="flex flex-col ml-[260px] doc-content" id="doc-content">
+  <div :class="{ 'pr-[390px]': isShow() }" class="flex flex-col ml-[260px] doc-content" id="doc-content">
     <div class="min-h-[800px] bg-white dark:bg-gray-900 doc-content-document" >
       <router-view />
     </div>
