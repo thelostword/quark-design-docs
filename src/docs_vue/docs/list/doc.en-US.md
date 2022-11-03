@@ -126,7 +126,7 @@ methods: {
 ### PullRefresh
 Can be used with `pull-refresh` component.
 ```tsx
-import "quarkd/lib/pullrefresh";
+import "quarkd/lib/pull-refresh";
 ```
 ```html
 <div>

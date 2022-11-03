@@ -124,7 +124,7 @@ methods: {
 ### 下拉刷新
 可以和下拉刷新组件联合使用
 ```tsx
-import "quarkd/lib/pullrefresh";
+import "quarkd/lib/pull-refresh";
 ```
 ```html
 <div>

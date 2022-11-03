@@ -1,5 +1,5 @@
 {
-  "version": "1.0.10",
+  "version": "1.0.13",
   "nav": [
     {
       "name": "基础组件",
@@ -543,5 +543,5 @@
       }
     ]
   },
-  "demoUrl": "/demo/demo.html#"
+  "demoUrl": "https://quark-design.hellobike.com/demo/demo.html#/"
 }

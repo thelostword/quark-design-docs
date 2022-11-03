@@ -57,7 +57,7 @@ export default () => {
 ### 分组用法
 
 ```tsx
-import { Cell, CellGroupl } from '@quarkd/quark-react';
+import { Cell, CellGroup } from '@quarkd/quark-react';
 
 export default () => {
   return (
@@ -83,13 +83,15 @@ export default () => {
 }
 ```
 ```css
-// CSS 省略号展示
+/* CSS 省略号展示 */
 .my-cell {
   --cell-title-white-space: nowrap;
   --cell-title-text-overflow: ellipsis;
 }
 ```
-### 自定义右侧内容
+### 自定义右侧描述
+
+通过 Slot（`Cell` 包裹的内容）可以自定义右侧描述。
 
 ```tsx
 import { Cell } from '@quarkd/quark-react';

@@ -57,7 +57,7 @@ export default () => {
 ### Inset Grouped
 
 ```tsx
-import { Cell, CellGroupl } from '@quarkd/quark-react';
+import { Cell, CellGroup } from '@quarkd/quark-react';
 
 export default () => {
   return (
@@ -90,7 +90,10 @@ export default () => {
   --cell-title-text-overflow: ellipsis;
 }
 ```
-### Right content
+
+### Customize right description
+
+The description on the right can be customized through Slot (the content of the `Cell` package).
 
 ```tsx
 import { Cell } from '@quarkd/quark-react';
