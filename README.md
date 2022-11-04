@@ -7,7 +7,9 @@ npm run dev
 
 ### github 官网发布
 
+```bash
 npm run push2GithubWebsite
+```
 
 ### 注意
 
