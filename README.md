@@ -1,16 +1,14 @@
-# Quark design website for quark-design.hellobike.com
-
-## Available Scripts
+### 启动
 
 ```bash
-npm install
+npm i
 npm run dev
 ```
 
-## Build
+### github 官网发布
 
-When the code is merged into the main branch, the static resources are automatically built.
+当分支被 `main` 分支合并后，会主动构建静态资源并推送，所以您无需主动构建。
 
-## Notice
+### 注意
 
-Since vite uses 3.0, the node version must be greater than v16, otherwise the following error will occur `Cannot find module 'node:path'`
+由于 vite 使用 3.0, node 版本必须大于 v16, 否则会出现如下错误 `Cannot find module 'node:path'`
