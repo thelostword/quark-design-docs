@@ -27,7 +27,7 @@
 
           <!-- 指南 / 组件 -->
           <div class="nav-item" v-for="item in header" :key="item.name">
-            <template v-if="docMd === 'react' && item.name === 'component'">
+            <template v-if="docMd === 'react' && item.name === 'Components'">
               <a class="transition-colors hover:text-gray-700 dark:hover:text-gray-400"
                 :class="isActive(item.name) ? 'text-gray-400 dark:text-gray-400 111' : 'text-gray-500 dark:text-gray-500'"
                 :href="`${ isZhLang ? `${item.pathName}-react` : `${item.pathEnName}-react`}`">
