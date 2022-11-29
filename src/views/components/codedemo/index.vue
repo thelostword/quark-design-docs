@@ -71,15 +71,15 @@ import "quarkd/lib/button"
     <meta charset="utf-8">
   </head>
   <script src="https://fastly.jsdelivr.net/npm/quarkd@1.0.11/umd/index.js" />
+  <body>
+    <quark-button loading="false" id="btn">Button</quark-button>
+  </body>
   <script>
     const el = document.getElementById('btn')
     el.addEventListener('click', function handleClick() {
       el.loading = true
     })
-<\/script>
-<body>
-  <quark-button loading="false" id="btn">Button</quark-button>
-</body>
+  <\/script>
 </html>
   `,
 };

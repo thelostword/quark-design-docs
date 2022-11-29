@@ -12,7 +12,7 @@
           <a class="flex items-center mr-2 text-gray-500" href="/#/">
             <img class="h-8" src="/src/assets/images/quark-logo.png" alt="" />
           </a>
-          <span class="version flex items-center mr-8 text-gray-500" href="/">
+          <span class="flex items-center mr-8 text-gray-500" href="/">
             {{ version }}
           </span>
           <Search />
@@ -25,7 +25,7 @@
               class="transition-colors hover:text-gray-700 dark:hover:text-gray-400"
               :class="
                 isActive('pages')
-                  ? 'text-gray-900 dark:text-gray-400 111'
+                  ? 'text-gray-900 dark:text-gray-400'
                   : 'text-gray-400 dark:text-gray-500'
               "
               :href="`${
@@ -38,13 +38,13 @@
 
           <!-- 指南 / 组件 -->
           <div class="nav-item" v-for="item in header" :key="item.name">
-            <template v-if="docMd === 'react' && item.name === 'component'">
+            <template v-if="docMd === 'react' && item.name === 'Components'">
               <a
                 class="transition-colors hover:text-gray-700 dark:hover:text-gray-400"
                 :class="
-                  isActive(item.name)
-                    ? 'text-gray-400 dark:text-gray-400 111'
-                    : 'text-gray-500 dark:text-gray-500'
+                  isActive(item.type)
+                    ? 'text-gray-900 dark:text-gray-400'
+                    : 'text-gray-400 dark:text-gray-500'
                 "
                 :href="`${
                   isZhLang
@@ -59,8 +59,8 @@
               <a
                 class="transition-colors hover:text-gray-700 dark:hover:text-gray-400"
                 :class="
-                  isActive(item.name)
-                    ? 'text-gray-900 dark:text-gray-400 111'
+                  isActive(item.type)
+                    ? 'text-gray-900 dark:text-gray-400'
                     : 'text-gray-400 dark:text-gray-500'
                 "
                 :href="`${isZhLang ? item.pathName : item.pathEnName}`"
@@ -189,8 +189,7 @@ export default defineComponent({
   },
   setup() {
     const version = ref();
-    const isZhLang =
-      localStorage.getItem("language") === "zh-CN" ? true : false;
+    const isZhLang = localStorage.getItem("language") === "zh-CN";
     const route = useRoute();
     let packages = [];
     nav.forEach((item) => {
@@ -224,13 +223,7 @@ export default defineComponent({
     const isActive = computed(() => {
       return function (name: string) {
         const lName = name.toLowerCase();
-        if (lName === "components") {
-          return route.path.includes("component");
-        } else if (lName === "pages") {
-          return route.path.includes("pages");
-        } else {
-          return route.path.includes("guide");
-        }
+        return route.path.includes(lName);
       };
     });
 
@@ -285,9 +278,6 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-.version {
-  font-size: 14px;
-}
 .nav-item a {
   font-size: 14px;
 }

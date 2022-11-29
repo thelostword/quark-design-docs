@@ -13,13 +13,13 @@ import { Switch } from "@quarkd/quark-react";
 ### 基本使用
 
 ```html
-<Swtich checked></Swtich>
+<Switch checked></Switch>
 ```
 
 ### 禁用状态
 
 ```html
-<Swtich disabled></Swtich>
+<Switch disabled></Switch>
 ```
 
 ### 自定义大小
@@ -27,7 +27,7 @@ import { Switch } from "@quarkd/quark-react";
 可以通过 `size` 或修改元素 `font-size` 来控制大小。
 
 ```html
-<Swtich size="26px"></Swtich> <Swtich style="font-size: 26px"></Swtich>
+<Switch size="26px"></Switch> <Switch style="font-size: 26px"></Switch>
 ```
 
 ### 自定义颜色
@@ -35,7 +35,7 @@ import { Switch } from "@quarkd/quark-react";
 可以通过 `color` 属性控制颜色。
 
 ```html
-<Swtich color="red"></Swtich>
+<Switch color="red"></Switch>
 ```
 
 ### change 事件
@@ -46,7 +46,7 @@ export default () => {
   const handleChange = (e) => {
     setChecked(e.detail.value);
   };
-  return <Swtich onChange="console.log(event)" checked={checked}></Swtich>;
+  return <Switch onChange="console.log(event)" checked={checked}></Switch>;
 };
 ```
 
@@ -60,7 +60,7 @@ export default () => {
 | disabled | 禁用            | `boolean`                              | `false` |
 | size     | 开关大小        | `number`                               | `16px ` |
 | color    | 颜色            | `string`                               | -       |
-| onChange | change 回调函数 | `e: {detail:{value: string}}）=>void ` |
+| onChange | change 回调函数 | `e: ({ detail: { value: string } }) => void` |
 
 ## 样式变量
 
