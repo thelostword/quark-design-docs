@@ -9,9 +9,7 @@ Quark uses Chinese as the default language and supports multi-language switching
 Quark implements multi-language support through the Locale component, and you can use the Locale.use method to switch the currently used language.
 
 ```ts
-import Locale from "quarkd/lib/locale";
-// import Chinese locale
-import zhCN from "quarkd/lib/locale/lang/zh-CN";
+import Locale, { zhCN } from "quarkd/lib/locale";
 
 Locale.use(zhCN);
 ```

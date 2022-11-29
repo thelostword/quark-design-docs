@@ -78,10 +78,10 @@ export default () => {
 单选框支持禁用
 
 ```html
-<Radio checked="{true}" disabled>已选-禁用</Radio>
-<Radio checked="{false}" disabled>未选-禁用</Radio>
-<Radio checked="{true}" shape="square" disabled>方形-已选-禁用</Radio>
-<Radio checked="{false}" shape="square" disabled>方形-未选-禁用</Radio>
+<Radio checked={true} disabled>已选-禁用</Radio>
+<Radio checked={false} disabled>未选-禁用</Radio>
+<Radio checked={true} shape="square" disabled>方形-已选-禁用</Radio>
+<Radio checked={false} shape="square" disabled>方形-未选-禁用</Radio>
 ```
 
 ### 单选框风格
@@ -111,7 +111,7 @@ export default () => {
 | 参数     | 说明           | 类型                                  | 默认值 |
 | -------- | -------------- | ------------------------------------- | ------ |
 | value    | 指定选中的选项 | `string`                              | -      |
-| onChange | 变化时回调函数 | `(e:{detail: {value: string}})=>void` |
+| onChange | 变化时回调函数 | `(e: { detail: { value: string } }) => void` |
 
 ## 样式变量
 

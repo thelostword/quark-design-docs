@@ -23,9 +23,7 @@ export default () => {
     setOpen(false);
   };
 
-  const handleClose = () => {
-    setOpen(false);
-  };
+  const handleClose = () => setOpen(false);
 
   return (
     <div>
@@ -33,6 +31,7 @@ export default () => {
       <Dialog
         open={open}
         title="Title"
+        content="This is a content"
         onConfirm={handleConfirm}
         onClose={handleClose}
         content="This is a content"
@@ -55,9 +54,7 @@ export default () => {
     setOpen(false);
   };
 
-  const handleClose = () => {
-    setOpen(false);
-  };
+  const handleClose = () => setOpen(false);
 
   return (
     <div>
@@ -90,9 +87,7 @@ export default () => {
     setOpen(false);
   };
 
-  const handleClose = () => {
-    setOpen(false);
-  };
+  const handleClose = () => setOpen(false);
 
   return (
     <div>
