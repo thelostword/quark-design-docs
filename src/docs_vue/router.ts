@@ -16,7 +16,7 @@ const modulesPage = (import.meta as any).glob(
   "/src/docs_vue/docs/**/doc.zh-CN.md"
 );
 for (const path in modulesPage) {
-  let name = (/docs_vue\/docs\/(.*)\/doc.zh-CN.md/.exec(path) as any[])[1];
+  const name = (/docs_vue\/docs\/(.*)\/doc.zh-CN.md/.exec(path) as any[])[1];
   pagesRouter.push({
     path: `/zh-CN/component/${name}`,
     component: modulesPage[path],
@@ -28,7 +28,7 @@ const modulesEnPage = (import.meta as any).glob(
   "/src/docs_vue/docs/**/doc.en-US.md"
 );
 for (const path in modulesEnPage) {
-  let name = (/docs_vue\/docs\/(.*)\/doc.en-US.md/.exec(path) as any[])[1];
+  const name = (/docs_vue\/docs\/(.*)\/doc.en-US.md/.exec(path) as any[])[1];
   pagesEnRouter.push({
     path: `/en-US/component/${name}`,
     component: modulesEnPage[path],
@@ -41,7 +41,7 @@ const modulesPageReact = (import.meta as any).glob(
   "/src/docs_vue/docs/**/doc-react.zh-CN.md"
 );
 for (const path in modulesPageReact) {
-  let name = (
+  const name = (
     /docs_vue\/docs\/(.*)\/doc-react.zh-CN.md/.exec(path) as any[]
   )[1];
   pagesRouter.push({
@@ -55,7 +55,7 @@ const modulesEnPageReact = (import.meta as any).glob(
   "/src/docs_vue/docs/**/doc-react.en-US.md"
 );
 for (const path in modulesEnPageReact) {
-  let name = (
+  const name = (
     /docs_vue\/docs\/(.*)\/doc-react.en-US.md/.exec(path) as any[]
   )[1];
   pagesEnRouter.push({
@@ -68,7 +68,7 @@ for (const path in modulesEnPageReact) {
 /** 指南部分: 本工程 src/docs 文档 */
 const modulesDocs = (import.meta as any).glob("/src/docs/*.zh-CN.md");
 for (const path in modulesDocs) {
-  let name = (/docs\/(.*).zh-CN.md/.exec(path) as any[])[1];
+  const name = (/docs\/(.*).zh-CN.md/.exec(path) as any[])[1];
 
   guideRouters.push({
     path: `/zh-CN/guide/${name}`,
@@ -78,7 +78,7 @@ for (const path in modulesDocs) {
 }
 const modulesEnDocs = (import.meta as any).glob("/src/docs/*.en-US.md");
 for (const path in modulesEnDocs) {
-  let name = (/docs\/(.*).en-US.md/.exec(path) as any[])[1];
+  const name = (/docs\/(.*).en-US.md/.exec(path) as any[])[1];
 
   guideEnRouters.push({
     path: `/en-US/guide/${name}`,
@@ -100,18 +100,21 @@ const routes: Array<RouteRecordRaw> = [
     component: Index,
     children: [
       {
-        path: '/zh-CN/pages/otherDocs',
-        name: 'pages',
+        path: "/zh-CN/pages/otherDocs",
+        name: "pages",
         component: Guide,
-        children: [{
-          path: `/zh-CN/pages/otherDocs`,
-          component: OtherDocs,
-          name: `zh-CN/pages/otherDocs`,
-        }, {
-          path: `/en-US/pages/otherDocs`,
-          component: OtherDocs,
-          name: `en-US/pages/otherDocs`,
-        }]
+        children: [
+          {
+            path: `/zh-CN/pages/otherDocs`,
+            component: OtherDocs,
+            name: `zh-CN/pages/otherDocs`,
+          },
+          {
+            path: `/en-US/pages/otherDocs`,
+            component: OtherDocs,
+            name: `en-US/pages/otherDocs`,
+          },
+        ],
       },
       {
         path: "/zh-CN/guide",
@@ -162,6 +165,10 @@ const router = createRouter({
       });
     }
   },
+});
+
+router.afterEach(() => {
+  window.scrollTo(0, 0);
 });
 
 export default router;
