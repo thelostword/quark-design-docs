@@ -98,7 +98,7 @@
           "cName": "跑马灯",
           "type": "component",
           "show": true,
-          "desc": "动作面板",
+          "desc": "跑马灯",
           "author": "yhy"
         },
         {
@@ -108,7 +108,7 @@
           "cName": "通知栏",
           "type": "component",
           "show": true,
-          "desc": "动作面板",
+          "desc": "通知栏",
           "author": "yhy"
         },
         {
@@ -118,7 +118,7 @@
           "cName": "进度条",
           "type": "component",
           "show": true,
-          "desc": "动作面板",
+          "desc": "进度条",
           "author": "yhy"
         },
         {
@@ -221,6 +221,16 @@
           "show": true,
           "desc": "动作面板",
           "author": "MrZhao"
+        },
+        {
+          "version": "1.0.29",
+          "name": "Collapse",
+          "sort": 1,
+          "cName": "折叠面板",
+          "type": "component",
+          "show": true,
+          "desc": "折叠面板",
+          "author": "xsf"
         },
         {
           "version": "0.0.1",
