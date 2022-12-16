@@ -93,6 +93,16 @@
         },
         {
           "version": "0.0.1",
+          "name": "VirtualList",
+          "sort": 1,
+          "cName": "虚拟列表",
+          "type": "component",
+          "show": true,
+          "desc": "虚拟列表",
+          "author": "kz"
+        },
+        {
+          "version": "0.0.1",
           "name": "Marquee",
           "sort": 1,
           "cName": "跑马灯",
@@ -503,16 +513,6 @@
           "show": true,
           "desc": "电商秒杀专用",
           "author": "yhy"
-        },
-        {
-          "version": "0.0.1",
-          "name": "VirtualList",
-          "sort": 1,
-          "cName": "虚拟列表",
-          "type": "component",
-          "show": true,
-          "desc": "虚拟列表",
-          "author": "kz"
         }
       ]
     }
