@@ -73,6 +73,7 @@
           <a
             class="nav-item-a-link flex items-center justify-between text-gray-400 dark:text-gray-500 transition-colors hover:text-gray-700 dark:hover:text-gray-400"
             href="https://github.com/hellof2e/quark-design"
+            target="_blank"
           >
             GitHub
             <svg
