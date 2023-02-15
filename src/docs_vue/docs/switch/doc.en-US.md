@@ -75,8 +75,8 @@ export default {
 
 ### Event
 
-| Event  | Description                       | Arguments                              |
-| ------ | --------------------------------- | -------------------------------------- |
+| Event  | Description                       | Arguments                                    |
+| ------ | --------------------------------- | -------------------------------------------- |
 | change | Emitted when check status changed | `e: ({ detail: { value: string } }) => void` |
 
 ## CSS Variables

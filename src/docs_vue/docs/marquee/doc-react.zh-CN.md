@@ -13,45 +13,49 @@ import { Marquee } from "@quarkd/quark-react";
 ### 基础用法
 
 ```html
-<Marquee title={title}></Marquee>
+<marquee title="{title}"></marquee>
 ```
 
 ### 不同速度
 
 ```html
-<Marquee title={title} speed="25"></Marquee>
-<Marquee title={title} speed="100"></Marquee>
+<marquee title="{title}" speed="25"></marquee>
+<marquee title="{title}" speed="100"></marquee>
 ```
 
 ### 控制暂停
 
 ```html
-<Button onClick={pauseAnimation}> 暂停 </Button>
-<Button onClick={continueAnimation}> 继续 </Button>
-<Marquee title={title} paused={paused}></Marquee>
+<button onClick="{pauseAnimation}">暂停</button>
+<button onClick="{continueAnimation}">继续</button>
+<marquee title="{title}" paused="{paused}"></marquee>
 ```
 
 ### 悬浮暂停
 
 ```html
-<Marquee
-  title={title}
-  paused={paused}
-  onMouseover={pauseAnimation}
-  onMouseleave={continueAnimation}
-></Marquee>
+<marquee
+  title="{title}"
+  paused="{paused}"
+  onMouseover="{pauseAnimation}"
+  onMouseleave="{continueAnimation}"
+></marquee>
 ```
 
 ### 点击暂停
 
 ```html
-<Marquee title={title} paused={paused} onClick={changePauseStatus}></Marquee>
+<marquee
+  title="{title}"
+  paused="{paused}"
+  onClick="{changePauseStatus}"
+></marquee>
 ```
 
 ### 反向动画
 
 ```html
-<Marquee title={title} reverse="true"></Marquee>
+<marquee title="{title}" reverse="true"></marquee>
 ```
 
 ## API

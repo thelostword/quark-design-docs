@@ -84,8 +84,8 @@ Set `slot='title'` to replace `title`.
 
 ### Event
 
-| Name   | Description                  | Type          |
-| ------ | ---------------------------- | ------------- |
+| Name  | Description                  | Type          |
+| ----- | ---------------------------- | ------------- |
 | close | Emitted when popup is closed | `（）=> void` |
 
 ## CSS Variables

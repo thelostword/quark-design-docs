@@ -52,23 +52,26 @@ export default () => {
 };
 ```
 
-### 图片icon
+### 图片 icon
 
 ```html
-<Rate value="2" imgicon="https://quark-design.hellobike.com/assets/quark-logo.7fd50e67.png"></Rate>
+<Rate
+  value="2"
+  imgicon="https://quark-design.hellobike.com/assets/quark-logo.7fd50e67.png"
+></Rate>
 ```
 
 ## API
 
 ### Props
 
-| 参数         | 说明                              | 类型                                 | 默认值    |
-| ------------ | --------------------------------- | ------------------------------------ | --------- |
-| defaultvalue | 默认选中 1-5 代表星级             | `string`                             | ` 0`      |
-| value        | 选中，可接收异步数值 1-5 代表星级 | `string`                             | ` 0`      |
-| size         | icon 字体大小                     | `string`                             | `25`      |
-| disabled     | 是否禁用                          | `boolean`                            | `false`   |
-| readonly     | 是否只读                          | `boolean`                            | `false`   |
-| activecolor  | 选中的时候颜色                    | `string`                             | `#ffc800` |
-| imgicon      | 图片 icon                       | `string`                             | `-`       |
+| 参数         | 说明                              | 类型                                         | 默认值    |
+| ------------ | --------------------------------- | -------------------------------------------- | --------- |
+| defaultvalue | 默认选中 1-5 代表星级             | `string`                                     | ` 0`      |
+| value        | 选中，可接收异步数值 1-5 代表星级 | `string`                                     | ` 0`      |
+| size         | icon 字体大小                     | `string`                                     | `25`      |
+| disabled     | 是否禁用                          | `boolean`                                    | `false`   |
+| readonly     | 是否只读                          | `boolean`                                    | `false`   |
+| activecolor  | 选中的时候颜色                    | `string`                                     | `#ffc800` |
+| imgicon      | 图片 icon                         | `string`                                     | `-`       |
 | onChange     | 当前分值修改时时触发的事件        | `(e: { detail: { value: string } }) => void` |           |

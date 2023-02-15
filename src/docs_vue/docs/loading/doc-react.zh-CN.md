@@ -68,12 +68,12 @@ import { Loading } from "@quarkd/quark-react";
 
 ### Props
 
-| 参数     | 说明                             | 类型               | 默认值    |
-| -------- | -------------------------------- | ------------------ | --------- |
-| type     | 图标类型， `circular` `spinner`  | `string`           | `spinner` |
-| color    | 图标颜色                         | `string`           | `#879099` |
+| 参数     | 说明                                           | 类型               | 默认值    |
+| -------- | ---------------------------------------------- | ------------------ | --------- |
+| type     | 图标类型， `circular` `spinner`                | `string`           | `spinner` |
+| color    | 图标颜色                                       | `string`           | `#879099` |
 | size     | 图标大小，如 `20px` `2em` `2rem` `20vm` `20vh` | `string or number` | `30px`    |
-| vertical | 文案是否垂直排列                 | `boolean`          | `false`   |
+| vertical | 文案是否垂直排列                               | `boolean`          | `false`   |
 
 ## 样式变量
 

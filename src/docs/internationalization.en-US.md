@@ -34,8 +34,8 @@ Locale.add({
 
 | Languages           | File  | Version    |
 | ------------------- | ----- | ---------- |
-| English             | en-US | `v1.0.0`  |
-| Simplified Chinese  | zh-CN | `v1.0.0`  |
+| English             | en-US | `v1.0.0`   |
+| Simplified Chinese  | zh-CN | `v1.0.0`   |
 | Traditional Chinese | zh-TW | waiting PR |
 | Indonesian          | id-ID | waiting PR |
 | Thai                | th-TH | waiting PR |
