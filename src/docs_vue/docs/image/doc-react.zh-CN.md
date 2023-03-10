@@ -15,13 +15,13 @@ import { Image } from "@quarkd/quark-react";
 基础用法与原生 img 标签一致，可以设置 src、width、height、alt 等原生属性。
 
 ```tsx
-<image src="https://m.hellobike.com/resource/helloyun/13459/_zZAz_2546.jpg_wh300.jpg" />
+<Image src="https://m.hellobike.com/resource/helloyun/13459/_zZAz_2546.jpg_wh300.jpg" />
 ```
 
 ### 圆形图片
 
 ```tsx
-<image
+<Image
   src="https://m.hellobike.com/resource/helloyun/13459/_zZAz_2546.jpg_wh300.jpg"
   width="100"
   height="100"
@@ -32,7 +32,7 @@ import { Image } from "@quarkd/quark-react";
 ### 懒加载
 
 ```tsx
-<image
+<Image
   src="https://m.hellobike.com/resource/helloyun/13459/_zZAz_2546.jpg_wh300.jpg"
   width="100"
   height="100"
