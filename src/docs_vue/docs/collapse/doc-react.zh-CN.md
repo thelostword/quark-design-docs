@@ -28,7 +28,7 @@ import { Collapse } from "@quarkd/quark-react";
 </Collapse>
 ```
 
-### 无icon样式
+### 无 icon 样式
 
 通过 `iconhide` 属性来自定义标题。
 
@@ -51,9 +51,9 @@ import { Collapse } from "@quarkd/quark-react";
 </Collapse>
 ```
 
-### 自定义icon
+### 自定义 icon
 
-通过 `slot="icon"` 来自定义icon。
+通过 `slot="icon"` 来自定义 icon。
 
 ```tsx
 <Collapse title="标题">
@@ -62,23 +62,22 @@ import { Collapse } from "@quarkd/quark-react";
 </Collapse>
 ```
 
-
 ## API
 
 ### Props
 
-| 参数               | 说明             | 类型                                      | 默认值    |
-| ------------------ | ---------------- | ----------------------------------------- | --------- |
-| title              | 标题文字         | `string`                                  |           |
-| open               | 打开            | `Boolean`                                |   `false` |
+| 参数  | 说明     | 类型      | 默认值  |
+| ----- | -------- | --------- | ------- |
+| title | 标题文字 | `string`  |         |
+| open  | 打开     | `Boolean` | `false` |
 
 ## 样式变量
 
 组件提供了以下[CSS 变量](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Using_CSS_custom_properties)，可用于自定义样式，使用方法请参考[主题定制](#/zh-CN/guide/theme)。
 
-| 名称                       | 说明             | 默认值                            |
-| -------------------------- | ---------------- | --------------------------------- |
-| `--callapse-title-fontsize`   | 标题字体大小     | `14px`                            |
-| `--callapse-title-color`      | 标题字体颜色     | `#666`                            |
-| `--callapse-content-fontsize`   | 展开内容字体大小     | `14px`                            |
-| `--callapse-content-color`      | 展开内容字体颜色     | `#666`                            |
+| 名称                          | 说明             | 默认值 |
+| ----------------------------- | ---------------- | ------ |
+| `--callapse-title-fontsize`   | 标题字体大小     | `14px` |
+| `--callapse-title-color`      | 标题字体颜色     | `#666` |
+| `--callapse-content-fontsize` | 展开内容字体大小 | `14px` |
+| `--callapse-content-color`    | 展开内容字体颜色 | `#666` |

@@ -37,13 +37,17 @@ import { Tag } "@quarkd/quark-react";
 ### 自定义样式
 
 ```tsx
-<Tag size="large" color="#ffe1e1" textcolor="#ad0000">正</Tag>
+<Tag size="large" color="#ffe1e1" textcolor="#ad0000">
+  正
+</Tag>
 ```
 
 ### 圆角标签
 
 ```tsx
-<Tag size="large" round>正</Tag>
+<Tag size="large" round>
+  正
+</Tag>
 ```
 
 ## API

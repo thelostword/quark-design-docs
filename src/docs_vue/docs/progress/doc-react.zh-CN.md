@@ -53,7 +53,9 @@ import { Progress } "@quarkd/quark-react"
   color="linear-gradient(
   268deg,#fa2c19 0%,#fa3f19 44.59259259%,#fa5919 83.40740741%,#fa6419 100%)"
 >
-  <span slot="percent" class="percent">0.9</span>
+  <span slot="percent" class="percent">
+    0.9
+  </span>
 </Progress>
 ```
 

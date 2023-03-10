@@ -38,7 +38,7 @@ import "quarkd/lib/sticky";
 
 ### Props
 
-| Attribute | Description         | Unit      | Default |
-| --------- | ------------------- | --------- | ------- |
-| offsettop | Offset top          |  `vw` or `vh` or `px` or `rem` or `%`     | `0vw`   |
-| zindex    | z-index when sticky | `number` | `99`    |
+| Attribute | Description         | Unit                                 | Default |
+| --------- | ------------------- | ------------------------------------ | ------- |
+| offsettop | Offset top          | `vw` or `vh` or `px` or `rem` or `%` | `0vw`   |
+| zindex    | z-index when sticky | `number`                             | `99`    |

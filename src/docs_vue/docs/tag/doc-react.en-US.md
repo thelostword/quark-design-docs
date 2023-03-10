@@ -39,13 +39,17 @@ import { Tag } "@quarkd/quark-react";
 ### Custom style
 
 ```tsx
-<Tag size="large" color="#ffe1e1" textcolor="#ad0000">Q</Tag>
+<Tag size="large" color="#ffe1e1" textcolor="#ad0000">
+  Q
+</Tag>
 ```
 
 ### Round tag
 
 ```tsx
-<Tag size="large" round>Q</Tag>
+<Tag size="large" round>
+  Q
+</Tag>
 ```
 
 ## API

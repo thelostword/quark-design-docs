@@ -16,7 +16,10 @@ import { Tabs, TabContent } from "@quarkd/quark-react";
 <Tabs activekey="{1}">
   <TabContent label="tab1"> tab1 content </TabContent>
   <TabContent label="tab2"> tab2 content </TabContent>
-  <TabContent label="tab3" disabled> tab3 content </TabContent>
+  <TabContent label="tab3" disabled>
+    {" "}
+    tab3 content{" "}
+  </TabContent>
   <TabContent label="tab4"> tab4 content </TabContent>
 </Tabs>
 ```
@@ -24,19 +27,19 @@ import { Tabs, TabContent } from "@quarkd/quark-react";
 ### 通过名称匹配
 
 ```tsx
-<Tabs activekey={'d'}>
-    <TabContent label="tab1" name="a">
-        tab1 content
-    </TabContent>
-    <TabContent label="tab2" name="b">
-        tab2 content
-    </TabContent>
-    <TabContent label="tab3" disabled name="c">
-        tab3 content
-    </TabContent>
-    <TabContent label="tab4" name="d">
-        tab4 content
-    </TabContent>
+<Tabs activekey={"d"}>
+  <TabContent label="tab1" name="a">
+    tab1 content
+  </TabContent>
+  <TabContent label="tab2" name="b">
+    tab2 content
+  </TabContent>
+  <TabContent label="tab3" disabled name="c">
+    tab3 content
+  </TabContent>
+  <TabContent label="tab4" name="d">
+    tab4 content
+  </TabContent>
 </Tabs>
 ```
 

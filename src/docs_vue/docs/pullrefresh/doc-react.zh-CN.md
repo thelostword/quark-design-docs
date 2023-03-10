@@ -51,7 +51,9 @@ export default () => {
 
 ```tsx
 <PullRefresh dark loading="{loading}" onRefresh="{onFresh}">
-  <div className="content" slot="content">{ count }</div>
+  <div className="content" slot="content">
+    {count}
+  </div>
 </PullRefresh>
 ```
 
@@ -61,16 +63,16 @@ export default () => {
 
 ```tsx
 <PullRefresh dark loading="{loading}" onRefresh="{onFresh}">
-  <div slot="content" className="pull-content">刷新次数: { count }</div>
+  <div slot="content" className="pull-content">
+    刷新次数: {count}
+  </div>
   <div className="refresh-text" slot="pulling">
-    <img
-      src="https://m.hellobike.com/resource/helloyun/18625/3OOq2_down.svg"
-    />下拉提示
+    <img src="https://m.hellobike.com/resource/helloyun/18625/3OOq2_down.svg" />
+    下拉提示
   </div>
   <div className="refresh-text" slot="loosing">
-    <img
-      src="https://m.hellobike.com/resource/helloyun/18625/ImS4S_up.svg"
-    />松开立即刷新
+    <img src="https://m.hellobike.com/resource/helloyun/18625/ImS4S_up.svg" />
+    松开立即刷新
   </div>
   <div className="refresh-text" slot="loading">
     <quark-loading size="18">正在刷新数据...</quark-loading>

@@ -68,8 +68,12 @@ Radio size supports `normal` and `big`, the default is `normal`.
 
 ```tsx
 <RadioGroup value="{value}">
-  <Radio name="apple" shape="square" size="big">Square(Big)</Radio>
-  <Radio name="banana" size="big">Round(Big)</Radio>
+  <Radio name="apple" shape="square" size="big">
+    Square(Big)
+  </Radio>
+  <Radio name="banana" size="big">
+    Round(Big)
+  </Radio>
 </RadioGroup>
 ```
 
@@ -112,9 +116,9 @@ Custom checked color
 
 ### RadioGroup Props
 
-| 参数     | 说明                                                                          | 类型     | 默认值 |
-| -------- | ----------------------------------------------------------------------------- | -------- | ------ |
-| value    | Specific radio                                                                | `String` | -      |
+| 参数     | 说明                                                                                 | 类型     | 默认值 |
+| -------- | ------------------------------------------------------------------------------------ | -------- | ------ |
+| value    | Specific radio                                                                       | `String` | -      |
 | onChange | Emitted when radio check status changed `(e: { detail: { value: string } }) => void` |
 
 ## CSS Variables

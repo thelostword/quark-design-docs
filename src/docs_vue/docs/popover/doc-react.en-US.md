@@ -45,10 +45,7 @@ export default () => {
           handleClose();
         }}
       >
-        <div
-          className="quark-popover"
-          onClick={handleClick}
-        >
+        <div className="quark-popover" onClick={handleClick}>
           Basic Usage
         </div>
       </Popover>
@@ -109,10 +106,7 @@ export default () => {
           handleClose();
         }}
       >
-        <div
-          className="quark-popover"
-          onClick={handleClick}
-        >
+        <div className="quark-popover" onClick={handleClick}>
           Show Icon
         </div>
       </Popover>
@@ -166,10 +160,7 @@ export default () => {
           handleClose();
         }}
       >
-        <div
-          className="quark-popover"
-          onClick={() => handleClick()}
-        >
+        <div className="quark-popover" onClick={() => handleClick()}>
           Disabled
         </div>
       </Popover>

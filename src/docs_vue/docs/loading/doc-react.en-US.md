@@ -49,13 +49,17 @@ Default `px`。
 ### Vertical
 
 ```tsx
-<Loading size="30" vertical>loading...</Loading>
+<Loading size="30" vertical>
+  loading...
+</Loading>
 ```
 
 ### Text Color
 
 ```tsx
-<Loading size="30" vertical class="custom-text">loading...</Loading>
+<Loading size="30" vertical class="custom-text">
+  loading...
+</Loading>
 ```
 
 ```css

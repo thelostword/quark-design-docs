@@ -23,13 +23,14 @@ You just need to set the following variables in your project to modify theme sty
   --quark-success-color: #07c160;
 }
 ```
+
 ## Custom Themes
 
 Set theme colors individually for components:
 
 ```less
-quark-button { 
-  --quark-theme-color: #0088FF;
+quark-button {
+  --quark-theme-color: #0088ff;
 }
 ```
 

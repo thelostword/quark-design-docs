@@ -16,7 +16,10 @@ import { Tabs, TabContent } from "@quarkd/quark-react";
 <Tabs activekey="{1}">
   <TabContent label="tab1"> tab1 content </TabContent>
   <TabContent label="tab2"> tab2 content </TabContent>
-  <TabContent label="tab3" disabled> tab3 content </TabContent>
+  <TabContent label="tab3" disabled>
+    {" "}
+    tab3 content{" "}
+  </TabContent>
   <TabContent label="tab4"> tab4 content </TabContent>
 </Tabs>
 ```
@@ -24,7 +27,7 @@ import { Tabs, TabContent } from "@quarkd/quark-react";
 ### Match By Name
 
 ```tsx
-<Tabs activekey={'d'}>
+<Tabs activekey={"d"}>
   <TabContent label="tab1" name="a">
     tab1 content
   </TabContent>

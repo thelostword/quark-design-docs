@@ -15,9 +15,7 @@ import { Image } from "@quarkd/quark-react";
 The basic usage is consistent with the native img tag, and native attributes such as src, width, height, and alt can be set.
 
 ```tsx
-<image
-  src="https://m.hellobike.com/resource/helloyun/13459/_zZAz_2546.jpg_wh300.jpg"
-/>
+<image src="https://m.hellobike.com/resource/helloyun/13459/_zZAz_2546.jpg_wh300.jpg" />
 ```
 
 ### Round

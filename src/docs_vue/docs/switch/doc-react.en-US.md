@@ -54,12 +54,12 @@ export default () => {
 
 ### Props
 
-| Attribute | Description                       | Type                                   | Default |
-| --------- | --------------------------------- | -------------------------------------- | ------- |
-| checked   | On/Off                            | `boolean`                              | `false` |
-| disabled  | Disable switch                    | `boolean`                              | `false` |
-| size      | Switch size                       | `number`                               | `16px`  |
-| color     | Switch color                      | `string`                               | -       |
+| Attribute | Description                       | Type                                         | Default |
+| --------- | --------------------------------- | -------------------------------------------- | ------- |
+| checked   | On/Off                            | `boolean`                                    | `false` |
+| disabled  | Disable switch                    | `boolean`                                    | `false` |
+| size      | Switch size                       | `number`                                     | `16px`  |
+| color     | Switch color                      | `string`                                     | -       |
 | onChange  | Emitted when check status changed | `e: ({ detail: { value: string } }) => void` |
 
 ## CSS Variables

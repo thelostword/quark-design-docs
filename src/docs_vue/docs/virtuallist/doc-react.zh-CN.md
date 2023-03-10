@@ -20,7 +20,7 @@ export default () => {
   const onLoad = () => {
     const len = list.length;
     const arr = new Array(100).fill(0).map((_, i) => len + i + 1);
-    const newList = [...list, ...arr]
+    const newList = [...list, ...arr];
     setList(newList);
     virtualListRef.current.setListData(newList);
   };

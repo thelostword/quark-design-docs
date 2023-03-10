@@ -68,8 +68,12 @@ export default () => {
 
 ```tsx
 <RadioGroup value="{value}">
-  <Radio name="apple" shape="square" size="big">方形(大)</Radio>
-  <Radio name="banana" size="big">圆形(大)</Radio>
+  <Radio name="apple" shape="square" size="big">
+    方形(大)
+  </Radio>
+  <Radio name="banana" size="big">
+    圆形(大)
+  </Radio>
 </RadioGroup>
 ```
 
@@ -108,9 +112,9 @@ export default () => {
 
 ### RadioGroup Props
 
-| 参数     | 说明           | 类型                                  | 默认值 |
-| -------- | -------------- | ------------------------------------- | ------ |
-| value    | 指定选中的选项 | `string`                              | -      |
+| 参数     | 说明           | 类型                                         | 默认值 |
+| -------- | -------------- | -------------------------------------------- | ------ |
+| value    | 指定选中的选项 | `string`                                     | -      |
 | onChange | 变化时回调函数 | `(e: { detail: { value: string } }) => void` |
 
 ## 样式变量
