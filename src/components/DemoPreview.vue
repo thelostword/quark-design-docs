@@ -1,8 +1,7 @@
 <template>
   <div
     class="doc-demo-preview transition-all rounded-xl overflow-hidden right-[30px] top-[88px] w-[360px] min-h-[620px] fixed drop-shadow-xl"
-    :class="{ 'fixed-class': fixed }"
-  >
+    :class="{ 'fixed-class': fixed }">
     <iframe :src="url" id="quark-demo" frameborder="0"></iframe>
   </div>
 </template>

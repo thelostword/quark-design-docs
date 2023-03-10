@@ -20,8 +20,14 @@ export default () => {
 
   return (
     <div>
-      <Tooltip tips="气泡文字" open={open} onClose={handleClose}>
-        <div onClick={handleClick}>top 位置</div>
+      <Tooltip
+        tips="气泡文字"
+        open={open}
+        onClose={handleClose}
+      >
+        <div onClick={handleClick}>
+          top 位置
+        </div>
       </Tooltip>
     </div>
   );

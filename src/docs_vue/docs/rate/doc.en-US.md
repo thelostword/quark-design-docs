@@ -50,16 +50,11 @@ quark-rate {
 ```javascript
  onselect(e) { console.log(e.detail.value) }
 ```
-
 ### image icon
 
 ```html
-<quark-rate
-  defaultvalue="2"
-  imgicon="https://quark-design.hellobike.com/assets/quark-logo.7fd50e67.png"
-></quark-rate>
+<quark-rate  defaultvalue="2" imgicon="https://quark-design.hellobike.com/assets/quark-logo.7fd50e67.png"></quark-rate>
 ```
-
 ## API
 
 ### Props
@@ -76,6 +71,6 @@ quark-rate {
 
 ### Event
 
-| Event  | Description               | Type                                         |
-| ------ | ------------------------- | -------------------------------------------- |
+| Event  | Description               | Type                                 |
+| ------ | ------------------------- | ------------------------------------ |
 | change | Emitted when rate changed | `(e: { detail: { value: string } }) => void` |

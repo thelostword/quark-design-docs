@@ -13,49 +13,45 @@ import { Marquee } from "@quarkd/quark-react";
 ### Basic Usage
 
 ```html
-<marquee title="{title}"></marquee>
+<Marquee title={title}></Marquee>
 ```
 
 ### Speed
 
 ```html
-<marquee title="{title}" speed="25"></marquee>
-<marquee title="{title}" speed="100"></marquee>
+<Marquee title={title} speed="25"></Marquee>
+<Marquee title={title} speed="100"></Marquee>
 ```
 
 ### Control Paused
 
 ```html
-<button onClick="{pauseAnimation}">Paused</button>
-<button onClick="{continueAnimation}">Continue</button>
-<marquee title="{title}" paused="{paused}"></marquee>
+<Button onClick={pauseAnimation}> Paused </Button>
+<Button onClick={continueAnimation}> Continue </Button>
+<Marquee title={title} paused={paused}></Marquee>
 ```
 
 ### Hover Paused
 
 ```html
-<marquee
-  title="{title}"
-  paused="{paused}"
-  onMouseover="{pauseAnimation}"
-  onMouseleave="{continueAnimation}"
-></marquee>
+<Marquee
+  title={title}
+  paused={paused}
+  onMouseover={pauseAnimation}
+  onMouseleave={continueAnimation}
+></Marquee>
 ```
 
 ### Click Paused
 
 ```html
-<marquee
-  title="{title}"
-  paused="{paused}"
-  onClick="{changePauseStatus}"
-></marquee>
+<Marquee title={title} paused={paused} onClick={changePauseStatus}></Marquee>
 ```
 
 ### Reverse
 
 ```html
-<marquee title="{title}" reverse="true"></marquee>
+<Marquee title={title} reverse="true"></Marquee>
 ```
 
 ## API

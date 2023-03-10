@@ -42,11 +42,11 @@ const DATA = [
     ],
   },
   {
-    text: "Beijing",
+    text: 'Beijing',
     children: [
       {
-        text: "",
-        children: [{ text: "" }],
+        text: '',
+        children: [{ text: '' }],
       },
     ],
   },

@@ -9,7 +9,7 @@ Quark 采用中文作为默认语言，同时支持多语言切换，请按照�
 Quark 通过 Locale 组件实现多语言支持，使用 Locale.use 方法可以切换当前使用的语言。
 
 ```ts
-import Locale, { enUS } from "quarkd/lib/locale";
+import Locale, {enUS} from "quarkd/lib/locale";
 Locale.use(enUS);
 ```
 
@@ -31,13 +31,13 @@ Locale.add({
 
 ## 目前支持的语言
 
-| 语言         | 文件名 | 版本     |
-| ------------ | ------ | -------- |
+| 语言         | 文件名 | 版本      |
+| ------------ | ------ | --------- |
 | 英语         | en-US  | `v1.0.0` |
 | 简体中文     | zh-CN  | `v1.0.0` |
-| 繁體中文     | zh-TW  | 等待 PR  |
-| 印度尼西亚语 | id-ID  | 等待 PR  |
-| 泰语         | th-TH  | 等待 PR  |
+| 繁體中文     | zh-TW  | 等待 PR   |
+| 印度尼西亚语 | id-ID  | 等待 PR   |
+| 泰语         | th-TH  | 等待 PR   |
 
 ## 内置的变量
 

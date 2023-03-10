@@ -17,12 +17,11 @@ Toast.text("网络失败，请稍后再试~");
 ```
 
 ### 文字提示位置
-
 通过 position 控制 文字提示位置，支持 `top`、`bottom`,默认`middle`
 
 ```javascript
 Toast.text("网络失败，请稍后再试~", {
-  position: "top",
+  position: 'top'
 });
 ```
 
@@ -115,24 +114,24 @@ toast2.hide();
 
 ### ToastOptions 数据结构
 
-| 参数                 | 说明                                           | 类型                         | 默认值     |
-| -------------------- | ---------------------------------------------- | ---------------------------- | ---------- |
-| duration             | 展示时长(ms)，值为 0 时，toast 不会消失        | `number`                     | `2000ms`   |
-| size                 | 图标大小                                       | `number`                     | `40px`     |
-| zIndex               | 浮层层级                                       | `number`                     | `9999`     |
-| close                | 关闭时的回调函数                               | `() => void`                 | -          |
-| loadingIconDirection | loading 图标展示方向，仅 `type=loading` 时生效 | `horizontal` 或者 `vertical` | `vertical` |
-| position             | 位置                                           | `top`或者 `bottom`           | `middle`   |
+| 参数     | 说明                                    | 类型       | 默认值   |
+| -------- | --------------------------------------- | ---------- | -------- |
+| duration | 展示时长(ms)，值为 0 时，toast 不会消失 | `number`   | `2000ms` |
+| size     | 图标大小                                | `number`  | `40px`   |
+| zIndex   | 浮层层级                                | `number`   | `9999`   |
+| close    | 关闭时的回调函数                        | `() => void` | -        |
+| loadingIconDirection    | loading 图标展示方向，仅 `type=loading` 时生效 | `horizontal` 或者 `vertical` | `vertical` |
+| position    | 位置 | `top`或者 `bottom` | `middle` |
 
 ## 样式变量
 
-| 名称                            | 说明                 | 默认值                                                           |
-| ------------------------------- | -------------------- | ---------------------------------------------------------------- |
-| `--toast-min-width`             | 最小宽度             | `120px`                                                          |
-| `--toast-max-width`             | 最大宽度             | `240px`                                                          |
-| `--toast-text-padding`          | 内间距               | `24px 16px`                                                      |
-| `--toast-font-size`             | 字体大小             | `14px`                                                           |
-| `--toast-color`                 | 字体颜色             | `#fff`                                                           |
-| `--toast-loading-bottom`        | loading 图标底部边距 | 垂直 loading 为 `14px`；水平 loading 为 `0`                      |
-| `--toast-loading-right`         | loading 图标右边边距 | 垂直 loading 为 `0`；水平 loading 为 `8px`                       |
-| `--toast-position-top-distance` | 提示距顶部距离       | position 为`top`时 值为 `20%`， position 值为`botton`时值为`80%` |
+| 名称                   | 说明     | 默认值      |
+| ---------------------- | -------- | ----------- |
+| `--toast-min-width`    | 最小宽度 | `120px`     |
+| `--toast-max-width`    | 最大宽度 | `240px`     |
+| `--toast-text-padding` | 内间距   | `24px 16px` |
+| `--toast-font-size`    | 字体大小 | `14px`      |
+| `--toast-color`        | 字体颜色 | `#fff`      |
+| `--toast-loading-bottom` | loading 图标底部边距 | 垂直 loading 为 `14px`；水平 loading 为 `0` |
+| `--toast-loading-right` | loading 图标右边边距 | 垂直 loading 为 `0`；水平 loading 为 `8px` |
+| `--toast-position-top-distance` | 提示距顶部距离 | position 为`top`时 值为 `20%`， position值为`botton`时值为`80%` |

@@ -3,19 +3,15 @@
 
   <doc-nav :fixed="fixed"></doc-nav>
 
-  <div
-    :class="{ 'pr-[390px]': isShow() }"
-    class="flex flex-col ml-[260px] doc-content"
-    id="doc-content"
-  >
-    <div class="min-h-[800px] bg-white dark:bg-gray-900 doc-content-document">
+  <div :class="{ 'pr-[390px]': isShow() }" class="flex flex-col ml-[260px] doc-content" id="doc-content">
+    <div class="min-h-[800px] bg-white dark:bg-gray-900 doc-content-document" >
       <router-view />
     </div>
 
     <doc-demo-preview
       v-show="isShow()"
       :url="demoUrl"
-      :class="{ fixed: fixed }"
+      :class="{ 'fixed': fixed }"
       :fixed="fixed"
       type="vue"
     ></doc-demo-preview>
@@ -23,7 +19,7 @@
 </template>
 <script lang="ts">
 import { defineComponent, onMounted, reactive, toRefs } from "vue";
-import { demoUrl as defaultUrl, nav } from "@/config/index";
+import { demoUrl as defaultUrl,  nav } from "@/config/index";
 import {
   onBeforeRouteUpdate,
   RouteLocationNormalized,
@@ -42,7 +38,8 @@ export default defineComponent({
     [DemoPreview.name]: DemoPreview,
   },
   setup() {
-    const isZhLang = localStorage.getItem("language") === "zh-CN";
+    const isZhLang =
+      localStorage.getItem("language") === "zh-CN";
     const docMd = localStorage.getItem("docMd");
     const route = useRoute();
     // const router = useRouter();
@@ -81,6 +78,7 @@ export default defineComponent({
         .split("/")
         .pop()}?lang=${localStorage.getItem("language")}`;
     };
+
 
     const isReact = (router: RouteLocationNormalized) => {
       return router.path.indexOf("react") > -1;
@@ -135,13 +133,10 @@ export default defineComponent({
       watchDemoUrl(to);
       data.curKey = isReact(to) ? "react" : "vue";
       componentTitle(to);
-      document.getElementById("doc-content")?.scrollTo({ top: 0 });
+      document.getElementById('doc-content')?.scrollTo({ top: 0 });
     });
-    const demoUrl =
-      import.meta.env.VITE_ENV === "dev"
-        ? "https://quark-design.hellobike.com/demo/demo.html#"
-        : defaultUrl;
-    console.log(import.meta.env, "ENV");
+    const demoUrl = import.meta.env.VITE_ENV === 'dev' ? 'https://quark-design.hellobike.com/demo/demo.html#' : defaultUrl
+    console.log(import.meta.env, 'ENV')
     return {
       ...toRefs(state),
       ...toRefs(data),

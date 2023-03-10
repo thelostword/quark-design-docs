@@ -6,6 +6,7 @@
 
 <img src="https://m.hellobike.com/resource/helloyun/16682/76s6X_quark.demo.png?x-oss-process=image/quality,q_80" width="200" alt="qr.png">
 
+
 ## CDN
 
 The easiest way to use quark is to directly introduce the CDN link in the HTML file, and then you can use it anywhere in the world. Since quark has achieved CSS-IN-JS, you only need to load the link below.
@@ -67,11 +68,7 @@ import { Button } from "@quarkd/quark-react";
 
 class Demo extends React.Component {
   render() {
-    return (
-      <Button type="primary" onClick="() => handleClick()">
-        Button
-      </Button>
-    );
+    return <Button type="primary" onClick="() => handleClick()">Button</Button>;
   }
 }
 ```
@@ -82,20 +79,20 @@ class Demo extends React.Component {
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
   </head>
   <!-- cdn -->
   <script src="https://fastly.jsdelivr.net/npm/quarkd@1.0.11/umd/index.js"></script>
-  <body>
-    <quark-button loading="false" id="btn">Button</quark-button>
-  </body>
+<body>
+  <quark-button loading="false" id="btn">Button</quark-button>
+</body>
 
-  <script>
-    const el = document.getElementById("btn");
-    el.addEventListener("click", function handleClick() {
-      el.loading = true;
-    });
-  </script>
+<script>
+  const el = document.getElementById('btn')
+  el.addEventListener('click', function handleClick() {
+    el.loading = true
+  })
+</script>
 </html>
 ```
 

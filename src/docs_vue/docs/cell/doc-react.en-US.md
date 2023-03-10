@@ -119,11 +119,11 @@ export default () => {
 
 ### Slots
 
-| Name            | Description       |
-| --------------- | ----------------- |
-| slot            | Custom right info |
-| slot name=title | Custom title      |
-| slot name=icon  | Custom left icon  |
+| Name             | Description                                  |
+| ---------------- | -------------------------------------- |
+| slot             | Custom right info                        |
+| slot name=title  | Custom title                             |
+| slot name=icon   | Custom left icon |
 
 ## CSS Variables
 

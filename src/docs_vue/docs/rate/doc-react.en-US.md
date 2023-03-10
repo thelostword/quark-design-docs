@@ -55,10 +55,7 @@ export default () => {
 ### image icon
 
 ```html
-<Rate
-  value="2"
-  imgicon="https://quark-design.hellobike.com/assets/quark-logo.7fd50e67.png"
-></Rate>
+<Rate value="2" imgicon="https://quark-design.hellobike.com/assets/quark-logo.7fd50e67.png"></Rate>
 ```
 
 ## API
@@ -74,4 +71,5 @@ export default () => {
 | readonly                           | Whether to be readonly                                      | `boolean` | `false`   |
 | activecolor                        | chosen color                                                | `string`  | `#ffc800` |
 | imgicon                            | iamge icon                                                  | `string`  | `-`       |
-| onChange Emitted when rate changed | `(e: { detail: { value: string } }) => void`                |           |
+| onChange Emitted when rate changed | `(e: { detail: { value: string } }) => void`                            |           |
+

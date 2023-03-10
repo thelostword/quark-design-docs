@@ -257,47 +257,39 @@
   }
 }
 
+
 .dark {
   --tw-border-opacity: 1;
   --tw-text-opacity: 1;
   --tw-prose-pre-bg: #141f31;
-  .doc-content-document h1,
-  .doc-content-document h2,
-  .doc-content-document h3,
-  .doc-content-document h4,
-  .doc-content-document h5,
-  .doc-content-document h6 {
+  .doc-content-document h1, .doc-content-document h2, .doc-content-document h3, .doc-content-document h4, .doc-content-document h5, .doc-content-document h6{
     color: white;
   }
-  .router-link-active {
+  .router-link-active{
     color: white;
   }
   .doc-content-document strong {
-    color: rgb(148 163 184 / var(--tw-text-opacity));
+    color: rgb(148 163 184/var(--tw-text-opacity));
   }
   .doc-content-document h3 {
-    color: rgb(226 232 240 / var(--tw-text-opacity));
+    color: rgb(226 232 240/var(--tw-text-opacity));
   }
-  .doc-content-document p {
+  .doc-content-document p{
     color: #9ca3af;
   }
-  code {
+  code{
     background-color: var(--tw-prose-pre-bg);
     color: #9ca3b0;
   }
-  .hljs-doctag,
-  .hljs-formula,
-  .hljs-keyword {
+  .hljs-doctag, .hljs-formula, .hljs-keyword{
     color: #bcc4d3;
   }
-  .doc-content-document p > code,
-  .doc-content-document li > code,
-  .doc-content-document table code {
+  .doc-content-document p > code, .doc-content-document li > code, .doc-content-document table code{
     background-color: #1f2938;
     color: #9da3b0;
     font-weight: 600;
   }
-  .doc-content-document table td:first-child code {
+  .doc-content-document table td:first-child code{
     color: #9da3b0;
   }
   .doc-content-document table th {
@@ -308,65 +300,48 @@
     border-color: rgb(31 41 55 / var(--tw-border-opacity));
   }
   .doc-content-document table,
-  .doc-content-document table td {
+  .doc-content-document table td{
     border-color: rgb(31 41 55 / var(--tw-border-opacity));
   }
-  .doc-content-document table {
+  .doc-content-document table{
     color: rgb(156 163 175 / var(--tw-text-opacity));
   }
-  .doc-content-document h2 {
-    color: rgb(226 232 240 / var(--tw-text-opacity));
+  .doc-content-document h2{
+    color: rgb(226 232 240/var(--tw-text-opacity));
   }
   .doc-content-document blockquote {
     background-color: var(--tw-prose-pre-bg);
     color: #93a2b7;
   }
-  .doc-content-document {
+  .doc-content-document{
     min-height: 100vh;
   }
-  .doc-content-document ul li,
-  .doc-content-document ol li {
+  .doc-content-document ul li, .doc-content-document ol li{
     color: rgb(156 163 175 / var(--tw-text-opacity));
   }
-  .doc-content-document blockquote {
+  .doc-content-document blockquote{
     border-color: #38bdf8;
   }
-  .hljs-deletion,
-  .hljs-name,
-  .hljs-section,
-  .hljs-selector-tag,
-  .hljs-subst {
+  .hljs-deletion, .hljs-name, .hljs-section, .hljs-selector-tag, .hljs-subst{
     color: #fdc96a;
   }
-  .hljs-attr,
-  .hljs-number,
-  .hljs-selector-attr,
-  .hljs-selector-class,
-  .hljs-selector-pseudo,
-  .hljs-template-variable,
-  .hljs-type,
-  .hljs-variable {
+  .hljs-attr, .hljs-number, .hljs-selector-attr, .hljs-selector-class, .hljs-selector-pseudo, .hljs-template-variable, .hljs-type, .hljs-variable {
     color: #fdc96a;
   }
-  .hljs-addition,
-  .hljs-attribute,
-  .hljs-meta-string,
-  .hljs-regexp,
-  .hljs-string {
+  .hljs-addition, .hljs-attribute, .hljs-meta-string, .hljs-regexp, .hljs-string{
     color: #f1526f;
   }
-  .hljs-strin {
+  .hljs-strin{
     color: #50a14f;
   }
-
+  
   // JSX for react doc
   .language-jsx {
     color: #9ca3b0;
 
-    .hljs-doctag,
-    .hljs-formula,
-    .hljs-keyword {
+    .hljs-doctag, .hljs-formula, .hljs-keyword {
       color: #7ea4f5;
     }
   }
 }
+

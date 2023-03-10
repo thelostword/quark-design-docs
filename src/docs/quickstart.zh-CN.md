@@ -22,7 +22,7 @@
 npm i quarkd
 ```
 
-**React 使用须知**：由于 `quarkd` 提供的组件均为原生自定义元素（类比 div），因此组件内派发（dispatch）的事件需要使用 `addEventLisener` 接收，比如 `dialog` 组件内部的自定义关闭事件 `close`。而 Vue 技术栈则可以直接使用 `@xx` 即可接收原生派发的事件，因此不需要使用 `addEventLisener` 接收。
+**React 使用须知**：由于 `quarkd` 提供的组件均为原生自定义元素（类比div），因此组件内派发（dispatch）的事件需要使用 `addEventLisener` 接收，比如 `dialog` 组件内部的自定义关闭事件 `close`。而 Vue 技术栈则可以直接使用 `@xx` 即可接收原生派发的事件，因此不需要使用 `addEventLisener` 接收。
 <br />
 <br />
 为了提升开发体验，我们对 `quarkd` 进行了 [Reactify(React 化)](https://github.com/BBKolton/reactify-wc/)！所以，我们建议您在 React/Preact 项目中使用 `@quarkd/quark-react`！
@@ -33,7 +33,6 @@ npm i @quarkd/quark-react
 ```
 
 ## 使用示例
-
 ### Vue
 
 ```tsx
@@ -67,35 +66,31 @@ import { Button } from "@quarkd/quark-react";
 
 class Demo extends React.Component {
   render() {
-    return (
-      <Button type="primary" onClick="() => handleClick()">
-        Button
-      </Button>
-    );
+    return <Button type="primary" onClick="() => handleClick()">Button</Button>;
   }
 }
 ```
 
-### 无框架/Jquery 等
+### 无框架/Jquery等
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
   </head>
   <!-- cdn -->
   <script src="https://fastly.jsdelivr.net/npm/quarkd@1.0.11/umd/index.js"></script>
-  <body>
-    <quark-button loading="false" id="btn">Button</quark-button>
-  </body>
+<body>
+  <quark-button loading="false" id="btn">Button</quark-button>
+</body>
 
-  <script>
-    const el = document.getElementById("btn");
-    el.addEventListener("click", function handleClick() {
-      el.loading = true;
-    });
-  </script>
+<script>
+  const el = document.getElementById('btn')
+  el.addEventListener('click', function handleClick() {
+    el.loading = true
+  })
+</script>
 </html>
 ```
 
@@ -107,4 +102,4 @@ class Demo extends React.Component {
 <script src="https://unpkg.com/@webcomponents/webcomponentsjs@^2/"></script>
 ```
 
-更多详情，参考官方 Polyfill [点击查看更多](https://www.webcomponents.org/polyfills)。
+更多详情，参考官方Polyfill [点击查看更多](https://www.webcomponents.org/polyfills)。

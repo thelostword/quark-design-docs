@@ -20,8 +20,14 @@ export default () => {
 
   return (
     <div>
-      <Tooltip tips="bubble text" open={open} onClose={handleClose}>
-        <div onClick={handleClick}>top position</div>
+      <Tooltip
+        tips="bubble text"
+        open={open}
+        onClose={handleClose}
+      >
+        <div onClick={handleClick}>
+          top position
+        </div>
       </Tooltip>
     </div>
   );

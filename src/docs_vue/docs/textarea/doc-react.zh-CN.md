@@ -13,43 +13,43 @@ import { Textarea } from "@quarkd/quark-react";
 ### 基本使用
 
 ```html
-<textarea />
+<Textarea />
 ```
 
 ### 指定行数
 
 ```html
-<textarea rows="6" />
+<Textarea rows="6" />
 ```
 
 ### 根据内容自动调整高度
 
 ```html
-<textarea autosize />
+<Textarea autosize />
 ```
 
 ### 字数统计
 
 ```html
-<textarea showcount />
+<Textarea showcount />
 ```
 
 ### 字数限制
 
 ```html
-<textarea showcount maxlength="50" />
+<Textarea showcount maxlength="50" />
 ```
 
 ### 禁用状态
 
 ```html
-<textarea disabled />
+<Textarea disabled />
 ```
 
 ### 自定义样式
 
 ```html
-<textarea showcount class="custom-style" />
+<Textarea showcount class="custom-style" />
 ```
 
 ```css
@@ -89,21 +89,21 @@ export default () => {
 
 ### Props
 
-| 参数               | 说明                                      | 类型                                         | 默认值  |
-| ------------------ | ----------------------------------------- | -------------------------------------------- | ------- |
-| value              | 输入值                                    | `string`                                     |
-| placeholder        | 提示文本                                  | `string`                                     |
-| rows               | 行数                                      | `number`                                     | `2`     |
-| maxlength          | 最大字符数                                | `number`                                     | `-`     |
-| showcount          | 显示字数                                  | `boolean`                                    | `false` |
-| autocomplete       | 自动补全                                  | `boolean`                                    | `false` |
-| disabled           | 是否禁用                                  | `boolean`                                    | `false` |
-| readonly           | 是否只读                                  | `boolean`                                    | `false` |
-| id                 | textarea 元素的 id，常用来配合 label 使用 | `string`                                     |
+| 参数               | 说明                                      | 类型                                    | 默认值  |
+| ------------------ | ----------------------------------------- | --------------------------------------- | ------- |
+| value              | 输入值                                    | `string`                               |
+| placeholder        | 提示文本                                  | `string`                                |
+| rows               | 行数                                      | `number`                                | `2`     |
+| maxlength          | 最大字符数                                | `number`                               | `-`     |
+| showcount          | 显示字数                                  | `boolean`                               | `false` |
+| autocomplete       | 自动补全                                  | `boolean`                               | `false` |
+| disabled           | 是否禁用                                  | `boolean`                               | `false` |
+| readonly           | 是否只读                                  | `boolean`                               | `false` |
+| id                 | textarea 元素的 id，常用来配合 label 使用 | `string`                                |
 | onInput            | 文本域内容变化时触发                      | `(e: { detail: { value: string } }) => void` |         |
 | onFocus            | 文本域获得焦点时触发                      | `(e: { detail: { value: string } }) => void` |         |
 | onBlur             | 文本域失去焦点时触发                      | `(e: { detail: { value: string } }) => void` |         |
-| onCompositionStart | 输入法编辑器开始新的输入时触发            | `(）=> void `                                |
+| onCompositionStart | 输入法编辑器开始新的输入时触发            | `(）=> void `                            |
 
 ## CSS 样式变量
 

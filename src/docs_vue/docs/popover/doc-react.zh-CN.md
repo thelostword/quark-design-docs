@@ -40,7 +40,10 @@ export default () => {
           handleClose();
         }}
       >
-        <div className="quark-popover" onClick={handleClick}>
+        <div
+          className="quark-popover"
+          onClick={handleClick}
+        >
           基本使用
         </div>
       </Popover>
@@ -101,7 +104,10 @@ export default () => {
           handleClose();
         }}
       >
-        <div className="quark-popover" onClick={handleClick}>
+        <div
+          className="quark-popover"
+          onClick={handleClick}
+        >
           展示图标
         </div>
       </Popover>
@@ -153,7 +159,10 @@ export default () => {
           handleClose();
         }}
       >
-        <div className="quark-popover" onClick={handleClick}>
+        <div
+          className="quark-popover"
+          onClick={handleClick}
+        >
           禁用某项
         </div>
       </Popover>

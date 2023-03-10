@@ -48,7 +48,7 @@ export default defineConfig({
   ],
   build: {
     target: "es2015",
-    outDir: "dist",
+    outDir: 'dist',
     cssCodeSplit: true,
     rollupOptions: {
       input: {

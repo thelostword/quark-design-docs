@@ -121,8 +121,8 @@ export default () => {
 
 ### Props
 
-| Attribute | Description    | Type      | Default |
-| --------- | -------------- | --------- | ------- |
+| Attribute | Description    | Type    | Default |
+| --------- | -------------- | ------- | ------- |
 | open      | Component call | `boolean` | `false` |
 
 ### Methods

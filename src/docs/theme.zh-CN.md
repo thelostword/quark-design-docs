@@ -30,8 +30,8 @@ Quark 默认提供一套 UI 主题，同时允许在一定程度上定制新的�
 为组件单独设置主题色：
 
 ```less
-quark-button {
-  --quark-theme-color: #0088ff;
+quark-button { 
+  --quark-theme-color: #0088FF;
 }
 ```
 
