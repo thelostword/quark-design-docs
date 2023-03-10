@@ -12,7 +12,7 @@ import { Collapse } from "@quarkd/quark-react";
 
 ### 基本用法
 
-```html
+```tsx
 <Collapse title="标题">
   生命远不止连轴转和忙到极限，人类的体验远比这辽阔、丰富得多。
 </Collapse>
@@ -22,7 +22,7 @@ import { Collapse } from "@quarkd/quark-react";
 
 通过设置 `open=true` 属性来控制折叠面板打开状态
 
-```html
+```tsx
 <Collapse title="标题" open>
   生命远不止连轴转和忙到极限，人类的体验远比这辽阔、丰富得多。
 </Collapse>
@@ -32,7 +32,7 @@ import { Collapse } from "@quarkd/quark-react";
 
 通过 `iconhide` 属性来自定义标题。
 
-```html
+```tsx
 <Collapse title="标题" iconhide>
   生命远不止连轴转和忙到极限，人类的体验远比这辽阔、丰富得多。
 </Collapse>
@@ -42,7 +42,7 @@ import { Collapse } from "@quarkd/quark-react";
 
 通过 `slot="title"` 来自定义标题。
 
-```html
+```tsx
 <Collapse title="标题">
   <div slot="title">
     <span style="color: blueviolet">自定义标题</span>
@@ -55,7 +55,7 @@ import { Collapse } from "@quarkd/quark-react";
 
 通过 `slot="icon"` 来自定义icon。
 
-```html
+```tsx
 <Collapse title="标题">
   <span slot="icon">🎉🎉🎉</span>
   生命远不止连轴转和忙到极限，人类的体验远比这辽阔、丰富得多。

@@ -12,13 +12,13 @@ import { Progress } "@quarkd/quark-react"
 
 ### 基本用法
 
-```html
+```tsx
 <Progress value="0"></Progress>
 ```
 
 ### 显示字体进度
 
-```html
+```tsx
 <Progress value="100" showtext></Progress>
 ```
 
@@ -31,7 +31,7 @@ import { Progress } "@quarkd/quark-react"
 }
 ```
 
-```html
+```tsx
 <Progress value="20" color="green"></Progress>
 <Progress value="30" color="green" class="green"></Progress>
 ```
@@ -46,7 +46,7 @@ import { Progress } "@quarkd/quark-react"
 }
 ```
 
-```html
+```tsx
 <Progress
   value="90"
   class="auto"

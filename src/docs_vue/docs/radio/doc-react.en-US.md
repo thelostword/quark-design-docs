@@ -66,7 +66,7 @@ export default () => {
 
 Radio size supports `normal` and `big`, the default is `normal`.
 
-```html
+```tsx
 <RadioGroup value="{value}">
   <Radio name="apple" shape="square" size="big">Square(Big)</Radio>
   <Radio name="banana" size="big">Round(Big)</Radio>
@@ -77,7 +77,7 @@ Radio size supports `normal` and `big`, the default is `normal`.
 
 To disable radio, add `disabled` prop on the Radio.
 
-```html
+```tsx
 <Radio checked={true} disabled>checked - disabled</Radio>
 <Radio checked={false} disabled>unchecked - disabled</Radio>
 <Radio checked={true} shape="square" disabled
@@ -92,7 +92,7 @@ To disable radio, add `disabled` prop on the Radio.
 
 Custom checked color
 
-```html
+```tsx
 <Radio className="my-radio" checked="true">Radio-Custom checked color</Radio>
 
 <!-- CSS -->

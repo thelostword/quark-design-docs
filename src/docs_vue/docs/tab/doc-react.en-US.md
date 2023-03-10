@@ -12,7 +12,7 @@ import { Tabs, TabContent } from "@quarkd/quark-react";
 
 ### Basic Usage
 
-```html
+```tsx
 <Tabs activekey="{1}">
   <TabContent label="tab1"> tab1 content </TabContent>
   <TabContent label="tab2"> tab2 content </TabContent>
@@ -23,7 +23,7 @@ import { Tabs, TabContent } from "@quarkd/quark-react";
 
 ### Match By Name
 
-```html
+```tsx
 <Tabs activekey={'d'}>
   <TabContent label="tab1" name="a">
     tab1 content
@@ -44,7 +44,7 @@ import { Tabs, TabContent } from "@quarkd/quark-react";
 
 Horizontal scrolling is automatically supported when the length exceeds the viewport.
 
-```html
+```tsx
 <Tabs>
   <TabContent label="tab1">tab1</TabContent>
   <TabContent label="tab2">tab2</TabContent>
@@ -88,7 +88,7 @@ export default () => {
 
 In sticky mode, the nav-item will be fixed to top when scroll to top.
 
-```html
+```tsx
 <Tabs sticky offsettop="17vw">
   <TabContent label="tab1"> tab1 content </TabContent>
   <TabContent label="tab2"> tab2 content </TabContent>

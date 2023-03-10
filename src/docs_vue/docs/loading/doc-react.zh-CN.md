@@ -12,13 +12,13 @@ import { Loading } from "@quarkd/quark-react";
 
 ### 基本使用
 
-```html
+```tsx
 <Loading></Loading>
 ```
 
 ### 加载类型
 
-```html
+```tsx
 <Loading type="circular"></Loading> <Loading type="spinner"></Loading>
 ```
 
@@ -26,7 +26,7 @@ import { Loading } from "@quarkd/quark-react";
 
 默认单位为 `px`。
 
-```html
+```tsx
 <Loading size="20"></Loading>
 <Loading size="30"></Loading>
 <Loading size="40"></Loading>
@@ -34,7 +34,7 @@ import { Loading } from "@quarkd/quark-react";
 
 ### 自定义颜色
 
-```html
+```tsx
 <Loading size="30"></Loading> // 默认颜色
 <Loading size="30" color="green"></Loading>
 <Loading size="30" color="warning"></Loading>
@@ -42,19 +42,19 @@ import { Loading } from "@quarkd/quark-react";
 
 ### 加载文案
 
-```html
+```tsx
 <Loading size="30">加载中...</Loading>
 ```
 
 ### 垂直排列
 
-```html
+```tsx
 <Loading size="30" vertical>加载中...</Loading>
 ```
 
 ### 自定义文本样式
 
-```html
+```tsx
 <Loading size="30" vertical class="custom-text">加载中...</Loading>
 ```
 

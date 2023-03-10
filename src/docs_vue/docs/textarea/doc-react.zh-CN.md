@@ -12,43 +12,43 @@ import { Textarea } from "@quarkd/quark-react";
 
 ### 基本使用
 
-```html
+```tsx
 <Textarea />
 ```
 
 ### 指定行数
 
-```html
+```tsx
 <Textarea rows="6" />
 ```
 
 ### 根据内容自动调整高度
 
-```html
+```tsx
 <Textarea autosize />
 ```
 
 ### 字数统计
 
-```html
+```tsx
 <Textarea showcount />
 ```
 
 ### 字数限制
 
-```html
+```tsx
 <Textarea showcount maxlength="50" />
 ```
 
 ### 禁用状态
 
-```html
+```tsx
 <Textarea disabled />
 ```
 
 ### 自定义样式
 
-```html
+```tsx
 <Textarea showcount class="custom-style" />
 ```
 

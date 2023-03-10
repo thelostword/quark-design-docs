@@ -12,7 +12,7 @@ import { Collapse } from "@quarkd/quark-react";
 
 ### Basic Usage
 
-```html
+```tsx
 <Collapse title="title">
   Life is far more than spinning around and being busy to the limit. Human experience is far broader and richer than this.
 </Collapse>
@@ -22,7 +22,7 @@ import { Collapse } from "@quarkd/quark-react";
 
 Control the open state of the accordion by setting the `open=true` property.
 
-```html
+```tsx
 <Collapse title="title" open>
   Life is far more than spinning around and being busy to the limit. Human experience is far broader and richer than this.
 </Collapse>
@@ -32,7 +32,7 @@ Control the open state of the accordion by setting the `open=true` property.
 
 Set custom icons through `iconhide` property.
 
-```html
+```tsx
 <Collapse title="title" iconhide>
   Life is far more than spinning around and being busy to the limit. Human experience is far broader and richer than this.
 </Collapse>
@@ -42,7 +42,7 @@ Set custom icons through `iconhide` property.
 
 Set custom title through `slot="title"`.
 
-```html
+```tsx
 <Collapse title="title">
   <div slot="title">
     <span style="color: blueviolet">custom title</span>
@@ -56,7 +56,7 @@ Set custom title through `slot="title"`.
 
 Set custom icon through `slot="icon"`.
 
-```html
+```tsx
 <Collapse title="title">
   <span slot="icon">🎉🎉🎉</span>
   Life is far more than spinning around and being busy to the limit. Human experience is far broader and richer than this.

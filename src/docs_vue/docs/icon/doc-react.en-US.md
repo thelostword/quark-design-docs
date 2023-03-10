@@ -14,7 +14,7 @@ import '@quarkd/icons/lib/user';
 
 ### Basic Usage
 
-```html
+```tsx
 <quark-icon-user size="20" />
 ```
 
@@ -22,7 +22,7 @@ import '@quarkd/icons/lib/user';
 
 Use `size` prop to set icon size. The default unit is `px`.
 
-```html
+```tsx
 <quark-icon-user size="18" />
 <quark-icon-user size="24" />
 <quark-icon-user size="30" />
@@ -32,7 +32,7 @@ Use `size` prop to set icon size. The default unit is `px`.
 
 Use `color` prop to set icon color.
 
-```html
+```tsx
 <quark-icon-user size="40" color="#F44336" />
 <quark-icon-user size="40" color="#3F51B5" />
 ```

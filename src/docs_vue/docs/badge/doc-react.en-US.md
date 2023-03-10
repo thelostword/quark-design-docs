@@ -14,7 +14,7 @@ import { Badge } from "@quarkd/quark-react";
 
 Show Badge content by setting `content` prop, or just show a red dot by setting `type` prop to dot.
 
-```html
+```tsx
 <Badge type="dot"></Badge>
 <Badge type="round" content="9"></Badge>
 <Badge type="label" content="text badge"></Badge>
@@ -24,7 +24,7 @@ Show Badge content by setting `content` prop, or just show a red dot by setting 
 
 There are `dot`、`round`、`label` in Quark，the default is `round`.
 
-```html
+```tsx
 <Badge type="dot">
   <div></div>
 </Badge>
@@ -37,7 +37,7 @@ There are `dot`、`round`、`label` in Quark，the default is `round`.
 
 There are `normal`、`big` in Quark，the default is `normal`.
 
-```html
+```tsx
 <Badge type="dot">
   <div></div>
 </Badge>
@@ -56,7 +56,7 @@ There are `normal`、`big` in Quark，the default is `normal`.
 
 To show border of badge, add `border` prop on the Badge. The default border color is white.
 
-```html
+```tsx
 <Badge type="label" content="normal badge">
   <div></div>
 </Badge>
@@ -69,7 +69,7 @@ To show border of badge, add `border` prop on the Badge. The default border colo
 
 The maximun can be added to a badge by setting `max` prop on the Badge, the default is 99. Show ... when the number of `content` prop on the Badge exceeds.
 
-```html
+```tsx
 <Badge content="9">
   <div></div>
 </Badge>
@@ -80,7 +80,7 @@ The maximun can be added to a badge by setting `max` prop on the Badge, the defa
 
 ### Custom style - background color
 
-```html
+```tsx
 <Badge className="bg-color">
   <div></div>
 </Badge>

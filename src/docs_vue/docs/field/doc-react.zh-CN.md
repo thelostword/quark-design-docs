@@ -12,7 +12,7 @@ import { Field, FieldRef } from "@quarkd/quark-react";
 
 ### 基础用法
 
-```html
+```tsx
 <Field placeholder="请输入文本" label="文本" />
 <Field type="password" value="123456" label="密码" />
 <Field type="number" value="12345678901" max="11" label="数字" />
@@ -21,7 +21,7 @@ import { Field, FieldRef } from "@quarkd/quark-react";
 
 ### 自定义标题/无标题
 
-```html
+```tsx
 <Field value="自定义标题">
   <div slot="label" class="label">
     <span>主标题</span>
@@ -33,7 +33,7 @@ import { Field, FieldRef } from "@quarkd/quark-react";
 
 ### 禁用与只读
 
-```html
+```tsx
 <Field value="我禁用了" label="禁用" disabled />
 <Field placeholder="禁用label" />
 <Field value="我是只读的" label="只读" readonly />
@@ -41,13 +41,13 @@ import { Field, FieldRef } from "@quarkd/quark-react";
 
 ### 设置必填字段
 
-```html
+```tsx
 <Field placeholder="请输入" label="文本" required errormsg="不能为空" />
 ```
 
 ### css 属性
 
-```html
+```tsx
 <Field class="theme" value="css 属性" label="css" />
 ```
 

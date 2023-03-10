@@ -41,7 +41,7 @@ export default () => {
 
 Use position prop to set popup display position.By default, the popup is centered and can be set to top, bottom, left, right.
 
-```html
+```tsx
 <Popup position="top" :open="open" />
 ```
 
@@ -49,21 +49,21 @@ Use position prop to set popup display position.By default, the popup is centere
 
 After setting the closeable property, the close icon will be displayed in the upper right corner of the popup layer.
 
-```html
+```tsx
 <Popup position="bottom" :open="open" closeable />
 ```
 ### Forbid mask click
 
 forbid mask click
 
-```html
+```tsx
 <Popup position="bottom" :open="open" forbidmaskclick />
 ```
 ### Round Corner
 
 After setting the round property, the popup window will add different rounded corner styles according to the popup position.
 
-```html
+```tsx
 <Popup position="bottom" :open="open" round />
 ```
 

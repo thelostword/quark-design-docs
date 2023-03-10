@@ -12,13 +12,13 @@ import { Switch } from "@quarkd/quark-react";
 
 ### 基本使用
 
-```html
+```tsx
 <Switch checked></Switch>
 ```
 
 ### 禁用状态
 
-```html
+```tsx
 <Switch disabled></Switch>
 ```
 
@@ -26,7 +26,7 @@ import { Switch } from "@quarkd/quark-react";
 
 可以通过 `size` 或修改元素 `font-size` 来控制大小。
 
-```html
+```tsx
 <Switch size="26px"></Switch> <Switch style="font-size: 26px"></Switch>
 ```
 
@@ -34,7 +34,7 @@ import { Switch } from "@quarkd/quark-react";
 
 可以通过 `color` 属性控制颜色。
 
-```html
+```tsx
 <Switch color="red"></Switch>
 ```
 

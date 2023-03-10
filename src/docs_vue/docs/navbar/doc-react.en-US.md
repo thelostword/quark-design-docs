@@ -12,7 +12,7 @@ import { Navbar } from "@quarkd/quark-react";
 
 ### Basic Usage
 
-```html
+```tsx
 <Navbar title="pageTitle"></Navbar>
 <Navbar title="leftTitle" closehide className="left"></Navbar>
 ```
@@ -26,7 +26,7 @@ import { Navbar } from "@quarkd/quark-react";
 
 ### Text/Background color settings
 
-```html
+```tsx
 <Navbar title="pageTitle" class="bg" righttext="share"></Navbar>
 <Navbar title="smallIcon" class="bg2" iconsize="18" righttext="share"></Navbar>
 ```
@@ -44,7 +44,7 @@ import { Navbar } from "@quarkd/quark-react";
 
 ### left button customization
 
-```html
+```tsx
 <Navbar title="Display left custom icon">
   <div className="icon" slot="left"></div>
 </Navbar>
@@ -55,7 +55,7 @@ import { Navbar } from "@quarkd/quark-react";
 
 ### right button customization
 
-```html
+```tsx
 <Navbar title="Show right icon">
   <div className="icon" slot="right"></div>
 </Navbar>
@@ -96,7 +96,7 @@ There is a navigation bar by default in the App (return to the +title column)，
 
 HTML ：
 
-```html
+```tsx
 <meta
   name="viewport"
   content="width=device-width, initial-scale=1.0, viewport-fit=cover"

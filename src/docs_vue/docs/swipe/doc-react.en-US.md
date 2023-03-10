@@ -12,7 +12,7 @@ import { Swipe, SwipeItem } from "@quarkd/quark-react";
 
 ### Basic Usage
 
-```html
+```tsx
 <Swipe>
   <SwipeItem>
     <div>1</div>
@@ -31,7 +31,7 @@ import { Swipe, SwipeItem } from "@quarkd/quark-react";
 
 ### Round Indicator
 
-```html
+```tsx
 <Swipe type="round">
   <SwipeItem>
     <div>1</div>
@@ -50,7 +50,7 @@ import { Swipe, SwipeItem } from "@quarkd/quark-react";
 
 ### Autoplay
 
-```html
+```tsx
 <Swipe autoplay>
   <SwipeItem>
     <div>1</div>
@@ -69,7 +69,7 @@ import { Swipe, SwipeItem } from "@quarkd/quark-react";
 
 ### Default SwipeItem
 
-```html
+```tsx
 <Swipe defaultindex="2">
   <SwipeItem>
     <div>1</div>
@@ -88,7 +88,7 @@ import { Swipe, SwipeItem } from "@quarkd/quark-react";
 
 ### Set SwipeItem Size
 
-```html
+```tsx
 <Swipe class="custom-style">
   <SwipeItem>
     <div>1</div>
@@ -107,7 +107,7 @@ import { Swipe, SwipeItem } from "@quarkd/quark-react";
 
 ### Set Indicator color
 
-```html
+```tsx
 <Swipe activecolor="red">
   <SwipeItem>
     <div>1</div>

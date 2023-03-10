@@ -45,7 +45,7 @@ export default () => {
 
 You can set the background color of the drop-down through dark
 
-```html
+```tsx
 <PullRefresh dark loading="{loading}" onRefresh="{onFresh}">
   <div className="content" slot="content">{ count }</div>
 </PullRefresh>
@@ -55,7 +55,7 @@ You can set the background color of the drop-down through dark
 
 Use slots to custom tips.
 
-```html
+```tsx
 <PullRefresh dark loading="{loading}" onRefresh="{onFresh}">
   <div slot="content" className="pull-content">Refresh Count: { count }</div>
   <div className="refresh-text" slot="pulling">

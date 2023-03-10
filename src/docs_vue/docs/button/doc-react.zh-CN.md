@@ -12,7 +12,7 @@ import { Button } from "@quarkd/quark-react";
 
 ### 基本使用
 
-```html
+```tsx
 <Button>默认按钮</Button>
 ```
 
@@ -20,7 +20,7 @@ import { Button } from "@quarkd/quark-react";
 
 按钮支持 `primary`、`success`、`danger`、`warning`和默认类型。
 
-```html
+```tsx
 <Button>默认按钮</Button>
 <Button type="primary">主要按钮</Button>
 <Button type="success">成功按钮</Button>
@@ -32,7 +32,7 @@ import { Button } from "@quarkd/quark-react";
 
 通过 `plain` 属性将按钮设置为朴素按钮，朴素按钮的文字为按钮颜色，背景为白色。
 
-```html
+```tsx
 <Button plain type="primary">主要按钮</Button>
 <Button plain type="success">成功按钮</Button>
 ```
@@ -41,7 +41,7 @@ import { Button } from "@quarkd/quark-react";
 
 按钮支持 `big`、`small` 和默认尺寸。
 
-```html
+```tsx
 <Button type="primary" size="small">小号尺寸</Button>
 <Button type="primary" size="big">大号尺寸</Button>
 <Button type="primary">普通尺寸</Button>
@@ -51,7 +51,7 @@ import { Button } from "@quarkd/quark-react";
 
 通过 `disabled` 属性来禁用按钮，禁用状态下按钮不可点击。
 
-```html
+```tsx
 <Button disabled type="primary">禁用状态</Button>
 <Button disabled plain>禁用状态</Button>
 ```
@@ -60,7 +60,7 @@ import { Button } from "@quarkd/quark-react";
 
 通过 `shape` 属性设置按钮形状，支持圆角（`round`）、方形按钮(`square`)和默认的小圆角。
 
-```html
+```tsx
 <Button shape="square" type="danger">方形按钮</Button>
 <Button shape="round" type="primary">圆角按钮</Button>
 ```
@@ -69,7 +69,7 @@ import { Button } from "@quarkd/quark-react";
 
 通过 `loading` 属性设置加载状态，其中`loadingcolor `属性控制 loading 颜色，`loadingsize `属性控制 loading 大小，`loadingtype `属性控制 loading 类型，loading 参考 loading 组件，
 
-```html
+```tsx
 <Button loading type="danger" loadtype="circular">加载中...</Button>
 <Button loading type="warning">加载中...</Button>
 <Button onClick="changeLoading" loading={isLoading} type="success">Click me!</Button>
@@ -79,7 +79,7 @@ import { Button } from "@quarkd/quark-react";
 
 通过 `icon` 属性设置图标。
 
-```html
+```tsx
 <Button
   type="primary"
   icon="https://m.hellobike.com/resource/helloyun/16682/Agnve_tel%20(1).png"

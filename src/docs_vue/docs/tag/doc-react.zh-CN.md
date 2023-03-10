@@ -12,37 +12,37 @@ import { Tag } "@quarkd/quark-react";
 
 ### 基本用法
 
-```html
+```tsx
 <Tag>正</Tag>
 ```
 
 ### 标签类型
 
-```html
+```tsx
 <Tag type="primary">正</Tag>
 ```
 
 ### 标签大小
 
-```html
+```tsx
 <Tag>正</Tag> <Tag size="large">正</Tag>
 ```
 
 ### 空心标签
 
-```html
+```tsx
 <Tag plain>正</Tag>
 ```
 
 ### 自定义样式
 
-```html
+```tsx
 <Tag size="large" color="#ffe1e1" textcolor="#ad0000">正</Tag>
 ```
 
 ### 圆角标签
 
-```html
+```tsx
 <Tag size="large" round>正</Tag>
 ```
 

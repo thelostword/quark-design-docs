@@ -12,7 +12,7 @@ import { Rate } from "@quarkd/quark-react";
 
 ### Basic Usage
 
-```html
+```tsx
 <Rate value="1"></Rate>
 ```
 
@@ -25,19 +25,19 @@ Rate {
 
 ### Custom color
 
-```html
+```tsx
 <Rate value="2" active-color="green"></Rate>
 ```
 
 ### Disabled
 
-```html
+```tsx
 <Rate value="2" disabled></Rate>
 ```
 
 ### Readonly
 
-```html
+```tsx
 <Rate value="2" readonly></Rate>
 ```
 
@@ -54,7 +54,7 @@ export default () => {
 
 ### image icon
 
-```html
+```tsx
 <Rate value="2" imgicon="https://quark-design.hellobike.com/assets/quark-logo.7fd50e67.png"></Rate>
 ```
 

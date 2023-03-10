@@ -12,7 +12,7 @@ import { Rate } from "@quarkd/quark-react";
 
 ### 基本用法
 
-```html
+```tsx
 <Rate value="1"></Rate>
 ```
 
@@ -25,19 +25,19 @@ Rate {
 
 ### 自定义颜色
 
-```html
+```tsx
 <Rate value="2" active-color="green"></Rate>
 ```
 
 ### 禁用状态
 
-```html
+```tsx
 <Rate value="2" disabled></Rate>
 ```
 
 ### 只读状态
 
-```html
+```tsx
 <Rate value="2" readonly></Rate>
 ```
 
@@ -54,7 +54,7 @@ export default () => {
 
 ### 图片icon
 
-```html
+```tsx
 <Rate value="2" imgicon="https://quark-design.hellobike.com/assets/quark-logo.7fd50e67.png"></Rate>
 ```
 

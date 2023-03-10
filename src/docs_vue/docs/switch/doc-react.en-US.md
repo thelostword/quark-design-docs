@@ -12,13 +12,13 @@ import { Switch } from "@quarkd/quark-react";
 
 ### Basic Usage
 
-```html
+```tsx
 <Switch checked></Switch>
 ```
 
 ### Disabled
 
-```html
+```tsx
 <Switch disabled></Switch>
 ```
 
@@ -26,7 +26,7 @@ import { Switch } from "@quarkd/quark-react";
 
 TO change switch size, set `size` prop on the Switch or alter `font-size` value of `style` prop.
 
-```html
+```tsx
 <Switch size="26px"></Switch> <Switch style="font-size: 26px"></Switch>
 ```
 
@@ -34,7 +34,7 @@ TO change switch size, set `size` prop on the Switch or alter `font-size` value 
 
 To custom color, set `color` prop on the Switch.
 
-```html
+```tsx
 <Switch color="red"></Switch>
 ```
 

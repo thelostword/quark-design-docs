@@ -12,7 +12,7 @@ import { Steps, StepItem } from "@quarkd/quark-react";
 
 ### Basic Usage
 
-```html
+```tsx
 <Steps>
   <StepItem status="done" title="step one" order="1"></StepItem>
   <StepItem status="doing" title="step two" order="2"></StepItem>
@@ -22,7 +22,7 @@ import { Steps, StepItem } from "@quarkd/quark-react";
 
 ### Title & Content
 
-```html
+```tsx
 <Steps>
   <StepItem
     status="done"
@@ -47,7 +47,7 @@ import { Steps, StepItem } from "@quarkd/quark-react";
 
 ### Vertical Steps
 
-```html
+```tsx
 <Steps direction="vertical">
   <StepItem
     status="done"

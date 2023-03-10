@@ -39,7 +39,7 @@ export default () => {
 
 复选框支持`round`、`square`两种形状，默认为 `round`。
 
-```html
+```tsx
 <Checkbox checked={true}>圆形(默认)</Checkbox>
 <Checkbox checked={true} shape="square">方形</Checkbox>
 ```
@@ -48,7 +48,7 @@ export default () => {
 
 复选框大小支持 `normal`、`big` 两种，默认为 `normal`。
 
-```html
+```tsx
 <Checkbox checked={true} shape="round" size="big">默认形状-大</Checkbox>
 <Checkbox checked={true} shape="square" size="big">方形-大</Checkbox>
 ```
@@ -57,7 +57,7 @@ export default () => {
 
 复选框支持禁用
 
-```html
+```tsx
 <Checkbox checked={true} disabled>已选-禁用</Checkbox>
 <Checkbox checked={true} disabled>未选-禁用</Checkbox>
 ```
@@ -93,7 +93,7 @@ export default () => {
 
 复选框选中颜色自定义
 
-```html
+```tsx
 <Checkbox checked={true}>复选框-选中颜色自定义</Checkbox>
 
 <!-- CSS -->

@@ -12,7 +12,7 @@ import { Navbar } from "@quarkd/quark-react";
 
 ### 基础用法
 
-```html
+```tsx
 <Navbar title="页面标题"></Navbar>
 <Navbar title="左标题" closehide className="left"></Navbar>
 ```
@@ -26,7 +26,7 @@ import { Navbar } from "@quarkd/quark-react";
 
 ### 文字/背景颜色设置
 
-```html
+```tsx
 <Navbar title="页面标题" class="bg" righttext="分享"></Navbar>
 <Navbar title="小号图标" class="bg2" iconsize="18" righttext="分享"></Navbar>
 ```
@@ -44,7 +44,7 @@ import { Navbar } from "@quarkd/quark-react";
 
 ### 左侧按钮自定义
 
-```html
+```tsx
 <Navbar title="左侧自定义图标展示">
   <div className="icon" slot="left"></div>
 </Navbar>
@@ -55,7 +55,7 @@ import { Navbar } from "@quarkd/quark-react";
 
 ### 右侧按钮自定义
 
-```html
+```tsx
 <Navbar title="右侧图标展示">
   <div className="icon" slot="right"></div>
 </Navbar>
@@ -96,7 +96,7 @@ App 中默认有导航栏（返回+title 那栏），如果要使用本组件，
 
 HTML 中设置：
 
-```html
+```tsx
 <meta
   name="viewport"
   content="width=device-width, initial-scale=1.0, viewport-fit=cover"

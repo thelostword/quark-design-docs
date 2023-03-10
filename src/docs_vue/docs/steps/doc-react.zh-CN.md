@@ -12,7 +12,7 @@ import { Steps, StepItem } from "@quarkd/quark-react";
 
 ### 基本用法
 
-```html
+```tsx
 <Steps>
   <StepItem status="done" title="步骤一" order="1"></StepItem>
   <StepItem status="doing" title="步骤二" order="2"></StepItem>
@@ -22,7 +22,7 @@ import { Steps, StepItem } from "@quarkd/quark-react";
 
 ### 标题和描述信息
 
-```html
+```tsx
 <Steps>
   <StepItem
     status="done"
@@ -47,7 +47,7 @@ import { Steps, StepItem } from "@quarkd/quark-react";
 
 ### 竖向步骤条
 
-```html
+```tsx
 <Steps direction="vertical">
   <StepItem
     status="done"

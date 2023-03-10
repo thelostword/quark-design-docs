@@ -12,7 +12,7 @@ import { Tabs, TabContent } from "@quarkd/quark-react";
 
 ### 基础用法
 
-```html
+```tsx
 <Tabs activekey="{1}">
   <TabContent label="tab1"> tab1 content </TabContent>
   <TabContent label="tab2"> tab2 content </TabContent>
@@ -23,7 +23,7 @@ import { Tabs, TabContent } from "@quarkd/quark-react";
 
 ### 通过名称匹配
 
-```html
+```tsx
 <Tabs activekey={'d'}>
     <TabContent label="tab1" name="a">
         tab1 content
@@ -44,7 +44,7 @@ import { Tabs, TabContent } from "@quarkd/quark-react";
 
 长度超过自动支持横向滚动。
 
-```html
+```tsx
 <Tabs>
   <TabContent label="tab1">tab1</TabContent>
   <TabContent label="tab2">tab2</TabContent>
@@ -88,7 +88,7 @@ export default () => {
 
 nav-item 在滚动时固定在屏幕上方
 
-```html
+```tsx
 <Tabs sticky offsettop="17vw">
   <TabContent label="tab1"> tab1 content </TabContent>
   <TabContent label="tab2"> tab2 content </TabContent>

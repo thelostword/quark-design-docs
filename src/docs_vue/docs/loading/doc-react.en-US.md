@@ -12,13 +12,13 @@ import { Loading } from "@quarkd/quark-react";
 
 ### Basic Usage
 
-```html
+```tsx
 <Loading></Loading>
 ```
 
 ### Type
 
-```html
+```tsx
 <Loading type="circular"></Loading> <Loading type="spinner"></Loading>
 ```
 
@@ -26,7 +26,7 @@ import { Loading } from "@quarkd/quark-react";
 
 Default `px`。
 
-```html
+```tsx
 <Loading size="20"></Loading>
 <Loading size="30"></Loading>
 <Loading size="40"></Loading>
@@ -34,7 +34,7 @@ Default `px`。
 
 ### Color
 
-```html
+```tsx
 <Loading size="30"></Loading> // Default
 <Loading size="30" color="green"></Loading>
 <Loading size="30" color="warning"></Loading>
@@ -42,19 +42,19 @@ Default `px`。
 
 ### Text
 
-```html
+```tsx
 <Loading size="30">loading...</Loading>
 ```
 
 ### Vertical
 
-```html
+```tsx
 <Loading size="30" vertical>loading...</Loading>
 ```
 
 ### Text Color
 
-```html
+```tsx
 <Loading size="30" vertical class="custom-text">loading...</Loading>
 ```
 

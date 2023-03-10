@@ -40,7 +40,7 @@ export default () => {
 
 通过 position 属性设置弹出位置，默认居中弹出，可以设置为 top、bottom、left、right。
 
-```html
+```tsx
 <Popup position="top" :open="open" />
 ```
 
@@ -48,7 +48,7 @@ export default () => {
 
 设置 closeable 属性后，会在弹出层的右上角显示关闭图标。
 
-```html
+```tsx
 <Popup position="bottom" :open="open" closeable />
 ```
 
@@ -56,7 +56,7 @@ export default () => {
 
 设置 forbidmaskclick 属性后，点击遮罩层将无法自动关闭弹层。
 
-```html
+```tsx
 <Popup position="bottom" :open="open" forbidmaskclick />
 ```
 
@@ -64,7 +64,7 @@ export default () => {
 
 设置 round 属性后，弹窗会根据弹出位置添加不同的圆角样式。
 
-```html
+```tsx
 <Popup position="bottom" :open="open" round />
 ```
 

@@ -14,7 +14,7 @@ import { Grid, GridItem } from "@quarkd/quark-react";
 
 通过 `icon` 属性设置格子内的图标，`text` 属性设置文字内容。
 
-```html
+```tsx
 <Grid>
   <GridItem
     icon="https://m.hellobike.com/resource/helloyun/16682/dyElZ_img.png"
@@ -39,7 +39,7 @@ import { Grid, GridItem } from "@quarkd/quark-react";
 
 默认一行展示四个格子，可以通过 `column` 自定义列数。
 
-```html
+```tsx
 <Grid column="3">
   <GridItem
     icon="https://m.hellobike.com/resource/helloyun/16682/dyElZ_img.png"
@@ -72,7 +72,7 @@ import { Grid, GridItem } from "@quarkd/quark-react";
 
 设置 `square` 属性后，格子的高度会和宽度保持一致。
 
-```html
+```tsx
 <Grid square>
   <GridItem
     icon="https://m.hellobike.com/resource/helloyun/16682/dyElZ_img.png"
@@ -93,7 +93,7 @@ import { Grid, GridItem } from "@quarkd/quark-react";
 
 设置 noborder 属性后，将不显示边框。
 
-```html
+```tsx
 <Grid noborder>
   <GridItem
     icon="https://m.hellobike.com/resource/helloyun/16682/dyElZ_img.png"
@@ -118,7 +118,7 @@ import { Grid, GridItem } from "@quarkd/quark-react";
 
 通过默认插槽可以自定义格子展示的内容。
 
-```html
+```tsx
 <Grid>
   <GridItem>
     <img

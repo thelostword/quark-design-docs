@@ -43,7 +43,7 @@ export default () => {
 
 超过数量，隐藏多余部分并且隐藏上传按钮
 
-```html
+```tsx
 <Uploader maxcount="2" preview />
 ```
 
@@ -65,7 +65,7 @@ export default () => {
 
 ### 自定义上传样式
 
-```html
+```tsx
 <Uploader>
   <div slot="uploader">上传文件</div>
 </Uploader>
@@ -98,13 +98,13 @@ export default () => {
 
 ### 禁止上传
 
-```html
+```tsx
 <Uploader disabled></Uploader>
 ```
 
 ### 只读预览模式
 
-```html
+```tsx
 <Uploader preview readonly />
 ```
 

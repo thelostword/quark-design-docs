@@ -43,7 +43,7 @@ export default () => {
 
 Hide redundant and upload button when the number of uploaded files is more than max count.
 
-```html
+```tsx
 <Uploader maxcount="2" preview />
 ```
 
@@ -65,7 +65,7 @@ export default () => {
 
 ### Custom Upload Area
 
-```html
+```tsx
 <Uploader>
   <div slot="uploader">Upload files</div>
 </Uploader>
@@ -98,13 +98,13 @@ export default () => {
 
 ### Disable Uploader
 
-```html
+```tsx
 <Uploader disabled></Uploader>
 ```
 
 ### Read only preview mode
 
-```html
+```tsx
 <Uploader preview readonly />
 ```
 

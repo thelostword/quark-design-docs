@@ -12,13 +12,13 @@ import { Empty } from "@quarkd/quark-react";
 
 ### 基础用法
 
-```html
+```tsx
 <Empty />
 ```
 
 ### 描述文字
 
-```html
+```tsx
 <Empty title="描述文字" desc="快去添加数据吧~" />
 ```
 
@@ -26,7 +26,7 @@ import { Empty } from "@quarkd/quark-react";
 
 通过 `imagesize` 属性图片的大小。
 
-```html
+```tsx
 <!-- 不指定单位，默认为 px -->
 <Empty desc="描述文字" imagesize="100" />
 
@@ -38,7 +38,7 @@ import { Empty } from "@quarkd/quark-react";
 
 通过 `image` 属性中传入任意图片 URL。
 
-```html
+```tsx
 <Empty
   desc="描述文字"
   imagesize="100"
@@ -48,7 +48,7 @@ import { Empty } from "@quarkd/quark-react";
 
 ### 自定义底部
 
-```html
+```tsx
 <Empty desc="快去下一单吧" title="没有历史订单">
   <div slot="footer">
     <div>自定义底部</div>

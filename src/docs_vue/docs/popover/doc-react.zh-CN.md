@@ -56,7 +56,7 @@ export default () => {
 
 Popover 支持浅色和深色两种风格，默认为深色风格，将 theme 属性设置为 light 可切换为浅色风格。
 
-```html
+```tsx
 <Popover theme="light">
   <div class="Popover" @click="click">浅色模式</div>
 </Popover>
@@ -175,7 +175,7 @@ export default () => {
 
 通过 placement 属性来控制气泡的弹出位置。
 
-```html
+```tsx
 <Popover placement="top">
   <div class="Popover">浅色模式</div>
 </Popover>
@@ -202,7 +202,7 @@ bottomright    # 底部右侧位置
 
 通过 content 插槽，可以在 Popover 内部放置任意内容。
 
-```html
+```tsx
 <Popover>
   <div class="Popover">自定义内容</div>
   <div slot="content" class="popover-content">我是自定义内容</div>
@@ -222,7 +222,7 @@ bottomright    # 底部右侧位置
 
 通过 scroolhidden 属性来控制当页面滚动时是否关闭。
 
-```html
+```tsx
 <Popover scroolhidden>
   <div class="Popover">滚动关闭</div>
 </Popover>

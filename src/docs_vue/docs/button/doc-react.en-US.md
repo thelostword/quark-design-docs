@@ -12,7 +12,7 @@ import { Button } from "@quarkd/quark-react";
 
 ### Basic Usage
 
-```html
+```tsx
 <Button>Default</Button>
 ```
 
@@ -20,7 +20,7 @@ import { Button } from "@quarkd/quark-react";
 
 There are `primary`, `success`, `danger`, `warning` and default type.
 
-```html
+```tsx
 <Button>Default</Button>
 <Button type="primary">Blue</Button>
 <Button type="success">Green</Button>
@@ -33,7 +33,7 @@ There are `primary`, `success`, `danger`, `warning` and default type.
 
 To set the Button as a plain Button, add `plain` prop to the Button. The plain Button's text is the Button color, and the background is white.
 
-```html
+```tsx
 <Button plain type="primary">Primary</Button>
 <Button plain type="success">Success</Button>
 ```
@@ -42,7 +42,7 @@ To set the Button as a plain Button, add `plain` prop to the Button. The plain B
 
 Support `big`, `small`, the default is normal.
 
-```html
+```tsx
 <Button type="primary" size="small">Small</Button>
 <Button type="primary" size="big">Big</Button>
 <Button type="primary">Normal</Button>
@@ -52,7 +52,7 @@ Support `big`, `small`, the default is normal.
 
 To mark a Button as disabled, add `disabled` prop to the Button. The Button cannot be clicked when disabled.
 
-```html
+```tsx
 <Button disabled type="primary">Disabled</Button>
 <Button disabled plain>Disabled</Button>
 ```
@@ -61,7 +61,7 @@ To mark a Button as disabled, add `disabled` prop to the Button. The Button cann
 
 A Button shape can be added to a Button by setting `shape` prop on the Button, which supports `round` and `square` Buttons. The default is small rounded corners.
 
-```html
+```tsx
 <Button shape="square" type="danger">Square</Button>
 <Button shape="round" type="primary">Round</Button>
 ```
@@ -80,7 +80,7 @@ A loading indicator can be added to a Button by setting `loading` prop on the Bu
 
 Button components can contain an Icon. This is done by setting `icon` prop within the Button.
 
-```html
+```tsx
 <Button
   type="primary"
   icon="https://m.hellobike.com/resource/helloyun/16682/Agnve_tel%20(1).png"
