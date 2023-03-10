@@ -79,10 +79,10 @@ After setting the round property, the popup window will add different rounded co
 | closeable | Whether to show close icon                    | `boolean `                    | `false`   |
 | safearea  | Whether to enable bottom safe area adaptation | `boolean`                     | `false`   |
 | zindex    | Popup z-index                                 | `number、string `             | -         |
-| onClose   | Emitted when Popup will close                 | `（）=> void`                 | -         |
-| onClosed  | Emitted after Popup closed                    | `（）=> void`                 | -         |
-| onOpened  | Emitted after Popup opened                    | `（）=> void`                 | -         |
-
+| onClose  | Emitted when Popup will close                  | `（）=> void`                 | -         |
+| onClosed  | Emitted after Popup closed                 | `（）=> void`                 | -         |
+| onOpened  | Emitted after Popup opened                  | `（）=> void`                 | 
+| onClickoverlay  | Emitted when overlay click               | `（）=> void`                 | -         |
 ## CSS Variables
 
 The component provides the following[CSS variables](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Using_CSS_custom_properties),which can be used to customize styles. Please refer to[Theme customization](#/zh-CN/guide/theme)。
