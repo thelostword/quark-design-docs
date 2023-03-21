@@ -1,9 +1,16 @@
-# Quark design website for quark-design.hellobike.com
+# Quark Design Documentation
 
-## Available Scripts
+Quark Design uses Vue.js for its documentation.
+
+To run the project locally, first install the dependencies:
 
 ```bash
 npm install
+```
+
+Next, run the development server:
+
+```
 npm run dev
 ```
 
@@ -11,6 +18,6 @@ npm run dev
 
 When the code is merged into the `main` branch, the static resources are automatically built.
 
-## Notice
+## License
 
-Since vite uses 3.0, the node version must be greater than v16, otherwise the following error will occur `Cannot find module 'node:path'`.
+This project is not licensed under an open-source license and is the intellectual property of Quark Labs. The source is available only as an educational resource and to accept fixes for minor mistakes.
