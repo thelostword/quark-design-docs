@@ -45,10 +45,7 @@ export default () => {
           handleClose();
         }}
       >
-        <div
-          className="quark-popover"
-          onClick={handleClick}
-        >
+        <div className="quark-popover" onClick={handleClick}>
           Basic Usage
         </div>
       </Popover>
@@ -61,7 +58,7 @@ export default () => {
 
 Popover supports light and dark styles. The default is dark style. Set the theme property to light to switch to light style.
 
-```html
+```tsx
 <Popover theme="light">
   <div class="Popover" @click="click">Light Style</div>
 </Popover>
@@ -109,10 +106,7 @@ export default () => {
           handleClose();
         }}
       >
-        <div
-          className="quark-popover"
-          onClick={handleClick}
-        >
+        <div className="quark-popover" onClick={handleClick}>
           Show Icon
         </div>
       </Popover>
@@ -166,10 +160,7 @@ export default () => {
           handleClose();
         }}
       >
-        <div
-          className="quark-popover"
-          onClick={() => handleClick()}
-        >
+        <div className="quark-popover" onClick={() => handleClick()}>
           Disabled
         </div>
       </Popover>
@@ -182,7 +173,7 @@ export default () => {
 
 The pop-up position of the bubble is controlled by the placement property.
 
-```html
+```tsx
 <Popover placement="top">
   <div class="Popover">Light Style</div>
 </Popover>
@@ -209,7 +200,7 @@ bottomright   # Bottom Right position
 
 With the content slot, arbitrary content can be placed inside the Popover.
 
-```html
+```tsx
 <Popover>
   <div class="Popover">Custom Style</div>
   <div slot="content" class="popover-content">This is custom content</div>
@@ -229,7 +220,7 @@ With the content slot, arbitrary content can be placed inside the Popover.
 
 The scrollhidden property controls whether to close when the page is scrolled.
 
-```html
+```tsx
 <Popover scroolhidden>
   <div class="Popover">Close Scroll</div>
 </Popover>

@@ -85,11 +85,11 @@ The description on the right can be customized through Slot (the content of the 
 
 ### Slots
 
-| Name             | Description                                  |
-| ---------------- | -------------------------------------- |
-| slot             | Custom right info                        |
-| slot name=title  | Custom title                             |
-| slot name=icon   | Custom left icon |
+| Name            | Description       |
+| --------------- | ----------------- |
+| slot            | Custom right info |
+| slot name=title | Custom title      |
+| slot name=icon  | Custom left icon  |
 
 ## CSS Variables
 

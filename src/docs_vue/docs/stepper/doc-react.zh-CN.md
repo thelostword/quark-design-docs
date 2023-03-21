@@ -12,31 +12,31 @@ import { Stepper } from "@quarkd/quark-react";
 
 ### 基础用法
 
-```html
+```tsx
 <Stepper value="1"></Stepper>
 ```
 
 ### 限制输入范围
 
-```html
+```tsx
 <Stepper min="5" max="12" />
 ```
 
 ### 步长设置
 
-```html
+```tsx
 <Stepper steps="2" />
 ```
 
 ### 限制输入整数
 
-```html
+```tsx
 <Stepper interger />
 ```
 
 ### 禁用状态
 
-```html
+```tsx
 <Stepper disabled />
 ```
 

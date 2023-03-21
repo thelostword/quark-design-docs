@@ -15,14 +15,17 @@ import Toast from "quarkd/lib/toast";
 ```javascript
 Toast.text("Network failed, please try again later~");
 ```
+
 ### Text position
+
 use position property，can use `top`、`bottom`, `middle` is default
 
 ```javascript
 Toast.text("网络失败，请稍后再试~", {
-  position: 'top'
+  position: "top",
 });
 ```
+
 ### Success
 
 ```javascript
@@ -114,25 +117,24 @@ toast2.hide();
 
 ### Options
 
-| Attribute | Description                                       | Type       | Default  |
-| --------- | ------------------------------------------------- | ---------- | -------- |
-| duration  | Toast duration(ms), won't disappear if value is 0 | `number`   | `2000ms` |
-| size      | Custom icon size                                  | `number`   | `40px`   |
-| zIndex    | Custom zIndex                                     | `number`   | `9999`   |
-| close     | Callback function after close                     | `() => void` | -        |
-| loadingIconDirection    | loading icon display direction, only valid when `type=loading` | `horizontal` or `vertical` | `vertical` |
-| position    | Position | `top` or `bottom` | `middle` |
-
+| Attribute            | Description                                                    | Type                       | Default    |
+| -------------------- | -------------------------------------------------------------- | -------------------------- | ---------- |
+| duration             | Toast duration(ms), won't disappear if value is 0              | `number`                   | `2000ms`   |
+| size                 | Custom icon size                                               | `number`                   | `40px`     |
+| zIndex               | Custom zIndex                                                  | `number`                   | `9999`     |
+| close                | Callback function after close                                  | `() => void`               | -          |
+| loadingIconDirection | loading icon display direction, only valid when `type=loading` | `horizontal` or `vertical` | `vertical` |
+| position             | Position                                                       | `top` or `bottom`          | `middle`   |
 
 ## CSS Variables
 
-| Name                   | Description   | Default Value |
-| ---------------------- | ------------- | ------------- |
-| `--toast-min-width`    | Minimum width | `120px`       |
-| `--toast-max-width`    | Maximum width | `240px`       |
-| `--toast-text-padding` | Padding       | `24px 16px`   |
-| `--toast-font-size`    | Font size     | `14px`        |
-| `--toast-color`        | Font color    | `#fff`        |
-| `--toast-loading-bottom` | bottom margin of loading icon | Vertical loading is `14px`; horizontal loading is `0` |
-| `--toast-loading-right` | right margin of loading icon | Vertical loading is `0`; horizontal loading is `8px` |
-| `--toast-position-top-distance` | the text of top distance | When position is `top`,the value is`20%`.when position is `botton`,the value is`80%` |
+| Name                            | Description                   | Default Value                                                                        |
+| ------------------------------- | ----------------------------- | ------------------------------------------------------------------------------------ |
+| `--toast-min-width`             | Minimum width                 | `120px`                                                                              |
+| `--toast-max-width`             | Maximum width                 | `240px`                                                                              |
+| `--toast-text-padding`          | Padding                       | `24px 16px`                                                                          |
+| `--toast-font-size`             | Font size                     | `14px`                                                                               |
+| `--toast-color`                 | Font color                    | `#fff`                                                                               |
+| `--toast-loading-bottom`        | bottom margin of loading icon | Vertical loading is `14px`; horizontal loading is `0`                                |
+| `--toast-loading-right`         | right margin of loading icon  | Vertical loading is `0`; horizontal loading is `8px`                                 |
+| `--toast-position-top-distance` | the text of top distance      | When position is `top`,the value is`20%`.when position is `botton`,the value is`80%` |

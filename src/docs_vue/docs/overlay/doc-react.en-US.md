@@ -30,7 +30,7 @@ export default () => {
 
 ### Embedded Content
 
-```html
+```tsx
 <Overlay open="{open}" onClose="{handleClose}">
   <div class="content"></div>
 </Overlay>

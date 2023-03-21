@@ -12,20 +12,20 @@ import { Marquee } from "@quarkd/quark-react";
 
 ### 基础用法
 
-```html
+```tsx
 <Marquee title={title}></Marquee>
 ```
 
 ### 不同速度
 
-```html
+```tsx
 <Marquee title={title} speed="25"></Marquee>
 <Marquee title={title} speed="100"></Marquee>
 ```
 
 ### 控制暂停
 
-```html
+```tsx
 <Button onClick={pauseAnimation}> 暂停 </Button>
 <Button onClick={continueAnimation}> 继续 </Button>
 <Marquee title={title} paused={paused}></Marquee>
@@ -33,7 +33,7 @@ import { Marquee } from "@quarkd/quark-react";
 
 ### 悬浮暂停
 
-```html
+```tsx
 <Marquee
   title={title}
   paused={paused}
@@ -44,13 +44,13 @@ import { Marquee } from "@quarkd/quark-react";
 
 ### 点击暂停
 
-```html
+```tsx
 <Marquee title={title} paused={paused} onClick={changePauseStatus}></Marquee>
 ```
 
 ### 反向动画
 
-```html
+```tsx
 <Marquee title={title} reverse="true"></Marquee>
 ```
 

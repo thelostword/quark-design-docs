@@ -12,13 +12,13 @@ import { Progress } "@quarkd/quark-react"
 
 ### Basic Usage
 
-```html
+```tsx
 <Progress value="0"></Progress>
 ```
 
 ### Showtext
 
-```html
+```tsx
 <Progress value="100" showtext></Progress>
 ```
 
@@ -31,7 +31,7 @@ import { Progress } "@quarkd/quark-react"
 }
 ```
 
-```html
+```tsx
 <Progress value="20" color="green"></Progress>
 <Progress value="30" color="green" class="green"></Progress>
 ```
@@ -46,14 +46,16 @@ import { Progress } "@quarkd/quark-react"
 }
 ```
 
-```html
+```tsx
 <Progress
   value="90"
   class="auto"
   color="linear-gradient(
   268deg,#fa2c19 0%,#fa3f19 44.59259259%,#fa5919 83.40740741%,#fa6419 100%)"
 >
-  <span slot="percent" class="percent">0.9</span>
+  <span slot="percent" class="percent">
+    0.9
+  </span>
 </Progress>
 ```
 

@@ -40,7 +40,7 @@ export default () => {
 
 Checkbox shape supports `round` and `square`, the default is `round`.
 
-```html
+```tsx
 <Checkbox checked={true}>round(default)</Checkbox>
 <Checkbox checked={true} shape="square">square</Checkbox>
 ```
@@ -49,7 +49,7 @@ Checkbox shape supports `round` and `square`, the default is `round`.
 
 Checkbox size supports `normal` and `big`, the default is `normal`.
 
-```html
+```tsx
 <Checkbox checked={true} shape="round" size="big"
   >default shape - big</Checkbox
 >
@@ -60,7 +60,7 @@ Checkbox size supports `normal` and `big`, the default is `normal`.
 
 To disable Checkbox, add `disabled` prop on the Checkbox.
 
-```html
+```tsx
 <Checkbox checked={true} disabled>checked - disabled</Checkbox>
 <Checkbox checked={true} disabled>unchecked - disabled</Checkbox>
 ```
@@ -96,7 +96,7 @@ export default () => {
 
 Custom checked color
 
-```html
+```tsx
 <Checkbox checked={true}>Checkbox-Custom checked color</Checkbox>
 
 <!-- CSS -->

@@ -66,10 +66,14 @@ export default () => {
 
 Radio size supports `normal` and `big`, the default is `normal`.
 
-```html
+```tsx
 <RadioGroup value="{value}">
-  <Radio name="apple" shape="square" size="big">Square(Big)</Radio>
-  <Radio name="banana" size="big">Round(Big)</Radio>
+  <Radio name="apple" shape="square" size="big">
+    Square(Big)
+  </Radio>
+  <Radio name="banana" size="big">
+    Round(Big)
+  </Radio>
 </RadioGroup>
 ```
 
@@ -77,7 +81,7 @@ Radio size supports `normal` and `big`, the default is `normal`.
 
 To disable radio, add `disabled` prop on the Radio.
 
-```html
+```tsx
 <Radio checked={true} disabled>checked - disabled</Radio>
 <Radio checked={false} disabled>unchecked - disabled</Radio>
 <Radio checked={true} shape="square" disabled
@@ -92,7 +96,7 @@ To disable radio, add `disabled` prop on the Radio.
 
 Custom checked color
 
-```html
+```tsx
 <Radio className="my-radio" checked="true">Radio-Custom checked color</Radio>
 
 <!-- CSS -->
@@ -112,9 +116,9 @@ Custom checked color
 
 ### RadioGroup Props
 
-| 参数     | 说明                                                                          | 类型     | 默认值 |
-| -------- | ----------------------------------------------------------------------------- | -------- | ------ |
-| value    | Specific radio                                                                | `String` | -      |
+| 参数     | 说明                                                                                 | 类型     | 默认值 |
+| -------- | ------------------------------------------------------------------------------------ | -------- | ------ |
+| value    | Specific radio                                                                       | `String` | -      |
 | onChange | Emitted when radio check status changed `(e: { detail: { value: string } }) => void` |
 
 ## CSS Variables

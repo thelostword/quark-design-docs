@@ -14,7 +14,7 @@ import { Grid, GridItem } from "@quarkd/quark-react";
 
 To change the icon and add text in the block, set `icon` prop and `text` prop on the Grid respectively.
 
-```html
+```tsx
 <Grid>
   <GridItem
     icon="https://m.hellobike.com/resource/helloyun/16682/dyElZ_img.png"
@@ -39,7 +39,7 @@ To change the icon and add text in the block, set `icon` prop and `text` prop on
 
 To change the column number of grid, set `column` prop on the Grid. The default is 4.
 
-```html
+```tsx
 <Grid column="3">
   <GridItem
     icon="https://m.hellobike.com/resource/helloyun/16682/dyElZ_img.png"
@@ -72,7 +72,7 @@ To change the column number of grid, set `column` prop on the Grid. The default 
 
 To make every block of grid be quare shape, add `square` prop on the Grid.
 
-```html
+```tsx
 <Grid square>
   <GridItem
     icon="https://m.hellobike.com/resource/helloyun/16682/dyElZ_img.png"
@@ -93,7 +93,7 @@ To make every block of grid be quare shape, add `square` prop on the Grid.
 
 Every block of grid has no border when add `noborder` prop on the Grid.
 
-```html
+```tsx
 <Grid noborder>
   <GridItem
     icon="https://m.hellobike.com/resource/helloyun/16682/dyElZ_img.png"
@@ -118,7 +118,7 @@ Every block of grid has no border when add `noborder` prop on the Grid.
 
 To custom content in the block of grid, use Grid with default slot.
 
-```html
+```tsx
 <Grid>
   <GridItem>
     <img

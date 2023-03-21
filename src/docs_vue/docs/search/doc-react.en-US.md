@@ -12,37 +12,37 @@ import { Search } from "@quarkd/quark-react";
 
 ## Basic Usage
 
-```html
+```tsx
 <Search value="123"></Search>
 ```
 
 ## Round
 
-```html
+```tsx
 <Search shape="round" value="123"></Search>
 ```
 
 ### Hide Action Button
 
-```html
+```tsx
 <Search hideaction></Search>
 ```
 
 ### Show Back Button
 
-```html
+```tsx
 <Search showback></Search>
 ```
 
 ### Dark
 
-```html
+```tsx
 <Search dark></Search>
 ```
 
 ### Slot
 
-```html
+```tsx
 <Search hideaction>
   <div slot="action">
     <div>Primary Button</div>
@@ -66,7 +66,7 @@ export default () => {
 
 ### Custom Style
 
-```html
+```tsx
 <Search showback iconcolor="aqua" />
 ```
 

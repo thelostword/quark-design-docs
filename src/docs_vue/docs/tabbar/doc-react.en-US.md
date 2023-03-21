@@ -19,7 +19,7 @@ import "@quarkd/icons/lib/tel";
 
 ### Basic Usage
 
-```html
+```tsx
 <Tabbar>
   <TabbarItem label="home">
     <quark-icon-home slot="icon" size="20" />
@@ -35,7 +35,7 @@ import "@quarkd/icons/lib/tel";
 
 ### Match by name
 
-```html
+```tsx
 <Tabbar value="tel">
   <TabbarItem label="home" name="home">
     <quark-icon-home slot="icon" size="20" />
@@ -51,7 +51,7 @@ import "@quarkd/icons/lib/tel";
 
 ### Show Badge
 
-```html
+```tsx
 <Tabbar value="user">
   <TabbarItem badgecontent="20" label="home">
     <quark-icon-home slot="icon" size="20" />
@@ -67,7 +67,7 @@ import "@quarkd/icons/lib/tel";
 
 ### Custom Color
 
-```html
+```tsx
 <Tabbar inactivecolor="#000" activecolor="#ee0a24">
   <TabbarItem label="home">
     <quark-icon-home slot="icon" size="20" />
@@ -118,7 +118,7 @@ export default () => {
 
 ### Change Event
 
-```html
+```tsx
 <Tabbar onChange="{" onChange }>
   <TabbarItem label="home">
     <quark-icon-home slot="icon" size="20" />

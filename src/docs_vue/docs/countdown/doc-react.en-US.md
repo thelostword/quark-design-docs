@@ -12,7 +12,7 @@ import { CountDown } from "@quarkd/quark-react";
 
 ### Basic Usage
 
-```html
+```tsx
 <CountDown time="7200000" />
 ```
 
@@ -20,7 +20,7 @@ import { CountDown } from "@quarkd/quark-react";
 
 The format property controls that the spacer supports only one bit string.
 
-```html
+```tsx
 <CountDown time="360000" format="MM:SS" />
 <CountDown time="360000" format="MM-SS" />
 <CountDown time="360000" format="MM SS" />
@@ -41,7 +41,7 @@ export default () => {
 
 ### Custom Style
 
-```html
+```tsx
 <CountDown class="css" time="360000" />
 ```
 

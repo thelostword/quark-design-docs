@@ -12,7 +12,7 @@ import { Field, FieldRef } from "@quarkd/quark-react";
 
 ### 基础用法
 
-```html
+```tsx
 <Field placeholder="请输入文本" label="文本" />
 <Field type="password" value="123456" label="密码" />
 <Field type="number" value="12345678901" max="11" label="数字" />
@@ -21,7 +21,7 @@ import { Field, FieldRef } from "@quarkd/quark-react";
 
 ### 自定义标题/无标题
 
-```html
+```tsx
 <Field value="自定义标题">
   <div slot="label" class="label">
     <span>主标题</span>
@@ -33,7 +33,7 @@ import { Field, FieldRef } from "@quarkd/quark-react";
 
 ### 禁用与只读
 
-```html
+```tsx
 <Field value="我禁用了" label="禁用" disabled />
 <Field placeholder="禁用label" />
 <Field value="我是只读的" label="只读" readonly />
@@ -41,13 +41,13 @@ import { Field, FieldRef } from "@quarkd/quark-react";
 
 ### 设置必填字段
 
-```html
+```tsx
 <Field placeholder="请输入" label="文本" required errormsg="不能为空" />
 ```
 
 ### css 属性
 
-```html
+```tsx
 <Field class="theme" value="css 属性" label="css" />
 ```
 
@@ -123,22 +123,22 @@ export default () => {
 
 ### Props
 
-| 参数         | 说明                                     | 类型                                    | 默认值  |
-| ------------ | ---------------------------------------- | --------------------------------------- | ------- |
-| label        | 输入项描述, 不传隐藏 或者 slot = 'label' | `string`                                |
-| type         | input 类型 默认 text                     | `string`                                | text    |
-| value        | 表单值                                   | `string`                                |         |
-| defaultvalue | 默认 value 值                            | `string`                                |         |
-| name         | 表单需要                                 | `string`                                |         |
-| placeholder  | 默认提示                                 | `string`                                | -       |
-| min          | 继承原生 input 属性                      | `string`                                |         |
-| minlength    | 继承原生 input 属性                      | `string`                                |         |
-| max          | 继承原生 input 属性                      | `string`                                |         |
-| maxlength    | 继承原生 input 属性                      | `string`                                |         |
-| disabled     | 是否禁用                                 | `boolean`                               | `false` |
-| readonly     | 是否只读                                 | `boolean`                               | `false` |
-| required     | 是否必填                                 | `boolean`                               | `false` |
-| errormsg     | 错误提示信息                             | `string`                                | -       |
+| 参数         | 说明                                     | 类型                                         | 默认值  |
+| ------------ | ---------------------------------------- | -------------------------------------------- | ------- |
+| label        | 输入项描述, 不传隐藏 或者 slot = 'label' | `string`                                     |
+| type         | input 类型 默认 text                     | `string`                                     | text    |
+| value        | 表单值                                   | `string`                                     |         |
+| defaultvalue | 默认 value 值                            | `string`                                     |         |
+| name         | 表单需要                                 | `string`                                     |         |
+| placeholder  | 默认提示                                 | `string`                                     | -       |
+| min          | 继承原生 input 属性                      | `string`                                     |         |
+| minlength    | 继承原生 input 属性                      | `string`                                     |         |
+| max          | 继承原生 input 属性                      | `string`                                     |         |
+| maxlength    | 继承原生 input 属性                      | `string`                                     |         |
+| disabled     | 是否禁用                                 | `boolean`                                    | `false` |
+| readonly     | 是否只读                                 | `boolean`                                    | `false` |
+| required     | 是否必填                                 | `boolean`                                    | `false` |
+| errormsg     | 错误提示信息                             | `string`                                     | -       |
 | onChange     | 值改变事件                               | `(e: { detail: { value: string } }) => void` |         |
 | onFocus      | 聚焦事件                                 | `(e: { detail: { value: string } }) => void` |         |
 | onBlur       | 失焦事件                                 | `(e: { detail: { value: string } }) => void` |         |

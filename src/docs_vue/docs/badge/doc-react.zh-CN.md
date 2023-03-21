@@ -16,7 +16,7 @@ import { Badge } from "@quarkd/quark-react";
 
 设置 `content` 属性后，Badge 显示对应的内容，也可以通过设置 `type` 属性为 dot 来显示小红点。
 
-```html
+```tsx
 <Badge type="dot"></Badge>
 <Badge type="round" content="9"></Badge>
 <Badge type="label" content="文字徽标"></Badge>
@@ -26,7 +26,7 @@ import { Badge } from "@quarkd/quark-react";
 
 徽标支持`dot`、`round`、`label`三种类型，默认为 `round`。
 
-```html
+```tsx
 <Badge type="dot">
   <div></div>
 </Badge>
@@ -39,7 +39,7 @@ import { Badge } from "@quarkd/quark-react";
 
 徽标大小支持 `normal`、`big` 两种，默认为 `normal`。
 
-```html
+```tsx
 <Badge type="dot">
   <div></div>
 </Badge>
@@ -58,7 +58,7 @@ import { Badge } from "@quarkd/quark-react";
 
 徽标边框支持白色边框
 
-```html
+```tsx
 <Badge type="label" content="普通徽标">
   <div></div>
 </Badge>
@@ -71,7 +71,7 @@ import { Badge } from "@quarkd/quark-react";
 
 数字徽标支持最大值, 超出显示..., 默认最大 99
 
-```html
+```tsx
 <Badge content="9">
   <div></div>
 </Badge>
@@ -82,7 +82,7 @@ import { Badge } from "@quarkd/quark-react";
 
 ### 自定义样式-背景色
 
-```html
+```tsx
 <Badge className="bg-color">
   <div></div>
 </Badge>

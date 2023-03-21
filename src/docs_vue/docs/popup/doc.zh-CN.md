@@ -77,15 +77,15 @@ export default {
 
 ### Props
 
-| 参数      | 说明                     | 类型                          | 默认值    |
-| --------- | ------------------------ | ----------------------------- | --------- |
-| open      | 弹窗状态                 | `boolean`                     | `require` |
-| position  | 弹框位置                 | `top` `bottom` `left` `right` | `bottom`  |
-| round     | 是否圆角                 | `boolean`                    | `false`   |
-| closeable | 是否显示关闭按钮         | `boolean`                    | `false`   |
-| safearea  | 是否开启底部安全区域适配 | `boolean`                     | `false`   |
-| forbidmaskclick  | 是否禁止遮罩层点击 | `boolean`                     | `false`   |
-| zindex    | popup 层级设置           | `number、string`              | -         |
+| 参数            | 说明                     | 类型                          | 默认值    |
+| --------------- | ------------------------ | ----------------------------- | --------- |
+| open            | 弹窗状态                 | `boolean`                     | `require` |
+| position        | 弹框位置                 | `top` `bottom` `left` `right` | `bottom`  |
+| round           | 是否圆角                 | `boolean`                     | `false`   |
+| closeable       | 是否显示关闭按钮         | `boolean`                     | `false`   |
+| safearea        | 是否开启底部安全区域适配 | `boolean`                     | `false`   |
+| forbidmaskclick | 是否禁止遮罩层点击       | `boolean`                     | `false`   |
+| zindex          | popup 层级设置           | `number、string`              | -         |
 
 ### Event
 
@@ -94,7 +94,7 @@ export default {
 | clickoverlay | 遮罩层点击触发 | `() => void` |
 | close | 关闭弹出层立即触发 | `() => void` |
 | closed | 关闭弹出层且动画结束后触发 | `() => void` |
-| opened | 弹出层打开后触发 | `() => void` |
+| opened | 弹出层打开后触发           | `() => void` |
 
 ## 样式变量
 

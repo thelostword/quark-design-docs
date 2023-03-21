@@ -12,7 +12,7 @@ import { Sticky } from "@quarkd/quark-react";
 
 ### Basic Usage
 
-```html
+```tsx
 <Sticky offsettop="17vw">
   <div value="basic usage">Basic Usage</div>
 </Sticky>
@@ -20,7 +20,7 @@ import { Sticky } from "@quarkd/quark-react";
 
 ### Offset Top
 
-```html
+```tsx
 <Sticky offsettop="45vw">
   <div value="offset top">Offset Top</div>
 </Sticky>
@@ -28,7 +28,7 @@ import { Sticky } from "@quarkd/quark-react";
 
 ### Other Units
 
-```html
+```tsx
 <Sticky offsettop="150px">
   <div value="Other Units">Other Units</div>
 </Sticky>
@@ -38,7 +38,7 @@ import { Sticky } from "@quarkd/quark-react";
 
 ### Props
 
-| Attribute | Description         | Unit      | Default |
-| --------- | ------------------- | --------- | ------- |
-| offsettop | Offset top          |  `vw` or `vh` or `px` or `rem` or `%`     | `0vw`   |
-| zindex    | z-index when sticky | `number` | `99`    |
+| Attribute | Description         | Unit                                 | Default |
+| --------- | ------------------- | ------------------------------------ | ------- |
+| offsettop | Offset top          | `vw` or `vh` or `px` or `rem` or `%` | `0vw`   |
+| zindex    | z-index when sticky | `number`                             | `99`    |

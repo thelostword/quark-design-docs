@@ -14,15 +14,13 @@ import { Image } from "@quarkd/quark-react";
 
 The basic usage is consistent with the native img tag, and native attributes such as src, width, height, and alt can be set.
 
-```html
-<Image
-  src="https://m.hellobike.com/resource/helloyun/13459/_zZAz_2546.jpg_wh300.jpg"
-/>
+```tsx
+<Image src="https://m.hellobike.com/resource/helloyun/13459/_zZAz_2546.jpg_wh300.jpg" />
 ```
 
 ### Round
 
-```html
+```tsx
 <Image
   src="https://m.hellobike.com/resource/helloyun/13459/_zZAz_2546.jpg_wh300.jpg"
   width={100}
@@ -33,7 +31,7 @@ The basic usage is consistent with the native img tag, and native attributes suc
 
 ### Lazy load
 
-```html
+```tsx
 <Image
   src="https://m.hellobike.com/resource/helloyun/13459/_zZAz_2546.jpg_wh300.jpg"
   width="100px"

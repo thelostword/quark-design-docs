@@ -8,11 +8,14 @@ export default {
   },
   componentsOverview: {
     title: "组件总览（模块开发中...）",
-    components: [{
-      name: 'Button (按钮)'
-    }, {
-      name: 'Switch  (开关)'
-    }]
+    components: [
+      {
+        name: "Button (按钮)",
+      },
+      {
+        name: "Switch  (开关)",
+      },
+    ],
   },
-  learnMore: '了解更多...',
+  learnMore: "了解更多...",
 };

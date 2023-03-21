@@ -14,38 +14,42 @@ import { Tag } "@quarkd/quark-react";
 
 ### 基本用法
 
-```html
+```tsx
 <Tag>Q</Tag>
 ```
 
 ### Type
 
-```html
+```tsx
 <Tag type="primary">Q</Tag>
 ```
 
 ### Size
 
-```html
+```tsx
 <Tag>Q</Tag> <Tag size="large">Q</Tag>
 ```
 
 ### Plain tag
 
-```html
+```tsx
 <Tag plain>Q</Tag>
 ```
 
 ### Custom style
 
-```html
-<Tag size="large" color="#ffe1e1" textcolor="#ad0000">Q</Tag>
+```tsx
+<Tag size="large" color="#ffe1e1" textcolor="#ad0000">
+  Q
+</Tag>
 ```
 
 ### Round tag
 
-```html
-<Tag size="large" round>Q</Tag>
+```tsx
+<Tag size="large" round>
+  Q
+</Tag>
 ```
 
 ## API

@@ -45,9 +45,11 @@ export default () => {
 
 You can set the background color of the drop-down through dark
 
-```html
+```tsx
 <PullRefresh dark loading="{loading}" onRefresh="{onFresh}">
-  <div className="content" slot="content">{ count }</div>
+  <div className="content" slot="content">
+    {count}
+  </div>
 </PullRefresh>
 ```
 
@@ -55,18 +57,18 @@ You can set the background color of the drop-down through dark
 
 Use slots to custom tips.
 
-```html
+```tsx
 <PullRefresh dark loading="{loading}" onRefresh="{onFresh}">
-  <div slot="content" className="pull-content">Refresh Count: { count }</div>
+  <div slot="content" className="pull-content">
+    Refresh Count: {count}
+  </div>
   <div className="refresh-text" slot="pulling">
-    <img
-      src="https://m.hellobike.com/resource/helloyun/18625/3OOq2_down.svg"
-    />drop down prompt
+    <img src="https://m.hellobike.com/resource/helloyun/18625/3OOq2_down.svg" />
+    drop down prompt
   </div>
   <div className="refresh-text" slot="loosing">
-    <img
-      src="https://m.hellobike.com/resource/helloyun/18625/ImS4S_up.svg"
-    />Release to refresh now
+    <img src="https://m.hellobike.com/resource/helloyun/18625/ImS4S_up.svg" />
+    Release to refresh now
   </div>
   <div className="refresh-text" slot="loading">
     <quark-loading size="18">Refreshing data...</quark-loading>
