@@ -256,6 +256,9 @@ export default defineComponent({
   transition-duration: 150ms;
   color: rgba(255 255 255 / 0.5);
 }
+.nav-item a:hover {
+  color: rgba(255 255 255 / 1);
+}
 .nav-item .nav-active {
   color: #fff;
 }
@@ -267,6 +270,10 @@ export default defineComponent({
   width: 1.25rem;
   height: 1.25rem;
   color: rgba(255, 255, 255, 0.5);
+
+  &:hover {
+    color: rgba(255 255 255 / 1);
+  }
 }
 
 .translate-lang {
@@ -278,6 +285,10 @@ export default defineComponent({
     width: 1.5rem;
     height: 1.5rem;
   }
+
+  &:hover {
+    color: rgba(255 255 255 / 1);
+  }
 }
 
 .theme-mode {
@@ -285,6 +296,9 @@ export default defineComponent({
     width: 1.5rem;
     height: 1.5rem;
     margin-right: 0.5rem;
+  }
+  &:hover {
+    color: rgba(255 255 255 / 1);
   }
 }
 </style>

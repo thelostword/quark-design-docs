@@ -141,8 +141,3 @@ export default defineComponent({
   },
 });
 </script>
-<style>
-.doc-content-document ul li::before {
-  display: none;
-}
-</style>

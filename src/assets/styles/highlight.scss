@@ -3,19 +3,25 @@ code {
   display: block;
   padding: 16px;
   overflow-x: auto;
-  color: $quarkui-doc-code-color;
+  color: #58727e;
+  color: #fff;
   font-weight: 400;
   font-size: 14px;
-  font-family: $quarkui-doc-code-font-family;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI,
+  Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+  sans-serif;
   line-height: 26px;
   white-space: pre-wrap;
   word-wrap: break-word;
   -webkit-font-smoothing: auto;
   background-color: #fafafa;
+  background-color: #161618;
   border-radius: 16px;
 
   span {
-    font-family: $quarkui-doc-code-font-family;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
   }
 }
 

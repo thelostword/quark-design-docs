@@ -252,7 +252,7 @@ export default defineComponent({
   z-index: 1;
   top: 0px;
   position: sticky;
-  background-color: black;
+  background-color: #1e1e20;
   nav {
     padding-left: 0.25rem;
     padding-right: 0.25rem;

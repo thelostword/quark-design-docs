@@ -17,15 +17,15 @@ export default defineConfig({
   resolve: {
     alias: [{ find: "@", replacement: resolve(__dirname, "./src") }],
   },
-  css: {
-    preprocessorOptions: {
-      scss: {
-        // example : additionalData: `@import "./src/design/styles/variables";`
-        // dont need include file extend .scss
-        additionalData: `@import "@/assets/styles/variables.scss";`,
-      },
-    },
-  },
+  // css: {
+  //   preprocessorOptions: {
+  //     scss: {
+  //       // example : additionalData: `@import "./src/design/styles/variables";`
+  //       // dont need include file extend .scss
+  //       additionalData: `@import "@/assets/styles/variables.scss";`,
+  //     },
+  //   },
+  // },
   plugins: [
     vue({
       include: [/\.vue$/, /\.md$/],
@@ -35,10 +35,14 @@ export default defineConfig({
       // see: https://markdown-it.github.io/markdown-it/
       markdownItOptions: {
         highlight: function (str, lang) {
+          console.log(str, lang, 222);
+
           if (lang && hljs.getLanguage(lang)) {
             try {
               return hljs.highlight(lang, str).value;
-            } catch (__) {}
+            } catch (error) {
+              console.log(error);
+            }
           }
 
           return ""; // 使用额外的默认转义
