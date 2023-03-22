@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-[800px] bg-white doc-content-document full">
+  <div class="doc-content-document">
     <blockquote>
       <p>
         {{
@@ -141,4 +141,8 @@ export default defineComponent({
   },
 });
 </script>
-<style src="./index.scss"></style>
+<style>
+.doc-content-document ul li::before {
+  display: none;
+}
+</style>

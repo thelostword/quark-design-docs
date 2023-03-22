@@ -24,8 +24,7 @@
           <!-- 其它技术栈文档 -->
           <div class="nav-item">
             <a
-              class="transition-colors hover:text-gray-700"
-              :class="isActive('pages') ? 'text-gray-900' : 'text-gray-400'"
+              :class="isActive('pages') ? 'nav-active' : ''"
               :href="`${
                 isZhLang ? `#/zh-CN/pages/otherdocs` : `#/en-US/pages/otherdocs`
               }`"
@@ -38,8 +37,7 @@
           <div class="nav-item" v-for="item in header" :key="item.name">
             <template v-if="docMd === 'react' && item.name === 'Components'">
               <a
-                class="transition-colors hover:text-gray-700"
-                :class="isActive(item.type) ? 'text-gray-900' : 'text-gray-400'"
+                :class="isActive(item.type) ? 'nav-active' : ''"
                 :href="`${
                   isZhLang
                     ? `${item.pathName}-react`
@@ -51,8 +49,7 @@
             </template>
             <template v-else>
               <a
-                class="transition-colors hover:text-gray-700"
-                :class="isActive(item.type) ? 'text-gray-900' : 'text-gray-400'"
+                :class="isActive(item.type) ? 'nav-active' : ''"
                 :href="`${isZhLang ? item.pathName : item.pathEnName}`"
               >
                 {{ isZhLang ? item.cName : item.name }}
@@ -61,22 +58,23 @@
           </div>
 
           <a
-            class="transition-colors hover:text-gray-700"
             href="https://github.com/hellof2e/quark-design"
-            ><span class="sr-only">GitHub repository</span
-            ><svg viewBox="0 0 16 16" fill="currentColor" class="h-5 w-5">
+            class="github-link"
+          >
+            <span class="sr-only">GitHub repository</span>
+            <svg viewBox="0 0 16 16" fill="currentColor">
               <path
                 d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
-              ></path></svg
-          ></a>
+              ></path>
+            </svg>
+          </a>
 
           <a
-            class="nav-item-a-link text-gray-400 transition-colors hover:text-gray-500"
+            class="nav-item-a-link translate-lang"
             href="javascript:void(0);"
             @click="switchLang"
           >
             <svg
-              class="w-6 h-6"
               t="1660733385126"
               viewBox="0 0 1024 1024"
               version="1.1"
@@ -94,12 +92,12 @@
           </a>
 
           <a
-            class="nav-item-a-link"
+            class="nav-item-a-link theme-mode"
             href="javascript:void(0)"
             @click="switchMode"
           >
             <span>
-              <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6 mr-2">
+              <svg viewBox="0 0 24 24" fill="none">
                 <path
                   fill-rule="evenodd"
                   clip-rule="evenodd"
@@ -122,7 +120,6 @@
               <svg
                 viewBox="0 0 24 24"
                 fill="none"
-                class="w-6 h-6 mr-2"
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
@@ -254,8 +251,40 @@ export default defineComponent({
 <style lang="scss" scoped>
 .nav-item a {
   font-size: 14px;
+  transition-property: color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  color: rgba(255 255 255 / 0.5);
+}
+.nav-item .nav-active {
+  color: #fff;
 }
 .nav-item-a-link {
   font-size: 14px;
+}
+
+.github-link {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.translate-lang {
+  transition-property: color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  color: rgba(255 255 255 / 0.5);
+  > svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+.theme-mode {
+  > span svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+  }
 }
 </style>

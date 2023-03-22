@@ -8,7 +8,7 @@
     class="flex flex-col ml-[260px] doc-content"
     id="doc-content"
   >
-    <div class="min-h-[800px] bg-white doc-content-document">
+    <div class="doc-content-document">
       <router-view />
     </div>
 
@@ -156,10 +156,5 @@ export default defineComponent({
   overflow: auto;
   display: flex;
   flex-direction: column;
-}
-
-.doc-content-document {
-  min-height: 800px;
-  flex-shrink: 0;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative min-w-[300px] h-[34px] rounded-3xl bg-white lg:flex lg:items-center hidden border border-solid border-gray-200"
+    class="search-bar relative min-w-[300px] h-[34px] rounded-3xl lg:flex lg:items-center hidden border border-solid"
   >
     <svg
       t="1660736522656"
@@ -36,7 +36,7 @@
     <div class="quick-search" @click="quickSearch">⌘K</div>
 
     <ul
-      class="search-list bg-white absolute w-[300px] z-9999 top-[27px] p-0"
+      class="search-list absolute w-[300px] z-9999 top-[27px] p-0"
       v-show="data.searchList.length > 0"
     >
       <li
@@ -249,6 +249,9 @@ export default defineComponent({
   display: flex;
   left: 2.5rem;
   position: absolute;
-  background: #fff;
+  background: transparent;
+}
+.search-bar {
+  border-color: #666;
 }
 </style>

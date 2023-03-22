@@ -29,29 +29,23 @@
         href="#we-believe"
         style="opacity: 1"
       >
-        <span class="astro-3HLQMLNL">Scroll down</span>
+        <span>Scroll down</span>
         <!-- <span class="arrow" id="arrow">&gt;</span> -->
         <span class="arrow">
           <img src="/src/assets/images/arrow.png" alt="arrow" />
         </span>
       </a>
     </section>
-    <section
-      class="we-believe"
-      id="we-believe"
-      style="background: black; color: white"
-    >
+    <section class="we-believe" id="we-believe">
       <div class="wrap">
-        <h2 class="astro-3HLQMLNL">
-          We believe
+        <h2>
+          WE BELIEVE
           <img
-            alt="decorative icon"
-            class="astro-3HLQMLNL touch"
-            decoding="async"
+            class="down-icon"
+            alt="down-icon"
             src="/src/assets/images/i-down.svg"
             height="34"
             width="36"
-            fetchpriority="high"
           />
         </h2>
         <p>
@@ -60,7 +54,7 @@
         </p>
         <p style="margin-top: 1.5rem">
           If this can be done, then the component library can go through ups and
-          downs and go through a long period of time.
+          downs and go through a long period of time!
         </p>
         <p style="margin-top: 1.5rem">
           It does not need to be updated with the update of the technology
@@ -68,16 +62,37 @@
         </p>
       </div>
     </section>
+    <section class="what-we-do" id="what-we-do">
+      <div class="wrap">
+        <h2>
+          WHAT WE DO
+          <img
+            class="down-icon"
+            alt="down-icon"
+            src="/src/assets/images/i-down.svg"
+            height="34"
+            width="36"
+          />
+        </h2>
+        <p>
+          Benefiting from the native support of web components in browsers, we
+          developed Quark Design using this technology.
+        </p>
+        <p style="margin-top: 1.5rem">
+          This allows the front-end group library to actually find that the
+          technology stack has nothing to do.
+        </p>
+      </div>
+    </section>
   </main>
 
-  <!-- 
   <div class="footer-container">
     <footer>
       <div class="text-xs text-gray-400">
         A project by <a href="/"> Quark Labs</a>
       </div>
     </footer>
-  </div> -->
+  </div>
 </template>
 
 <script lang="ts">
@@ -102,8 +117,6 @@ export default defineComponent({
       if (localStorage.getItem("docMd") === null) {
         localStorage.setItem("docMd", "vue");
       }
-
-      // document.addEventListener("scroll", isArrowHidden);
 
       const intersectionObserver = new IntersectionObserver((entries) => {
         console.log(entries);

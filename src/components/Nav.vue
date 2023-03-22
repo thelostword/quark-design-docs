@@ -1,30 +1,19 @@
 <template>
-  <div
-    v-if="isShowSideBar()"
-    class="doc-nav w-[260px] border-r border-solid border-gray-200 overflow-auto fixed left-0 bottom-0 z-10 transition-all"
-    :class="{ 'fixed-class': fixed }"
-  >
+  <div v-if="isShowSideBar()" class="doc-nav" :class="{ 'fixed-class': fixed }">
     <!-- Doc‘s Switch -->
-    <div class="sticky bg-white top-0 pt-4 px-2 z-[1]">
-      <div
-        v-if="isShow()"
-        class="grid items-center justify-between h-[40px] rounded bg-zinc-100 px-1 grid-cols-2"
-      >
+    <div class="sticky-nav">
+      <nav v-if="isShow()">
         <div
-          :class="curKey === item.key ? 'bg-white' : 'bg-zinc-100'"
+          :class="curKey === item.key ? 'sticky-nav-active' : ''"
           :key="item.key"
-          class="tab-item relative px-[10px] leading-8 cursor-pointer text-base rounded text-center"
           v-for="item in tabs"
           @click="handleTabs(item.key)"
         >
           {{ item.text }}
         </div>
-      </div>
+      </nav>
     </div>
-    <div
-      v-if="isShow()"
-      class="sticky top-[56px] px-8 z-[1] h-8 bg-gradient-to-b from-white"
-    ></div>
+    <div v-if="isShow()" class="sticky-nav-shadow"></div>
 
     <!-- Docs' nav -->
     <ol class="pl-[32px] mb-6" v-if="isGuideNav">
@@ -181,6 +170,18 @@ export default defineComponent({
 <style lang="scss">
 .doc-nav {
   top: 75px;
+  border-right: 1px solid #333;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  bottom: 0px;
+  left: 0px;
+  z-index: 10;
+  width: 260px;
+  position: fixed;
+  top: 75px;
+  overflow: auto;
+
   &.fixed-class {
     top: 0;
   }
@@ -242,5 +243,50 @@ export default defineComponent({
       }
     }
   }
+}
+
+.sticky-nav {
+  padding-top: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  z-index: 1;
+  top: 0px;
+  position: sticky;
+  background-color: black;
+  nav {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    /* background-color: #f4f4f5; */
+    border-radius: 0.25rem;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    height: 40px;
+    display: grid;
+    > div {
+      line-height: 2rem;
+      font-size: 1rem;
+      text-align: center;
+      padding-left: 10px;
+      padding-right: 10px;
+      /* background-color: rgb(255 255 255); */
+      border-radius: 0.25rem;
+      cursor: pointer;
+      position: relative;
+    }
+    .sticky-nav-active {
+      color: #38bdf8;
+    }
+  }
+}
+
+.sticky-nav-shadow {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-image: linear-gradient(to bottom, #1e1e1e, rgb(0 0 0 / 0%));
+  top: 56px;
+  height: 2rem;
+  z-index: 1;
+  position: sticky;
 }
 </style>

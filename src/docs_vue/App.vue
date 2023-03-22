@@ -23,9 +23,4 @@ export default defineComponent({
   background: #646cff;
   color: #fff;
 }
-#doc {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
 </style>
