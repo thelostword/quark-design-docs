@@ -19,7 +19,8 @@ export default defineComponent({
 
 <style lang="scss">
 ::selection {
-  background: #38bdf8;
+  /* background: #38bdf8; */
+  background: #646cff;
   color: #fff;
 }
 #doc {

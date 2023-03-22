@@ -1,23 +1,19 @@
 <template>
   <div
     v-if="isShowSideBar()"
-    class="doc-nav w-[260px] border-r border-solid border-gray-200 dark:border-gray-800 overflow-auto fixed left-0 bottom-0 z-10 transition-all"
+    class="doc-nav w-[260px] border-r border-solid border-gray-200 overflow-auto fixed left-0 bottom-0 z-10 transition-all"
     :class="{ 'fixed-class': fixed }"
   >
     <!-- Doc‘s Switch -->
-    <div class="sticky bg-white dark:bg-gray-900 top-0 pt-4 px-2 z-[1]">
+    <div class="sticky bg-white top-0 pt-4 px-2 z-[1]">
       <div
         v-if="isShow()"
-        class="grid items-center justify-between h-[40px] rounded bg-zinc-100 dark:bg-gray-700 px-1 grid-cols-2"
+        class="grid items-center justify-between h-[40px] rounded bg-zinc-100 px-1 grid-cols-2"
       >
         <div
-          :class="
-            curKey === item.key
-              ? 'bg-white dark:bg-gray-900'
-              : 'bg-zinc-100 dark:bg-gray-700 dark:text-gray-400'
-          "
+          :class="curKey === item.key ? 'bg-white' : 'bg-zinc-100'"
           :key="item.key"
-          class="tab-item relative px-[10px] leading-8 cursor-pointer text-base rounded text-center dark:text-gray-400"
+          class="tab-item relative px-[10px] leading-8 cursor-pointer text-base rounded text-center"
           v-for="item in tabs"
           @click="handleTabs(item.key)"
         >
@@ -27,11 +23,11 @@
     </div>
     <div
       v-if="isShow()"
-      class="sticky top-[56px] px-8 z-[1] h-8 bg-gradient-to-b from-white dark:from-slate-900"
+      class="sticky top-[56px] px-8 z-[1] h-8 bg-gradient-to-b from-white"
     ></div>
 
     <!-- Docs' nav -->
-    <ol class="pl-[32px] mb-6 dark:text-gray-400" v-if="isGuideNav">
+    <ol class="pl-[32px] mb-6" v-if="isGuideNav">
       <ul>
         <li
           :class="{ active: isActive(_package.name) }"
@@ -39,10 +35,7 @@
           :key="_package"
           v-show="_package.show"
         >
-          <router-link
-            :to="_package.name.toLowerCase()"
-            class="dark:text-gray-400"
-          >
+          <router-link :to="_package.name.toLowerCase()">
             {{ isZhLang ? _package.cName : _package.name }}
           </router-link>
         </li>
@@ -51,11 +44,7 @@
 
     <!-- Components' nav -->
     <template v-else>
-      <ol
-        class="pl-[32px] mb-6 dark:text-gray-400"
-        v-for="_nav in nav"
-        :key="_nav"
-      >
+      <ol class="pl-[32px] mb-6" v-for="_nav in nav" :key="_nav">
         <li>{{ isZhLang ? _nav.name : _nav.enName }}</li>
         <ul>
           <template
@@ -71,7 +60,6 @@
                     : `${_package.name.toLowerCase()}-react`
                 "
                 :class="{ active: isActive(_package.name) }"
-                class="dark:text-gray-400 dark:dark-router-link-active"
               >
                 {{ _package.name }}&nbsp;&nbsp;<b v-if="isZhLang">{{
                   _package.cName

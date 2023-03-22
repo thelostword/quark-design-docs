@@ -8,7 +8,7 @@
     class="flex flex-col ml-[260px] doc-content"
     id="doc-content"
   >
-    <div class="min-h-[800px] bg-white dark:bg-gray-900 doc-content-document">
+    <div class="min-h-[800px] bg-white doc-content-document">
       <router-view />
     </div>
 

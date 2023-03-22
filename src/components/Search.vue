@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative min-w-[300px] h-[34px] rounded-3xl bg-white dark:bg-gray-800 lg:flex lg:items-center hidden border border-solid border-gray-200 dark:border-gray-600"
+    class="relative min-w-[300px] h-[34px] rounded-3xl bg-white lg:flex lg:items-center hidden border border-solid border-gray-200"
   >
     <svg
       t="1660736522656"
@@ -25,7 +25,7 @@
 
     <input
       type="text"
-      class="flex w-min-[300px] h-8 dark:bg-gray-800 text-sm absolute left-10 dark:text-gray-100"
+      class="search-input"
       :placeholder="isZhLang ? '在 Quark 中搜索...' : 'Search in Quark...'"
       v-model="data.searchVal"
       ref="refInput"
@@ -36,23 +36,16 @@
     <div class="quick-search" @click="quickSearch">⌘K</div>
 
     <ul
-      class="search-list bg-white dark:bg-gray-800 dark:border dark:border-solid absolute w-[300px] z-9999 top-[27px] p-0"
+      class="search-list bg-white absolute w-[300px] z-9999 top-[27px] p-0"
       v-show="data.searchList.length > 0"
     >
       <li
-        :class="
-          data.searchCurName == item.name
-            ? 'cur dark:bg-gray-900 dark:text-white'
-            : ''
-        "
+        :class="data.searchCurName == item.name ? 'cur' : ''"
         @click="checklist(item)"
         v-for="(item, index) in data.searchList"
         :key="index"
       >
-        <router-link
-          :to="item._name"
-          class="dark:text-gray-400 dark:hover:text-gray-100"
-        >
+        <router-link :to="item._name">
           {{ item.name }}
           <span v-if="isZhLang">{{ item.cName }}</span>
         </router-link>
@@ -247,5 +240,15 @@ export default defineComponent({
       color: #fff;
     }
   }
+}
+
+.search-input {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  height: 2rem;
+  display: flex;
+  left: 2.5rem;
+  position: absolute;
+  background: #fff;
 }
 </style>

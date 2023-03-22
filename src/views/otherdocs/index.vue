@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="min-h-[800px] bg-white dark:bg-gray-900 doc-content-document full"
-  >
+  <div class="min-h-[800px] bg-white doc-content-document full">
     <blockquote>
       <p>
         {{

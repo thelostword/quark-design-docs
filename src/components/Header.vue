@@ -6,15 +6,17 @@
   >
     <div class="mx-auto max-w-8xl xl:px-8">
       <div
-        class="flex items-center justify-between border-b border-solid border-gray-200 dark:border-gray-800 px-4 py-5 sm:px-6 lg:px-8 xl:px-0"
+        class="flex items-center justify-between px-4 py-5 sm:px-6 lg:px-8 xl:px-0"
       >
         <div class="flex items-center justify-between">
           <a class="flex items-center mr-2 text-gray-500" href="/#/">
             <img class="h-8" src="/src/assets/images/quark-logo.png" alt="" />
           </a>
-          <span class="flex items-center mr-8 text-gray-500" href="/">
+          <span class="flex items-center mr-8 text-gray-400" href="/">
             {{ version }}
           </span>
+
+          <!-- 搜索 -->
           <Search />
         </div>
 
@@ -22,12 +24,8 @@
           <!-- 其它技术栈文档 -->
           <div class="nav-item">
             <a
-              class="transition-colors hover:text-gray-700 dark:hover:text-gray-400"
-              :class="
-                isActive('pages')
-                  ? 'text-gray-900 dark:text-gray-400'
-                  : 'text-gray-400 dark:text-gray-500'
-              "
+              class="transition-colors hover:text-gray-700"
+              :class="isActive('pages') ? 'text-gray-900' : 'text-gray-400'"
               :href="`${
                 isZhLang ? `#/zh-CN/pages/otherdocs` : `#/en-US/pages/otherdocs`
               }`"
@@ -40,12 +38,8 @@
           <div class="nav-item" v-for="item in header" :key="item.name">
             <template v-if="docMd === 'react' && item.name === 'Components'">
               <a
-                class="transition-colors hover:text-gray-700 dark:hover:text-gray-400"
-                :class="
-                  isActive(item.type)
-                    ? 'text-gray-900 dark:text-gray-400'
-                    : 'text-gray-400 dark:text-gray-500'
-                "
+                class="transition-colors hover:text-gray-700"
+                :class="isActive(item.type) ? 'text-gray-900' : 'text-gray-400'"
                 :href="`${
                   isZhLang
                     ? `${item.pathName}-react`
@@ -57,12 +51,8 @@
             </template>
             <template v-else>
               <a
-                class="transition-colors hover:text-gray-700 dark:hover:text-gray-400"
-                :class="
-                  isActive(item.type)
-                    ? 'text-gray-900 dark:text-gray-400'
-                    : 'text-gray-400 dark:text-gray-500'
-                "
+                class="transition-colors hover:text-gray-700"
+                :class="isActive(item.type) ? 'text-gray-900' : 'text-gray-400'"
                 :href="`${isZhLang ? item.pathName : item.pathEnName}`"
               >
                 {{ isZhLang ? item.cName : item.name }}
@@ -71,34 +61,17 @@
           </div>
 
           <a
-            class="nav-item-a-link flex items-center justify-between text-gray-400 dark:text-gray-500 transition-colors hover:text-gray-700 dark:hover:text-gray-400"
+            class="transition-colors hover:text-gray-700"
             href="https://github.com/hellof2e/quark-design"
-            target="_blank"
-          >
-            GitHub
-            <svg
-              class="ml-1"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              x="0px"
-              y="0px"
-              viewBox="0 0 100 100"
-              width="15"
-              height="15"
-            >
+            ><span class="sr-only">GitHub repository</span
+            ><svg viewBox="0 0 16 16" fill="currentColor" class="h-5 w-5">
               <path
-                fill="currentColor"
-                d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"
-              ></path>
-              <polygon
-                fill="currentColor"
-                points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"
-              ></polygon>
-            </svg>
-          </a>
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+              ></path></svg
+          ></a>
 
           <a
-            class="nav-item-a-link text-gray-400 dark:text-white transition-colors hover:text-gray-500"
+            class="nav-item-a-link text-gray-400 transition-colors hover:text-gray-500"
             href="javascript:void(0);"
             @click="switchLang"
           >
@@ -125,7 +98,7 @@
             href="javascript:void(0)"
             @click="switchMode"
           >
-            <span class="dark:hidden">
+            <span>
               <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6 mr-2">
                 <path
                   fill-rule="evenodd"
@@ -135,17 +108,17 @@
                 ></path>
                 <path
                   d="m17.715 15.15.95.316a1 1 0 0 0-1.445-1.185l.495.869ZM9 6.035l.846.534a1 1 0 0 0-1.14-1.49L9 6.035Zm8.221 8.246a5.47 5.47 0 0 1-2.72.718v2a7.47 7.47 0 0 0 3.71-.98l-.99-1.738Zm-2.72.718A5.5 5.5 0 0 1 9 9.5H7a7.5 7.5 0 0 0 7.5 7.5v-2ZM9 9.5c0-1.079.31-2.082.845-2.93L8.153 5.5A7.47 7.47 0 0 0 7 9.5h2Zm-4 3.368C5 10.089 6.815 7.75 9.292 6.99L8.706 5.08C5.397 6.094 3 9.201 3 12.867h2Zm6.042 6.136C7.718 19.003 5 16.268 5 12.867H3c0 4.48 3.588 8.136 8.042 8.136v-2Zm5.725-4.17c-.81 2.433-3.074 4.17-5.725 4.17v2c3.552 0 6.553-2.327 7.622-5.537l-1.897-.632Z"
-                  class="fill-slate-400 dark:fill-slate-500"
+                  class="fill-slate-400"
                 ></path>
                 <path
                   fill-rule="evenodd"
                   clip-rule="evenodd"
                   d="M17 3a1 1 0 0 1 1 1 2 2 0 0 0 2 2 1 1 0 1 1 0 2 2 2 0 0 0-2 2 1 1 0 1 1-2 0 2 2 0 0 0-2-2 1 1 0 1 1 0-2 2 2 0 0 0 2-2 1 1 0 0 1 1-1Z"
-                  class="fill-slate-400 dark:fill-slate-500"
+                  class="fill-slate-400"
                 ></path>
               </svg>
             </span>
-            <span class="hidden dark:inline">
+            <span class="hidden">
               <svg
                 viewBox="0 0 24 24"
                 fill="none"
