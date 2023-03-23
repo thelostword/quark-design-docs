@@ -11,8 +11,8 @@ export default {
   weBelieveDesc3: "不用随着技术栈的更新而更新。",
   whatWeDo: "我们做了什么",
   whatWeDoDesc1:
-    "得益于 web components 在浏览器的原生支持特性中，我们使用该技术开发了 Quark Design。",
-  whatWeDoDesc2: "这让前端组库实际上发现了技术栈无关。",
+    "得益于 web components 在浏览器的原生支持特性，我们使用该技术开发了 Quark Design。",
+  whatWeDoDesc2: "这让前端组库实际上实现了技术栈无关。",
 
   codeExample: {
     title: "代码示例",

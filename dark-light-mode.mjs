@@ -98,13 +98,16 @@ template.innerHTML = `<style>
 `;
 
 function turnDark() {
+  console.log("turn dark");
   document.documentElement.classList.add("dark");
   localStorage.setItem("theme", "dark");
 }
 
 function turnLight() {
+  console.log("turn light");
   document.documentElement.classList.remove("dark");
-  localStorage.removeItem("theme");
+  // localStorage.removeItem("theme");
+  localStorage.setItem("theme", "light");
 }
 class DarkLightMode extends HTMLElement {
   constructor() {
@@ -116,20 +119,25 @@ class DarkLightMode extends HTMLElement {
     shadowRoot.appendChild(template.content.cloneNode(true));
 
     const themeMedia = window.matchMedia("(prefers-color-scheme: dark)");
-    if (localStorage.theme === "dark" || themeMedia.matches) {
+    const toggle = shadowRoot.querySelector(".toggle");
+
+    if (localStorage.theme === "dark") {
+      turnDark();
+    } else if (localStorage.theme === "light") {
+      toggle.classList.toggle("dark");
+      turnLight();
+    } else if (themeMedia.matches) {
       document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
     }
 
-    const toggle = shadowRoot.querySelector(".toggle");
     toggle.addEventListener("click", (e) => {
+      console.log(1);
       toggle.classList.toggle("dark");
 
       if (toggle.classList.contains("dark")) {
-        turnDark(e);
-      } else {
         turnLight();
+      } else {
+        turnDark();
       }
     });
   }

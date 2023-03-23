@@ -59,7 +59,11 @@
           <img
             class="down-icon"
             alt="down-icon"
-            src="/src/assets/images/i-down.svg"
+            :src="`${
+              darkMode
+                ? '/src/assets/images/i-down.png'
+                : '/src/assets/images/i-down-light.png'
+            }`"
             height="34"
             width="36"
           />
@@ -121,7 +125,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted } from "vue";
+import { defineComponent, onMounted, ref } from "vue";
 import { useI18n } from "vue-i18n";
 import Header from "@/components/Header.vue";
 
@@ -132,6 +136,7 @@ export default defineComponent({
   },
   setup() {
     const { t } = useI18n();
+    let darkMode = ref(true);
 
     onMounted(() => {
       // 默认中文
@@ -141,6 +146,11 @@ export default defineComponent({
       // 默认 vue 文档
       if (localStorage.getItem("docMd") === null) {
         localStorage.setItem("docMd", "vue");
+      }
+
+      if (localStorage.theme === "dark") {
+        console.log(darkMode, 33);
+        darkMode.value = true;
       }
 
       const intersectionObserver = new IntersectionObserver((entries) => {
@@ -157,6 +167,7 @@ export default defineComponent({
     return {
       isZhLang: localStorage.getItem("language") === "zh-CN",
       t,
+      darkMode,
     };
   },
 });
