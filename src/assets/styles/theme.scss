@@ -48,6 +48,7 @@ a {
 }
 .header .container {
   border-bottom: 1px solid var(--line-light);
+  background-color: var(--main-bg);
 }
 .sticky-nav {
   background-color: var(--main-bg);
@@ -164,6 +165,15 @@ html.dark {
   }
   .doc-content-document table td  {
     border-top: 1px solid #333;
+  }
+
+  .action .why-quark {
+    // background-color: var(--main-bg);
+    background-color: #313136;
+    color: #fff;
+    &:hover {
+      background-color: #2c2c30;
+    }
   }
 }
 
