@@ -94,11 +94,11 @@ a {
   color: #454ce1;
 }
 
-.doc-content-document ul li,
-.doc-content-document ol li,
-.doc-content-document strong {
-  color: var(--text-font-color-light);
-}
+// .doc-content-document ul li,
+// .doc-content-document ol li,
+// .doc-content-document strong {
+//   color: var(--text-font-color-light);
+// }
 
 
 html.dark {
@@ -119,6 +119,8 @@ html.dark {
   --brand-color-light: #bcc0ff; // hover color
   
   --mute-light: #313136; // tag background
+
+  --line-light: rgba(82, 82, 89, .32);
 
 
   font-family: var(--font-family-base);
@@ -167,8 +169,13 @@ html.dark {
     border-top: 1px solid #333;
   }
 
+  // .doc-content-document ul li,
+  // .doc-content-document ol li
+  //  .doc-content-document strong {
+  //   color: var(--text-font-color); 
+  // }
+
   .action .why-quark {
-    // background-color: var(--main-bg);
     background-color: #313136;
     color: #fff;
     &:hover {
