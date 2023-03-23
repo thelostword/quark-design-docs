@@ -115,7 +115,8 @@ class DarkLightMode extends HTMLElement {
     const shadowRoot = this.attachShadow({ mode: "closed" });
     shadowRoot.appendChild(template.content.cloneNode(true));
 
-    if (localStorage.theme === "dark" || "theme" in localStorage) {
+    const themeMedia = window.matchMedia("(prefers-color-scheme: dark)");
+    if (localStorage.theme === "dark" || themeMedia.matches) {
       document.documentElement.classList.add("dark");
     } else {
       document.documentElement.classList.remove("dark");
