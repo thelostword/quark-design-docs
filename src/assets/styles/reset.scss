@@ -58,6 +58,11 @@
 //     sans-serif;
 //   -webkit-overflow-scrolling: touch;
 // }
+::selection {
+  background: var(--brand-color);
+  color: #fff;
+}
+
 body {
   margin: 0;
   padding: 0;

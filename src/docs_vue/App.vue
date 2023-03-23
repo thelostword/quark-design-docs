@@ -16,11 +16,3 @@ export default defineComponent({
   },
 });
 </script>
-
-<style lang="scss">
-::selection {
-  /* background: #646cff; */
-  background: #646cff;
-  color: #fff;
-}
-</style>

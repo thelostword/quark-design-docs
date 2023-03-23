@@ -137,7 +137,7 @@ export default defineComponent({
       import.meta.env.VITE_ENV === "dev"
         ? "https://quark-design.hellobike.com/demo/demo.html#"
         : defaultUrl;
-    console.log(import.meta.env, "ENV");
+    // console.log(import.meta.env, "ENV");
     return {
       ...toRefs(state),
       ...toRefs(data),
