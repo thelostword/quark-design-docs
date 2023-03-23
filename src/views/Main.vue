@@ -46,17 +46,17 @@
         style="opacity: 1"
       >
         <span>{{ t("scrollDown") }}</span>
-        <!-- <span class="arrow" id="arrow">&gt;</span> -->
         <span class="arrow">
           <img
             v-if="darkMode"
-            src="/src/assets/images/arrow-light.png"
+            src="/src/assets/images/arrow2.png"
             alt="arrow"
           />
-          <img v-else src="/src/assets/images/arrow.png" alt="arrow" />
+          <img v-else src="/src/assets/images/arrow-light.png" alt="arrow" />
         </span>
       </a>
     </section>
+
     <section class="we-believe" id="we-believe">
       <div class="wrap">
         <h2>
@@ -65,7 +65,7 @@
             v-if="darkMode"
             class="down-icon"
             alt="down-icon"
-            src="/src/assets/images/i-down-light.png"
+            src="/src/assets/images/i-down.png"
             height="34"
             width="36"
           />
@@ -97,7 +97,7 @@
             v-if="darkMode"
             class="down-icon"
             alt="down-icon"
-            src="/src/assets/images/i-down-light.png"
+            src="/src/assets/images/i-down.png"
             height="34"
             width="36"
           />
@@ -155,7 +155,7 @@ export default defineComponent({
   },
   setup() {
     const { t } = useI18n();
-    let darkMode = ref(true);
+    let darkMode = ref(false);
 
     onMounted(() => {
       // 默认中文
@@ -166,9 +166,9 @@ export default defineComponent({
       if (localStorage.getItem("docMd") === null) {
         localStorage.setItem("docMd", "vue");
       }
-
-      if (localStorage.theme === "dark") {
-        console.log(darkMode, 33);
+      console.log(document.documentElement.classList, 222);
+      if (document.documentElement.classList.contains("dark")) {
+        // console.log( 33);
         darkMode.value = true;
       }
 
