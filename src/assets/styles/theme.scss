@@ -42,7 +42,8 @@ a {
 .github-link {
   color: var(--text-font-color-light);
 }
-.github-link:hover svg{
+.github-link:hover svg,
+.translate-lang:hover svg{
   color: var(--brand-color);
 }
 .header .container {

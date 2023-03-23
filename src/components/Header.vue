@@ -53,6 +53,7 @@
           <a
             href="https://github.com/hellof2e/quark-design"
             class="github-link"
+            target="_blank"
           >
             <span class="sr-only">GitHub repository</span>
             <svg viewBox="0 0 16 16" fill="currentColor">
@@ -63,23 +64,22 @@
           </a>
 
           <a
-            class="nav-item-a-link translate-lang"
+            class="translate-lang"
             href="javascript:void(0);"
             @click="switchLang"
           >
             <svg
-              t="1660733385126"
-              viewBox="0 0 1024 1024"
-              version="1.1"
               xmlns="http://www.w3.org/2000/svg"
-              p-id="3062"
-              width="200"
-              height="200"
+              aria-hidden="true"
+              focusable="false"
+              viewBox="0 0 24 24"
+              class="option-icon"
+              data-v-bb72eb81=""
             >
+              <path d="M0 0h24v24H0z" fill="none"></path>
               <path
-                d="M549.12 642.986667l-108.373333-107.093334 1.28-1.28A747.52 747.52 0 0 0 500.32 256H725.333333V170.666667h-298.666666V85.333333H341.333333v85.333334H42.666667v85.333333h476.586666C490.666667 337.92 445.44 416 384 484.266667 344.32 440.32 311.466667 392.106667 285.44 341.333333h-85.333333c31.146667 69.546667 73.813333 135.253333 127.146666 194.56l-217.173333 214.186667L170.666667 810.666667l213.333333-213.333334 132.693333 132.693334 32.426667-87.04M789.333333 426.666667h-85.333333L512 938.666667h85.333333l47.786667-128h202.666667L896 938.666667h85.333333l-192-512m-111.786666 298.666666l69.12-184.746666L815.786667 725.333333h-138.24z"
-                fill="#9da3b0"
-                p-id="3063"
+                d=" M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z "
+                class="css-c4d79v"
               ></path>
             </svg>
           </a>
@@ -206,7 +206,6 @@ export default defineComponent({
   .left-bar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
   }
   .menu {
     gap: 2rem;
@@ -256,17 +255,19 @@ export default defineComponent({
 }
 
 .translate-lang {
-  transition-property: color, fill, stroke;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-  color: rgba(255 255 255 / 0.5);
-  > svg {
-    width: 1.5rem;
-    height: 1.5rem;
-  }
+  width: 1.25rem;
+  height: 1.25rem;
 
-  &:hover {
-    color: rgba(255 255 255 / 1);
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
   }
 }
 
