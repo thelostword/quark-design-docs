@@ -99,7 +99,6 @@ import Search from "./Search.vue";
 import { header, versions, nav } from "@/config/index";
 import { version as defaultVersion } from "@/docs_vue/config.json";
 import { useRoute } from "vue-router";
-import './dark-light-mode.mjs';
 
 export default defineComponent({
   name: "doc-header",
