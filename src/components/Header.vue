@@ -257,7 +257,7 @@ export default defineComponent({
 
   &.sticky {
     position: sticky;
-    background: #1e1e20;
+    /* background: #1e1e20; */
   }
 
   > div {
@@ -304,14 +304,8 @@ export default defineComponent({
   transition-property: color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-  color: rgba(255 255 255 / 0.5);
 }
-.nav-item a:hover {
-  color: rgba(255 255 255 / 1);
-}
-.nav-item .nav-active {
-  color: #fff;
-}
+
 .nav-item-a-link {
   font-size: 14px;
 }
@@ -319,11 +313,7 @@ export default defineComponent({
 .github-link {
   width: 1.25rem;
   height: 1.25rem;
-  color: rgba(255, 255, 255, 0.5);
 
-  &:hover {
-    color: rgba(255 255 255 / 1);
-  }
   .sr-only {
     position: absolute;
     width: 1px;

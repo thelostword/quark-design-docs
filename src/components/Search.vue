@@ -263,7 +263,7 @@ export default defineComponent({
     width: 1.25rem;
     height: 1.25rem;
     position: absolute;
-    left: 2.5rem;
+    left: 1rem;
   }
 }
 </style>

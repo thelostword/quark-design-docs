@@ -16,17 +16,14 @@
 
   a {
     margin: 0 1px;
-    // color: #38bdf7;
     color: #646cff;
     -webkit-font-smoothing: auto;
 
     &:hover {
-      // color: darken(#38bdf7, 10%);
       color: #bcc0ff;
     }
 
     &:active {
-      // color: darken(#38bdf7, 20%);
       color: #bcc0ff;
     }
   }
@@ -85,17 +82,13 @@
   table {
     width: 100%;
     margin-top: 12px;
-    color: #666;
     font-size: 14px;
     line-height: 1.5;
     border-collapse: collapse;
-    border: 1px solid #333;
     th {
       padding: 8px 20px;
       font-weight: 600;
       text-align: left;
-      border-left: 1px solid #333;
-      color: #fff;
 
       &:last-child {
         padding-right: 0;
@@ -104,9 +97,8 @@
 
     td {
       padding: 8px 20px;
-      border-top: 1px solid #333;
-      border-left: 1px solid #333;
       color: #fff;
+      
       &:first-child {
         border-left: 0px;
         code {
@@ -174,7 +166,6 @@
     font-size: 14px;
     font-family: inherit;
     word-break: keep-all;
-    // background-color: #f7f8fa;
     background-color: #313136;
     color: #c9def1;
     border-radius: 4px;

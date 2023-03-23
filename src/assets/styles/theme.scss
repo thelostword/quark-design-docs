@@ -1,0 +1,130 @@
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: rgba(60, 60, 67, .92);
+    background-color: #fff;
+  }
+  a {
+    color: rgba(60, 60, 67, .92);
+  }
+
+  .action .why-quark {
+    background-color: #fff;
+    color: #213547;
+    &:hover {
+      background-color: #f6f6f6;
+    }
+  }
+
+  .nav-item a {
+    color: var(--text-font-color-light);
+  }
+  .nav-item a:hover {
+    color: var(--brand-color);
+  }
+  .github-link {
+    color: var(--text-font-color-light);
+  }
+  .github-link:hover svg{
+    color: var(--brand-color);
+  }
+  .header .container {
+    border-bottom: 1px solid var(--line-light);
+  }
+  .sticky-nav {
+    background-color: #fff;
+  }
+  .sticky-nav-shadow {    
+    background-image: linear-gradient(to bottom, #eee, rgba(0, 0, 0, 0));
+  }
+  .doc-content-document table {
+    border: 1px solid var(--line-light);
+  }
+  .doc-content-document table th,
+  .doc-content-document table td {
+    border-left: 1px solid var(--line-light);
+    color: var(--text-font-color-light);
+  }
+
+  .doc-content-document table td {
+    border-top: 1px solid var(--line-light);
+  }
+
+  .doc-content-document table code {
+    color: #476582;
+    background-color: var(--mute-light);
+
+  }
+  .doc-content-document p {
+    color: var(--text-font-color-light);
+  }
+  .doc-content-document table td:first-child code {
+    color: #476582;
+  }
+  .doc-nav {
+    border: 1px solid var(--line-light);
+  }
+  .doc-content-document p > code {
+    color: #476582;
+    background-color: var(--mute-light);
+  }
+  .doc-content-document blockquote {
+    background-color: rgba(100, 108, 255, .08);
+  }
+  .doc-content-document blockquote p {
+    color: #454ce1;
+  }
+
+  .doc-content-document ul li,
+  .doc-content-document ol li,
+  .doc-content-document strong {
+    color: var(--text-font-color-light);
+  }
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    font-family: var(--font-family-base);
+    line-height: 1.5;
+    font-weight: 400;
+    color: var(--link-font-color-dark);
+    
+    background-color: #1e1e20;
+    
+    color-scheme: light dark;
+  }
+  a {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .nav-item a:hover {
+    color: rgba(255 255 255 / 1);
+  }
+  .nav-item .nav-active {
+    color: #fff;
+  }
+  .github-link:hover {
+    color: rgba(255 255 255 / 1);
+  }
+  .doc-nav a {
+    color: #fff;
+  }
+  .doc-nav a:hover {
+    color: var(--brand-color);
+  }
+  .sticky-nav {
+    background-color: #1e1e20;
+  }
+  .doc-content-document table {
+    border: 1px solid #333;
+  }
+  .doc-content-document table th,
+  .doc-content-document table td {
+    border-left: 1px solid #333;
+    color: #fff;
+  }
+  .doc-content-document table td  {
+    border-top: 1px solid #333;
+  }
+}

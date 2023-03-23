@@ -11,8 +11,8 @@ Unknown custom element:
   - did you register the component correctly? For recursive components, make
   sure to provide the "name" option.
 
-  <!-- vue@3.x -->
-  [Vue warn]: Failed to resolve component: quark-icon
+<!-- vue@3.x -->
+[Vue warn]: Failed to resolve component: quark-icon
 </quark-card>
 ```
 
