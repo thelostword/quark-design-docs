@@ -12,13 +12,13 @@ import { Switch } from "@quarkd/quark-react";
 
 ### 基本使用
 
-```tsx
+```html
 <Switch checked></Switch>
 ```
 
 ### 禁用状态
 
-```tsx
+```html
 <Switch disabled></Switch>
 ```
 
@@ -26,7 +26,7 @@ import { Switch } from "@quarkd/quark-react";
 
 可以通过 `size` 或修改元素 `font-size` 来控制大小。
 
-```tsx
+```html
 <Switch size="26px"></Switch> <Switch style="font-size: 26px"></Switch>
 ```
 
@@ -34,7 +34,7 @@ import { Switch } from "@quarkd/quark-react";
 
 可以通过 `color` 属性控制颜色。
 
-```tsx
+```html
 <Switch color="red"></Switch>
 ```
 
@@ -54,12 +54,12 @@ export default () => {
 
 ### Props
 
-| 参数     | 说明            | 类型                                         | 默认值  |
-| -------- | --------------- | -------------------------------------------- | ------- |
-| checked  | 开/关           | `boolean`                                    | `false` |
-| disabled | 禁用            | `boolean`                                    | `false` |
-| size     | 开关大小        | `number`                                     | `16px ` |
-| color    | 颜色            | `string`                                     | -       |
+| 参数     | 说明            | 类型                                   | 默认值  |
+| -------- | --------------- | -------------------------------------- | ------- |
+| checked  | 开/关           | `boolean`                              | `false` |
+| disabled | 禁用            | `boolean`                              | `false` |
+| size     | 开关大小        | `number`                               | `16px ` |
+| color    | 颜色            | `string`                               | -       |
 | onChange | change 回调函数 | `e: ({ detail: { value: string } }) => void` |
 
 ## 样式变量

@@ -12,7 +12,7 @@ import { Navbar } from "@quarkd/quark-react";
 
 ### 基础用法
 
-```tsx
+```html
 <Navbar title="页面标题"></Navbar>
 <Navbar title="左标题" closehide className="left"></Navbar>
 ```
@@ -26,7 +26,7 @@ import { Navbar } from "@quarkd/quark-react";
 
 ### 文字/背景颜色设置
 
-```tsx
+```html
 <Navbar title="页面标题" class="bg" righttext="分享"></Navbar>
 <Navbar title="小号图标" class="bg2" iconsize="18" righttext="分享"></Navbar>
 ```
@@ -44,7 +44,7 @@ import { Navbar } from "@quarkd/quark-react";
 
 ### 左侧按钮自定义
 
-```tsx
+```html
 <Navbar title="左侧自定义图标展示">
   <div className="icon" slot="left"></div>
 </Navbar>
@@ -55,7 +55,7 @@ import { Navbar } from "@quarkd/quark-react";
 
 ### 右侧按钮自定义
 
-```tsx
+```html
 <Navbar title="右侧图标展示">
   <div className="icon" slot="right"></div>
 </Navbar>

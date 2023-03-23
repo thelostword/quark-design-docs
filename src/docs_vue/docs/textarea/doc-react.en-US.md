@@ -12,43 +12,43 @@ import { Textarea } from "@quarkd/quark-react";
 
 ### Basic Usage
 
-```tsx
+```html
 <Textarea />
 ```
 
 ### Rows Number
 
-```tsx
+```html
 <Textarea rows="6" />
 ```
 
 ### Autosize
 
-```tsx
+```html
 <Textarea autosize />
 ```
 
 ### Count
 
-```tsx
+```html
 <Textarea showcount />
 ```
 
 ### Maxlength
 
-```tsx
+```html
 <Textarea showcount maxlength="50" />
 ```
 
 ### Disabled
 
-```tsx
+```html
 <Textarea disabled />
 ```
 
 ### Custom Style
 
-```tsx
+```html
 <Textarea showcount class="custom-style" />
 ```
 

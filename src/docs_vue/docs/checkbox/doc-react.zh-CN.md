@@ -39,7 +39,7 @@ export default () => {
 
 复选框支持`round`、`square`两种形状，默认为 `round`。
 
-```tsx
+```html
 <Checkbox checked={true}>圆形(默认)</Checkbox>
 <Checkbox checked={true} shape="square">方形</Checkbox>
 ```
@@ -48,7 +48,7 @@ export default () => {
 
 复选框大小支持 `normal`、`big` 两种，默认为 `normal`。
 
-```tsx
+```html
 <Checkbox checked={true} shape="round" size="big">默认形状-大</Checkbox>
 <Checkbox checked={true} shape="square" size="big">方形-大</Checkbox>
 ```
@@ -57,7 +57,7 @@ export default () => {
 
 复选框支持禁用
 
-```tsx
+```html
 <Checkbox checked={true} disabled>已选-禁用</Checkbox>
 <Checkbox checked={true} disabled>未选-禁用</Checkbox>
 ```
@@ -93,7 +93,7 @@ export default () => {
 
 复选框选中颜色自定义
 
-```tsx
+```html
 <Checkbox checked={true}>复选框-选中颜色自定义</Checkbox>
 
 <!-- CSS -->
@@ -105,19 +105,19 @@ Checkbox { --radio-background: linear-gradient(225deg, #ff918d 0%, #f54640
 
 ### Checkbox Props
 
-| 参数     | 说明                                | 类型                                         | 默认值   |
-| -------- | ----------------------------------- | -------------------------------------------- | -------- |
-| shape    | 形状，可选值为 `round` `square`     | `string`                                     | `round`  |
-| size     | 复选框大小，可选值为 `normal` `big` | `string`                                     | `normal` |
-| disabled | 复选框禁用状态                      | `boolean`                                    | `false`  |
-| checked  | 复选框勾选状态                      | `boolean`                                    | `false`  |
+| 参数     | 说明                                | 类型                                  | 默认值   |
+| -------- | ----------------------------------- | ------------------------------------- | -------- |
+| shape    | 形状，可选值为 `round` `square`     | `string`                              | `round`  |
+| size     | 复选框大小，可选值为 `normal` `big` | `string`                              | `normal` |
+| disabled | 复选框禁用状态                      | `boolean`                             | `false`  |
+| checked  | 复选框勾选状态                      | `boolean`                             | `false`  |
 | onChange | 复选框勾选状态变化时回调函数        | `(e: { detail: { value: string } }) => void` |
 
 ### Checkbox-group Props
 
-| 参数     | 说明                           | 类型                                           | 默认值 |
-| -------- | ------------------------------ | ---------------------------------------------- | ------ |
-| value    | 指定选中的选项                 | `string`                                       | -      |
+| 参数     | 说明                           | 类型                                      | 默认值 |
+| -------- | ------------------------------ | ----------------------------------------- | ------ |
+| value    | 指定选中的选项                 | `string`                                  | -      |
 | onChange | 复选框组勾选状态变化时回调函数 | `(e: { detail: { value: string[] } }) => void` |
 
 ## 样式变量

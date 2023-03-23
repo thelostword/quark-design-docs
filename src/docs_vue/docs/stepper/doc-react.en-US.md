@@ -12,31 +12,31 @@ import { Stepper } from "@quarkd/quark-react";
 
 ### Basic Usage
 
-```tsx
+```html
 <Stepper value="1"></Stepper>
 ```
 
 ### Range
 
-```tsx
+```html
 <Stepper min="5" max="12" />
 ```
 
 ### Step
 
-```tsx
+```html
 <Stepper steps="2" />
 ```
 
 ### Integer
 
-```tsx
+```html
 <Stepper interger />
 ```
 
 ### Disabled
 
-```tsx
+```html
 <Stepper disabled />
 ```
 

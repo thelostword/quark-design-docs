@@ -12,7 +12,7 @@ import { Noticebar } from "@quarkd/quark-react";
 
 ### 基础用法
 
-```tsx
+```html
 <Noticebar text="{text}"></Noticebar>
 ```
 
@@ -20,7 +20,7 @@ import { Noticebar } from "@quarkd/quark-react";
 
 通过内嵌 `multiple` 控制文字行数。
 
-```tsx
+```html
 <Noticebar text="{multipleText}" multiple="2"></Noticebar>
 ```
 
@@ -28,7 +28,7 @@ import { Noticebar } from "@quarkd/quark-react";
 
 通过 `color` 控制字体颜色，通过 `bgcolor` 控制背景色。
 
-```tsx
+```html
 <Noticebar text="{text}" color="red" bgcolor="#ddd"></Noticebar>
 ```
 
@@ -40,7 +40,7 @@ import { Noticebar } from "@quarkd/quark-react";
 import { Marquee } from "@quarkd/quark-react";
 ```
 
-```tsx
+```html
 <Noticebar>
   <marquee slot="text" title="{multipleText}"></marquee>
 </Noticebar>
@@ -50,7 +50,7 @@ import { Marquee } from "@quarkd/quark-react";
 
 通过 `righthide`、`lefthide` 实现左右侧图标隐藏效果。
 
-```tsx
+```html
 <Noticebar text="隐藏右侧" righthide></Noticebar>
 <Noticebar text="隐藏左侧" lefthide></Noticebar>
 ```
@@ -59,7 +59,7 @@ import { Marquee } from "@quarkd/quark-react";
 
 通过 `slot="left"`、`slot="right"` 实现左右侧内容自定义。
 
-```tsx
+```html
 <Noticebar text="大学之道，在明明德，在亲民，在止于至善。">
   <div slot="left">左侧内容</div>
   <div slot="right">右侧内容</div>
@@ -68,7 +68,7 @@ import { Marquee } from "@quarkd/quark-react";
 
 ### 右侧事件绑定
 
-```tsx
+```html
 <Noticebar text="Try to click right icon" @rightclick="handleClick">
 </Noticebar>
 ```
@@ -100,5 +100,7 @@ import { Marquee } from "@quarkd/quark-react";
 
 | 名称                      | 说明         | 默认值 |
 | ------------------------- | ------------ | ------ |
+| `--noticebar-border-radius`  | 组件倒圆角 |  0px  |
+| `--noticebar-padding`  | 内边距 |  10px  |
 | `--noticebar-left-color`  | 左侧图标颜色 | `继承` |
 | `--noticebar-right-color` | 右侧图标颜色 | `继承` |

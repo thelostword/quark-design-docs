@@ -20,8 +20,14 @@ export default () => {
 
   return (
     <div>
-      <Tooltip tips="bubble text" open={open} onClose={handleClose}>
-        <div onClick={handleClick}>top position</div>
+      <Tooltip
+        tips="bubble text"
+        open={open}
+        onClose={handleClose}
+      >
+        <div onClick={handleClick}>
+          top position
+        </div>
       </Tooltip>
     </div>
   );
@@ -32,7 +38,7 @@ export default () => {
 
 The tips position of the bubble is controlled by the placement property.
 
-```tsx
+```html
 <Tooltip placement="top" tips="bubble text">
   <div>top position</div>
 </Tooltip>
@@ -59,7 +65,7 @@ bottomright   # bottom right position
 
 Control whether to display the close button through the closeable property.
 
-```tsx
+```html
 <Tooltip tips="bubble text" closeable>
   <div>top position</div>
 </Tooltip>
@@ -69,7 +75,7 @@ Control whether to display the close button through the closeable property.
 
 Whether to automatically close is controlled by the autoclose property, and how many milliseconds it will be automatically closed by the opentime property.
 
-```tsx
+```html
 <Tooltip tips="bubble text" autoclose opentime="5000">
   <div>top position</div>
 </Tooltip>
@@ -79,7 +85,7 @@ Whether to automatically close is controlled by the autoclose property, and how 
 
 Controls whether to close when the page is scrolled through the scroolhidden property.
 
-```tsx
+```html
 <Tooltip tips="bubble text" scroolhidden>
   <div>top position</div>
 </Tooltip>
@@ -87,7 +93,7 @@ Controls whether to close when the page is scrolled through the scroolhidden pro
 
 ### Custom Style
 
-```tsx
+```html
 <Tooltip tips="bubble text">
   <div>top position</div>
 </Tooltip>

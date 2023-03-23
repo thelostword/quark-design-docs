@@ -86,13 +86,14 @@ import "quarkd/lib/cell";
 | islink | 是否显示右侧箭头          | `boolean ` | `false` |
 | icon   | 左侧图标(支持传 url 链接) | `string `  | -       |
 
+
 ### Slots
 
-| 名称            | 说明            |
-| --------------- | --------------- |
-| slot            | 自定义右侧信息  |
-| slot name=title | 自定义标题      |
-| slot name=icon  | 自定义左侧 icon |
+| 名称             | 说明                                   |
+| ---------------- | -------------------------------------- |
+| slot             | 自定义右侧信息                        |
+| slot name=title  | 自定义标题                             |
+| slot name=icon   | 自定义左侧icon |
 
 ## 样式变量
 

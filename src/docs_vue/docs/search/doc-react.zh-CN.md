@@ -12,37 +12,37 @@ import { Search } from "@quarkd/quark-react";
 
 ## 基本用法
 
-```tsx
+```html
 <Search value="123"></Search>
 ```
 
 ## 圆角
 
-```tsx
+```html
 <Search shape="round" value="123"></Search>
 ```
 
 ### 隐藏取消按钮
 
-```tsx
+```html
 <Search hideaction></Search>
 ```
 
 ### 显示返回按钮
 
-```tsx
+```html
 <Search showback></Search>
 ```
 
 ### 深色模式
 
-```tsx
+```html
 <Search dark></Search>
 ```
 
 ### 插槽
 
-```tsx
+```html
 <Search hideaction>
   <div slot="action">
     <div>主要按钮</div>
@@ -66,7 +66,7 @@ export default () => {
 
 ### 自定义样式
 
-```tsx
+```html
 <Search showback iconcolor="aqua" />
 ```
 

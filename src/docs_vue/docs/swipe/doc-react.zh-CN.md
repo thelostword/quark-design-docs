@@ -12,7 +12,7 @@ import { Swipe, SwipeItem } from "@quarkd/quark-react";
 
 ### 基本使用
 
-```tsx
+```html
 <Swipe>
   <SwipeItem>
     <div>1</div>
@@ -31,7 +31,7 @@ import { Swipe, SwipeItem } from "@quarkd/quark-react";
 
 ### 圆形指示器
 
-```tsx
+```html
 <Swipe type="round">
   <SwipeItem>
     <div>1</div>
@@ -50,7 +50,7 @@ import { Swipe, SwipeItem } from "@quarkd/quark-react";
 
 ### 自动播放
 
-```tsx
+```html
 <Swipe autoplay>
   <SwipeItem>
     <div>1</div>
@@ -69,7 +69,7 @@ import { Swipe, SwipeItem } from "@quarkd/quark-react";
 
 ### 设置默认选中的 SwipeItem
 
-```tsx
+```html
 <Swipe defaultindex="2">
   <SwipeItem>
     <div>1</div>
@@ -88,7 +88,7 @@ import { Swipe, SwipeItem } from "@quarkd/quark-react";
 
 ### 自定义滑块大小
 
-```tsx
+```html
 <Swipe class="custom-style">
   <SwipeItem>
     <div>1</div>
@@ -107,7 +107,7 @@ import { Swipe, SwipeItem } from "@quarkd/quark-react";
 
 ### 设置指示器颜色
 
-```tsx
+```html
 <Swipe activecolor="red">
   <SwipeItem>
     <div>1</div>

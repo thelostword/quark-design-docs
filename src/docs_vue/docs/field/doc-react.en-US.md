@@ -12,7 +12,7 @@ import { Field, FieldRef } from "@quarkd/quark-react";
 
 ### Basic Usage
 
-```tsx
+```html
 <Field placeholder="Please enter text" label="label" />
 <Field type="password" value="123456" label="password" />
 <Field type="number" value="12345678901" max="11" label="number" />
@@ -21,7 +21,7 @@ import { Field, FieldRef } from "@quarkd/quark-react";
 
 ### Custom Label
 
-```tsx
+```html
 <Field value="custom label">
   <div slot="label" class="label">
     <span>Subject</span>
@@ -33,7 +33,7 @@ import { Field, FieldRef } from "@quarkd/quark-react";
 
 ### Disabled & Readonly
 
-```tsx
+```html
 <Field value="be disabled" label="disabled" disabled />
 <Field placeholder="disable label" />
 <Field value="be readonly" label="readonly" readonly />
@@ -41,7 +41,7 @@ import { Field, FieldRef } from "@quarkd/quark-react";
 
 ### Required Fields
 
-```tsx
+```html
 <Field
   placeholder="Please enter text"
   label="label"
@@ -52,7 +52,7 @@ import { Field, FieldRef } from "@quarkd/quark-react";
 
 ### CSS Style
 
-```tsx
+```html
 <Field class="theme" value="css style" label="css" />
 ```
 

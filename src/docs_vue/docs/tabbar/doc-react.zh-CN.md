@@ -19,7 +19,7 @@ import "@quarkd/icons/lib/tel";
 
 ### 基础用法
 
-```tsx
+```html
 <Tabbar>
   <TabbarItem label="home">
     <quark-icon-home slot="icon" size="20" />
@@ -35,7 +35,7 @@ import "@quarkd/icons/lib/tel";
 
 ### 通过名称匹配
 
-```tsx
+```html
 <Tabbar value="tel">
   <TabbarItem label="home" name="home">
     <quark-icon-home slot="icon" size="20" />
@@ -51,7 +51,7 @@ import "@quarkd/icons/lib/tel";
 
 ### 徽标提示
 
-```tsx
+```html
 <Tabbar value="user">
   <TabbarItem badgecontent="20" label="home">
     <quark-icon-home slot="icon" size="20" />
@@ -67,7 +67,7 @@ import "@quarkd/icons/lib/tel";
 
 ### 自定义颜色
 
-```tsx
+```html
 <Tabbar inactivecolor="#000" activecolor="#ee0a24">
   <TabbarItem label="home">
     <quark-icon-home slot="icon" size="20" />
@@ -118,7 +118,7 @@ export default () => {
 
 ### 监听切换事件
 
-```tsx
+```html
 <Tabbar onChange="{" onChange }>
   <TabbarItem label="home">
     <quark-icon-home slot="icon" size="20" />

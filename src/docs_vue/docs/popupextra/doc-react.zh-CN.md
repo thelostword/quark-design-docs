@@ -21,7 +21,11 @@ export default () => {
 
   return (
     <div>
-      <div onClick={handleOpen}>基本使用</div>
+      <div
+        onClick={handleOpen}
+      >
+        基本使用
+      </div>
       <PopupExtra
         title="大标题文案"
         subtitle="副标题文案"
@@ -43,7 +47,11 @@ export default () => {
 通过设置 `slot='title'` 可以覆盖属性中的 `title`，从而实现自定义 `title`。
 
 ```js
-<PopupExtra subtitle="副标题文案" open={open} onClose={() => setOpen(false)}>
+<PopupExtra
+  subtitle="副标题文案"
+  open={open}
+  onClose={() => setOpen(false)}
+>
   <div slot="title">
     <span style="color: red">自定义</span>大标题文案
   </div>
@@ -72,11 +80,11 @@ export default () => {
 | open      | 弹窗状态                 | `boolean`        | `require` |
 | title     | 主标题                   | `string`         |
 | subtitle  | 副标题                   | `string`         |
-| hideclose | 是否隐藏右上角关闭按钮   | `boolean`        | `false`   |
-| round     | 是否圆角                 | `boolean`        | `true`    |
+| hideclose | 是否隐藏右上角关闭按钮   | `boolean`       | `false`   |
+| round     | 是否圆角                 | `boolean`       | `true`    |
 | safearea  | 是否开启底部安全区域适配 | `boolean`        | `false`   |
 | zindex    | popup 层级设置           | `number、string` | -         |
-| onClose   | 组件关闭回调             | `() => void`     |
+| onClose  | 组件关闭回调             | `() => void`    |
 
 ## 样式变量
 

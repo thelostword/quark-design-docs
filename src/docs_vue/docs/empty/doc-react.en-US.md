@@ -12,19 +12,19 @@ import { Empty } from "@quarkd/quark-react";
 
 ### Basic Usage
 
-```tsx
+```html
 <Empty />
 ```
 
 ### Description
 
-```tsx
+```html
 <Empty title="no data" desc="add data now~" />
 ```
 
 ### Custom Image Size
 
-```tsx
+```html
 <!-- default unit is px -->
 <Empty desc="no data" imagesize="100" />
 
@@ -34,7 +34,7 @@ import { Empty } from "@quarkd/quark-react";
 
 ### Custom Image
 
-```tsx
+```html
 <Empty
   desc="no data"
   imagesize="100"
@@ -44,7 +44,7 @@ import { Empty } from "@quarkd/quark-react";
 
 ### Custom Bottom
 
-```tsx
+```html
 <Empty desc="Go and Order" title="no order history">
   <div slot="footer">custom footer</div>
 </Empty>

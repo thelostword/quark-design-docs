@@ -20,8 +20,14 @@ export default () => {
 
   return (
     <div>
-      <Tooltip tips="气泡文字" open={open} onClose={handleClose}>
-        <div onClick={handleClick}>top 位置</div>
+      <Tooltip
+        tips="气泡文字"
+        open={open}
+        onClose={handleClose}
+      >
+        <div onClick={handleClick}>
+          top 位置
+        </div>
       </Tooltip>
     </div>
   );
@@ -32,7 +38,7 @@ export default () => {
 
 通过 placement 属性来控制气泡的弹出位置。
 
-```tsx
+```html
 <Tooltip placement="top" tips="气泡文字">
   <div>top 位置</div>
 </Tooltip>
@@ -59,7 +65,7 @@ bottomright   # 底部右侧位置
 
 通过 closeable 属性来控制是否显示关闭按钮。
 
-```tsx
+```html
 <Tooltip tips="气泡文字" closeable>
   <div>top 位置</div>
 </Tooltip>
@@ -69,7 +75,7 @@ bottomright   # 底部右侧位置
 
 通过 autoclose 属性来控制是否自动关闭，通过 opentime 属性控制多少毫秒后自动关闭。
 
-```tsx
+```html
 <Tooltip tips="气泡文字" autoclose opentime="5000">
   <div>top 位置</div>
 </Tooltip>
@@ -79,7 +85,7 @@ bottomright   # 底部右侧位置
 
 通过 scroolhidden 属性来控制当页面滚动时是否关闭。
 
-```tsx
+```html
 <Tooltip tips="气泡文字" scroolhidden>
   <div>top 位置</div>
 </Tooltip>
@@ -87,7 +93,7 @@ bottomright   # 底部右侧位置
 
 ### 自定义样式
 
-```tsx
+```html
 <Tooltip tips="气泡文字">
   <div>top 位置</div>
 </Tooltip>

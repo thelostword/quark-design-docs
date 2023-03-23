@@ -12,7 +12,7 @@ import { Sticky } from "@quarkd/quark-react";
 
 ### 基本用法
 
-```tsx
+```html
 <Sticky offsettop="17vw">
   <div value="基础用法">基础用法</div>
 </Sticky>
@@ -20,7 +20,7 @@ import { Sticky } from "@quarkd/quark-react";
 
 ### 吸顶距离
 
-```tsx
+```html
 <Sticky offsettop="45vw">
   <div value="吸顶距离">吸顶距离</div>
 </Sticky>
@@ -28,7 +28,7 @@ import { Sticky } from "@quarkd/quark-react";
 
 ### 其他单位
 
-```tsx
+```html
 <Sticky offsettop="150px">
   <div value="其他单位">其他单位</div>
 </Sticky>
@@ -38,7 +38,7 @@ import { Sticky } from "@quarkd/quark-react";
 
 ### Props
 
-| 参数      | 说明               | 单位                                 | 默认值 |
-| --------- | ------------------ | ------------------------------------ | ------ |
-| offsettop | 吸顶时与顶部的距离 | `vw` or `vh` or `px` or `rem` or `%` | `0vw`  |
-| zindex    | 吸顶时的 z-index   | `number`                             | `99`   |
+| 参数      | 说明               | 单位      | 默认值 |
+| --------- | ------------------ | --------- | ------ |
+| offsettop | 吸顶时与顶部的距离 |  `vw` or `vh` or `px` or `rem` or `%`    | `0vw`  |
+| zindex    | 吸顶时的 z-index   | `number` | `99`   |

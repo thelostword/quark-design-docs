@@ -12,13 +12,13 @@ import { Switch } from "@quarkd/quark-react";
 
 ### Basic Usage
 
-```tsx
+```html
 <Switch checked></Switch>
 ```
 
 ### Disabled
 
-```tsx
+```html
 <Switch disabled></Switch>
 ```
 
@@ -26,7 +26,7 @@ import { Switch } from "@quarkd/quark-react";
 
 TO change switch size, set `size` prop on the Switch or alter `font-size` value of `style` prop.
 
-```tsx
+```html
 <Switch size="26px"></Switch> <Switch style="font-size: 26px"></Switch>
 ```
 
@@ -34,7 +34,7 @@ TO change switch size, set `size` prop on the Switch or alter `font-size` value 
 
 To custom color, set `color` prop on the Switch.
 
-```tsx
+```html
 <Switch color="red"></Switch>
 ```
 
@@ -54,12 +54,12 @@ export default () => {
 
 ### Props
 
-| Attribute | Description                       | Type                                         | Default |
-| --------- | --------------------------------- | -------------------------------------------- | ------- |
-| checked   | On/Off                            | `boolean`                                    | `false` |
-| disabled  | Disable switch                    | `boolean`                                    | `false` |
-| size      | Switch size                       | `number`                                     | `16px`  |
-| color     | Switch color                      | `string`                                     | -       |
+| Attribute | Description                       | Type                                   | Default |
+| --------- | --------------------------------- | -------------------------------------- | ------- |
+| checked   | On/Off                            | `boolean`                              | `false` |
+| disabled  | Disable switch                    | `boolean`                              | `false` |
+| size      | Switch size                       | `number`                               | `16px`  |
+| color     | Switch color                      | `string`                               | -       |
 | onChange  | Emitted when check status changed | `e: ({ detail: { value: string } }) => void` |
 
 ## CSS Variables

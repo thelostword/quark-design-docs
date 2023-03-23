@@ -12,34 +12,31 @@ import { Tabs, TabContent } from "@quarkd/quark-react";
 
 ### 基础用法
 
-```tsx
+```html
 <Tabs activekey="{1}">
   <TabContent label="tab1"> tab1 content </TabContent>
   <TabContent label="tab2"> tab2 content </TabContent>
-  <TabContent label="tab3" disabled>
-    {" "}
-    tab3 content{" "}
-  </TabContent>
+  <TabContent label="tab3" disabled> tab3 content </TabContent>
   <TabContent label="tab4"> tab4 content </TabContent>
 </Tabs>
 ```
 
 ### 通过名称匹配
 
-```tsx
-<Tabs activekey={"d"}>
-  <TabContent label="tab1" name="a">
-    tab1 content
-  </TabContent>
-  <TabContent label="tab2" name="b">
-    tab2 content
-  </TabContent>
-  <TabContent label="tab3" disabled name="c">
-    tab3 content
-  </TabContent>
-  <TabContent label="tab4" name="d">
-    tab4 content
-  </TabContent>
+```html
+<Tabs activekey={'d'}>
+    <TabContent label="tab1" name="a">
+        tab1 content
+    </TabContent>
+    <TabContent label="tab2" name="b">
+        tab2 content
+    </TabContent>
+    <TabContent label="tab3" disabled name="c">
+        tab3 content
+    </TabContent>
+    <TabContent label="tab4" name="d">
+        tab4 content
+    </TabContent>
 </Tabs>
 ```
 
@@ -47,7 +44,7 @@ import { Tabs, TabContent } from "@quarkd/quark-react";
 
 长度超过自动支持横向滚动。
 
-```tsx
+```html
 <Tabs>
   <TabContent label="tab1">tab1</TabContent>
   <TabContent label="tab2">tab2</TabContent>
@@ -91,7 +88,7 @@ export default () => {
 
 nav-item 在滚动时固定在屏幕上方
 
-```tsx
+```html
 <Tabs sticky offsettop="17vw">
   <TabContent label="tab1"> tab1 content </TabContent>
   <TabContent label="tab2"> tab2 content </TabContent>

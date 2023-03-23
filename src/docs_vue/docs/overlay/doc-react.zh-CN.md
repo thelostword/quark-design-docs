@@ -30,7 +30,7 @@ export default () => {
 
 ### 嵌入内容
 
-```tsx
+```html
 <Overlay open="{open}" onClose="{handleClose}">
   <div class="content"></div>
 </Overlay>

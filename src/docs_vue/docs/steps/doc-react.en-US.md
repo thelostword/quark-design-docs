@@ -12,7 +12,7 @@ import { Steps, StepItem } from "@quarkd/quark-react";
 
 ### Basic Usage
 
-```tsx
+```html
 <Steps>
   <StepItem status="done" title="step one" order="1"></StepItem>
   <StepItem status="doing" title="step two" order="2"></StepItem>
@@ -22,63 +22,51 @@ import { Steps, StepItem } from "@quarkd/quark-react";
 
 ### Title & Content
 
-```tsx
+```html
 <Steps>
   <StepItem
     status="done"
     title="finished"
     order="1"
     content="Your order has been packed and the item has been dispatched"
-  >
-    1
-  </StepItem>
+  >1</StepItem>
   <StepItem
     status="doing"
     title="processing"
     order="2"
     content="Your order is being shipped..."
-  >
-    2
-  </StepItem>
+  >2</StepItem>
   <StepItem
     status="todo"
     title="not started"
     order="3"
     content="The delivery address is: 16F, Yizhan Business Building, Hangzhou"
-  >
-    3
-  </StepItem>
+  >3</StepItem>
 </Steps>
 ```
 
 ### Vertical Steps
 
-```tsx
+```html
 <Steps direction="vertical">
   <StepItem
     status="done"
     title="finished"
     order="1"
     content="Your order has been packed and the item has been dispatched"
-  >
-    1
-  </StepItem>
+  >1</StepItem>
   <StepItem
     status="doing"
     title="processing"
     order="2"
     content="Your order is being shipped..."
-  >
-    2
-  </StepItem>
+  >2</StepItem>
   <StepItem
     status="todo"
     title="not started"
     order="3"
     content="The delivery address is: 16F, Yizhan Business Building, Hangzhou"
-  >
-    3
-  </StepItem>
+  >3</StepItem>
 </Steps>
 ```
 

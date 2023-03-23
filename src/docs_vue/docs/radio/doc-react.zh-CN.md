@@ -66,14 +66,10 @@ export default () => {
 
 单选框大小支持 `normal`、`big` 两种，默认为 `normal`。
 
-```tsx
+```html
 <RadioGroup value="{value}">
-  <Radio name="apple" shape="square" size="big">
-    方形(大)
-  </Radio>
-  <Radio name="banana" size="big">
-    圆形(大)
-  </Radio>
+  <Radio name="apple" shape="square" size="big">方形(大)</Radio>
+  <Radio name="banana" size="big">圆形(大)</Radio>
 </RadioGroup>
 ```
 
@@ -81,7 +77,7 @@ export default () => {
 
 单选框支持禁用
 
-```tsx
+```html
 <Radio checked={true} disabled>已选-禁用</Radio>
 <Radio checked={false} disabled>未选-禁用</Radio>
 <Radio checked={true} shape="square" disabled>方形-已选-禁用</Radio>
@@ -92,7 +88,7 @@ export default () => {
 
 单选框选中颜色自定义
 
-```tsx
+```html
 <Radio className="my-radio" checked="true">选中颜色自定义</Radio>
 
 <!-- CSS -->
@@ -112,9 +108,9 @@ export default () => {
 
 ### RadioGroup Props
 
-| 参数     | 说明           | 类型                                         | 默认值 |
-| -------- | -------------- | -------------------------------------------- | ------ |
-| value    | 指定选中的选项 | `string`                                     | -      |
+| 参数     | 说明           | 类型                                  | 默认值 |
+| -------- | -------------- | ------------------------------------- | ------ |
+| value    | 指定选中的选项 | `string`                              | -      |
 | onChange | 变化时回调函数 | `(e: { detail: { value: string } }) => void` |
 
 ## 样式变量

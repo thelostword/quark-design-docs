@@ -80,15 +80,15 @@ After setting the round property, the popup window will add different rounded co
 
 ### Props
 
-| Attribute       | Description                                   | Type                          | Default   |
-| --------------- | --------------------------------------------- | ----------------------------- | --------- |
-| open            | Popup status                                  | `boolean`                     | `require` |
-| position        | Popup position                                | `top` `bottom` `left` `right` | `bottom`  |
-| round           | Whether to show round corner                  | `boolean`                     | `false`   |
-| closeable       | Whether to show close icon                    | `boolean `                    | `false`   |
-| forbidmaskclick | Whether forbid mask click                     | `boolean`                     | `false`   |
-| safearea        | Whether to enable bottom safe area adaptation | `boolean`                     | `false`   |
-| zindex          | Popup z-index                                 | `number、string `             | -         |
+| Attribute | Description                                   | Type                          | Default   |
+| --------- | --------------------------------------------- | ----------------------------- | --------- |
+| open      | Popup status                                  | `boolean`                     | `require` |
+| position  | Popup position                                | `top` `bottom` `left` `right` | `bottom`  |
+| round     | Whether to show round corner                  | `boolean`                     | `false`   |
+| closeable | Whether to show close icon                    | `boolean `                    | `false`   |
+| forbidmaskclick  | Whether forbid mask click | `boolean`                     | `false`   |
+| safearea  | Whether to enable bottom safe area adaptation | `boolean`                     | `false`   |
+| zindex    | Popup z-index                                 | `number、string `             | -         |
 
 ### Event
 

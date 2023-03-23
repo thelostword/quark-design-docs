@@ -43,7 +43,7 @@ export default () => {
 
 Hide redundant and upload button when the number of uploaded files is more than max count.
 
-```tsx
+```html
 <Uploader maxcount="2" preview />
 ```
 
@@ -65,7 +65,7 @@ export default () => {
 
 ### Custom Upload Area
 
-```tsx
+```html
 <Uploader>
   <div slot="uploader">Upload files</div>
 </Uploader>
@@ -98,13 +98,13 @@ export default () => {
 
 ### Disable Uploader
 
-```tsx
+```html
 <Uploader disabled></Uploader>
 ```
 
 ### Read only preview mode
 
-```tsx
+```html
 <Uploader preview readonly />
 ```
 
@@ -112,18 +112,18 @@ export default () => {
 
 ### Props
 
-| Attribute   | Description                                            | Type                                       | Default            |
-| ----------- | ------------------------------------------------------ | ------------------------------------------ | ------------------ |
-| accept      | Accepted file type                                     | `string`                                   | `image/*`          |
-| multiple    | Whether to enable multiple selection pictures          | `boolean`                                  | `true`             |
-| preview     | Whether to show preview                                | `boolean`                                  | `false`            |
-| capture     | Capture, can be set to boolean (call camera directly ) | `false`                                    |
-| maxcount    | Max count of image                                     | `string`                                   |
-| maxsize     | Max size of file                                       | `string`                                   | `26214400 （25M）` |
-| disabled    | Whether to disabled the upload                         | `boolean`                                  | `false`            |
-| hidedelete  | Hide delete icon                                       | `boolean`                                  | `false`            |
-| readonly    | ReadOnly                                               | `boolean`                                  | `false`            |
-| onAfterread | Emitted when upload files.                             | `(file: file or file[]) => void`           |                    |
+| Attribute   | Description                                            | Type                                     | Default            |
+| ----------- | ------------------------------------------------------ | ---------------------------------------- | ------------------ |
+| accept      | Accepted file type                                     | `string`                                | `image/*`          |
+| multiple    | Whether to enable multiple selection pictures          | `boolean`                               | `true`             |
+| preview     | Whether to show preview                                | `boolean`                                | `false`            |
+| capture     | Capture, can be set to boolean (call camera directly ) | `false`                                  |
+| maxcount    | Max count of image                                     | `string`                                |
+| maxsize     | Max size of file                                       | `string`                                | `26214400 （25M）` |
+| disabled    | Whether to disabled the upload                         | `boolean`                               | `false`            |
+| hidedelete  | Hide delete icon                                       | `boolean`                                | `false`            |
+| readonly    | ReadOnly                                               | `boolean`                                | `false`            |
+| onAfterread | Emitted when upload files.                             | `(file: file or file[]) => void`         |                    |
 | onOversize  | Emitted when file size over limit, use with maxsize    | `(items: fiel[], maxsize: string) => void` |                    |
 
 ### slot

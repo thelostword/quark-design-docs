@@ -14,7 +14,7 @@ import '@quarkd/icons/lib/user';
 
 ### 基本使用
 
-```tsx
+```html
 <quark-icon-user size="20" />
 ```
 
@@ -22,7 +22,7 @@ import '@quarkd/icons/lib/user';
 
 通过 `size` 属性用来设置图标的自定义大小，默认单位为 `px`。
 
-```tsx
+```html
 <quark-icon-user size="18" />
 <quark-icon-user size="24" />
 <quark-icon-user size="30" />
@@ -32,7 +32,7 @@ import '@quarkd/icons/lib/user';
 
 通过 `color` 属性用来设置图标的颜色。
 
-```tsx
+```html
 <quark-icon-user size="40" color="#F44336" />
 <quark-icon-user size="40" color="#3F51B5" />
 ```

@@ -12,13 +12,13 @@ import { Loading } from "@quarkd/quark-react";
 
 ### 基本使用
 
-```tsx
+```html
 <Loading></Loading>
 ```
 
 ### 加载类型
 
-```tsx
+```html
 <Loading type="circular"></Loading> <Loading type="spinner"></Loading>
 ```
 
@@ -26,7 +26,7 @@ import { Loading } from "@quarkd/quark-react";
 
 默认单位为 `px`。
 
-```tsx
+```html
 <Loading size="20"></Loading>
 <Loading size="30"></Loading>
 <Loading size="40"></Loading>
@@ -34,7 +34,7 @@ import { Loading } from "@quarkd/quark-react";
 
 ### 自定义颜色
 
-```tsx
+```html
 <Loading size="30"></Loading> // 默认颜色
 <Loading size="30" color="green"></Loading>
 <Loading size="30" color="warning"></Loading>
@@ -42,24 +42,20 @@ import { Loading } from "@quarkd/quark-react";
 
 ### 加载文案
 
-```tsx
+```html
 <Loading size="30">加载中...</Loading>
 ```
 
 ### 垂直排列
 
-```tsx
-<Loading size="30" vertical>
-  加载中...
-</Loading>
+```html
+<Loading size="30" vertical>加载中...</Loading>
 ```
 
 ### 自定义文本样式
 
-```tsx
-<Loading size="30" vertical class="custom-text">
-  加载中...
-</Loading>
+```html
+<Loading size="30" vertical class="custom-text">加载中...</Loading>
 ```
 
 ```css
@@ -72,12 +68,12 @@ import { Loading } from "@quarkd/quark-react";
 
 ### Props
 
-| 参数     | 说明                                           | 类型               | 默认值    |
-| -------- | ---------------------------------------------- | ------------------ | --------- |
-| type     | 图标类型， `circular` `spinner`                | `string`           | `spinner` |
-| color    | 图标颜色                                       | `string`           | `#879099` |
+| 参数     | 说明                             | 类型               | 默认值    |
+| -------- | -------------------------------- | ------------------ | --------- |
+| type     | 图标类型， `circular` `spinner`  | `string`           | `spinner` |
+| color    | 图标颜色                         | `string`           | `#879099` |
 | size     | 图标大小，如 `20px` `2em` `2rem` `20vm` `20vh` | `string or number` | `30px`    |
-| vertical | 文案是否垂直排列                               | `boolean`          | `false`   |
+| vertical | 文案是否垂直排列                 | `boolean`          | `false`   |
 
 ## 样式变量
 

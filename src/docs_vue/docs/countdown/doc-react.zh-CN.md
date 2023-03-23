@@ -12,7 +12,7 @@ import { CountDown } from "@quarkd/quark-react";
 
 ### 基本使用
 
-```tsx
+```html
 <CountDown time="7200000" />
 ```
 
@@ -20,7 +20,7 @@ import { CountDown } from "@quarkd/quark-react";
 
 format 属性控制，间隔符仅支持一位字符串
 
-```tsx
+```html
 <CountDown time="360000" format="MM:SS" />
 <CountDown time="360000" format="MM-SS" />
 <CountDown time="360000" format="MM SS" />
@@ -43,7 +43,7 @@ export default () => {
 
 支持样式自定义
 
-```tsx
+```html
 <CountDown class="css" time="360000" />
 ```
 

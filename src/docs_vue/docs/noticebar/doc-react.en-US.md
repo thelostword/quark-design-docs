@@ -12,7 +12,7 @@ import { Noticebar } from "@quarkd/quark-react";
 
 ### Basic Usage
 
-```tsx
+```html
 <Noticebar text="{text}"></Noticebar>
 ```
 
@@ -20,7 +20,7 @@ import { Noticebar } from "@quarkd/quark-react";
 
 Set `multiple` prop on the Noticebar to control the maximum number of lines which text can show.
 
-```tsx
+```html
 <Noticebar text="{multipleText}" multiple="2"></Noticebar>
 ```
 
@@ -28,7 +28,7 @@ Set `multiple` prop on the Noticebar to control the maximum number of lines whic
 
 The font color is controlled by `color` prop, and the background color is controlled by `bgcolor` prop.
 
-```tsx
+```html
 <Noticebar text="{text}" color="red" bgcolor="#ddd"></Noticebar>
 ```
 
@@ -40,7 +40,7 @@ To make the text scrollable, embed `quark-marquee` component in the Noticebar.
 import { Marquee } from "@quarkd/quark-react";
 ```
 
-```tsx
+```html
 <Noticebar>
   <marquee slot="text" title="{multipleText}"></marquee>
 </Noticebar>
@@ -50,7 +50,7 @@ import { Marquee } from "@quarkd/quark-react";
 
 To hide right or left icon, add `righthide` or `lefthide` on the Noticebar.
 
-```tsx
+```html
 <Noticebar text="hide right icon" righthide></Noticebar>
 <Noticebar text="hide left icon" lefthide></Noticebar>
 ```
@@ -59,7 +59,7 @@ To hide right or left icon, add `righthide` or `lefthide` on the Noticebar.
 
 To custom left or right content, set `slot="left"` or `slot="right"` on the specific component.
 
-```tsx
+```html
 <Noticebar text="The way of the university is to be bright and virtuous.">
   <div slot="left">Left content</div>
   <div slot="right">Right content</div>
@@ -68,7 +68,7 @@ To custom left or right content, set `slot="left"` or `slot="right"` on the spec
 
 ### Right event
 
-```tsx
+```html
 <Noticebar
   text="Try to click right icon"
   onRightclick="{handleClick}"
@@ -102,5 +102,7 @@ The component provides the following [CSS variables](https://developer.mozilla.o
 
 | Name                      | Description      | Default   |
 | ------------------------- | ---------------- | --------- |
+| `--noticebar-border-radius`  | component border-radius |  0px  |
+| `--noticebar-padding`  | component padding |  10px  |
 | `--noticebar-left-color`  | Left icon color  | `inherit` |
 | `--noticebar-right-color` | Right icon color | `inherit` |
