@@ -1,18 +1,13 @@
 <template>
   <!-- <header class="sticky top-0 z-30 h-[72px] bg-whitebg-opacity-5 backdrop-blur backdrop-filter firefox:bg-opacity-90"> -->
-  <header
-    :class="{ sticky: isHomePage() }"
-    class="relative top-0 z-30 h-[72px] backdrop-blur backdrop-filter firefox:bg-opacity-90"
-  >
-    <div class="mx-auto max-w-8xl xl:px-8">
-      <div
-        class="flex items-center justify-between px-4 py-5 sm:px-6 lg:px-8 xl:px-0"
-      >
-        <div class="flex items-center justify-between">
-          <a class="flex items-center mr-2 text-gray-500" href="/#/">
-            <img class="h-8" src="/src/assets/images/quark-logo.png" alt="" />
+  <header :class="{ sticky: isHomePage() }" class="header">
+    <div>
+      <div class="container">
+        <div class="left-bar">
+          <a href="/#/">
+            <img src="/src/assets/images/quark-logo.png" alt="" />
           </a>
-          <span class="flex items-center mr-8 text-gray-400" href="/">
+          <span href="/">
             {{ version }}
           </span>
 
@@ -20,7 +15,7 @@
           <Search />
         </div>
 
-        <div class="flex items-center justify-between gap-8">
+        <div class="menu">
           <!-- 其它技术栈文档 -->
           <div class="nav-item">
             <a
@@ -249,6 +244,61 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+.header {
+  backdrop-filter: blur(8px) var(--tw-backdrop-brightness)
+    var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale)
+    var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)
+    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate)
+    var(--tw-backdrop-sepia);
+  height: 72px;
+  z-index: 30;
+  top: 0px;
+  position: relative;
+
+  &.sticky {
+    position: sticky;
+    background: #1e1e20;
+  }
+
+  > div {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container {
+    margin: 0 auto;
+    padding: 1.25rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 1376px;
+  }
+  .menu,
+  .left-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .menu {
+    gap: 2rem;
+  }
+  .left-bar a {
+    color: rgb(107 114 128);
+    display: flex;
+    align-items: center;
+    margin-right: 0.5rem;
+    img {
+      height: 2rem;
+    }
+  }
+  .left-bar span {
+    display: flex;
+    margin-right: 2rem;
+    align-items: center;
+    color: rgb(156 163 175);
+  }
+}
 .nav-item a {
   font-size: 14px;
   transition-property: color, fill, stroke;
@@ -273,6 +323,17 @@ export default defineComponent({
 
   &:hover {
     color: rgba(255 255 255 / 1);
+  }
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
   }
 }
 

@@ -16,7 +16,7 @@
     <div v-if="isShow()" class="sticky-nav-shadow"></div>
 
     <!-- Docs' nav -->
-    <ol class="pl-[32px] mb-6" v-if="isGuideNav">
+    <ol class="side-bar" v-if="isGuideNav">
       <ul>
         <li
           :class="{ active: isActive(_package.name) }"
@@ -33,7 +33,7 @@
 
     <!-- Components' nav -->
     <template v-else>
-      <ol class="pl-[32px] mb-6" v-for="_nav in nav" :key="_nav">
+      <ol class="side-bar" v-for="_nav in nav" :key="_nav">
         <li>{{ isZhLang ? _nav.name : _nav.enName }}</li>
         <ul>
           <template
@@ -213,7 +213,7 @@ export default defineComponent({
 
         &:hover {
           a {
-            color: #38bdf8;
+            color: #646cff;
           }
         }
 
@@ -221,17 +221,18 @@ export default defineComponent({
           height: 48px;
           line-height: 48px;
           display: flex;
+          color: #fff;
 
           &.router-link-active,
           &.active {
-            color: #38bdf8;
+            color: #646cff;
           }
 
           &:hover {
-            color: #38bdf8;
+            color: #646cff;
 
             &:visited {
-              color: #38bdf8;
+              color: #646cff;
             }
           }
 
@@ -275,7 +276,7 @@ export default defineComponent({
       position: relative;
     }
     .sticky-nav-active {
-      color: #38bdf8;
+      color: #646cff;
     }
   }
 }
@@ -288,5 +289,10 @@ export default defineComponent({
   height: 2rem;
   z-index: 1;
   position: sticky;
+}
+
+.side-bar {
+  padding-left: 32px;
+  margin-bottom: 20px;
 }
 </style>

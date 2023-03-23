@@ -1,23 +1,7 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities;
 
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #0a0a0a;
-  background-color: #1e1e20;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
 
 .home-main{
   display: block;
@@ -82,7 +66,6 @@
   text-align: center;
   display: flex;
   flex-wrap: wrap;
-  margin: -6px;
   padding-top: 32px;
   justify-content: center;
 }
@@ -114,6 +97,7 @@
   .why-quark {
     background-color: #313136;
     border-color: #525259;
+    color: #fff;
     &:hover{
       background-color: #0a0a0a;
     }
@@ -126,6 +110,9 @@
   transition: opacity .2s ease-in;
   position: relative;
   color: inherit;
+  &:hover {
+    text-decoration: underline;
+  }
   .arrow {
     box-sizing: border-box;
     margin-left: -12px;
@@ -133,9 +120,8 @@
     font-size: 50px;
     animation: 1.5s infinite anim-arrow;
     position: absolute;
-    top: 24px;
+    top: -50%;
     left: 50%;
-    // text-align: center;
     width: 22px;
   }
 }
@@ -186,14 +172,13 @@
 }
 
 
-
-
 .footer-container {
   margin-left: auto;
   margin-right: auto;
   footer {
     display: flex;
     padding: 2.5rem 0;
+    justify-content: center;
   }
 }
 

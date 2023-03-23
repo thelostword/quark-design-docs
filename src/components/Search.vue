@@ -1,10 +1,7 @@
 <template>
-  <div
-    class="search-bar relative min-w-[300px] h-[34px] rounded-3xl lg:flex lg:items-center hidden border border-solid"
-  >
+  <div class="search-bar">
     <svg
       t="1660736522656"
-      class="w-5 h-5 absolute left-10"
       viewBox="0 0 1024 1024"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
@@ -21,7 +18,6 @@
         p-id="4769"
       ></path>
     </svg>
-    <!-- <svg t="1660736522656" class="w-5 h-5 absolute left-10" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4767" width="200" height="200"><path d="M789.804097 737.772047 742.865042 784.699846 898.765741 940.600545 945.704796 893.672746Z" p-id="4768" fill="#9da3b0"></path><path d="M456.92259 82.893942c-209.311143 0-379.582131 170.282245-379.582131 379.582131s170.270988 379.570875 379.582131 379.570875c209.287607 0 379.558595-170.270988 379.558595-379.570875S666.210197 82.893942 456.92259 82.893942zM770.128989 462.477097c0 172.721807-140.508127 313.229934-313.206398 313.229934-172.720783 0-313.229934-140.508127-313.229934-313.229934s140.508127-313.229934 313.229934-313.229934C629.620861 149.247162 770.128989 289.75529 770.128989 462.477097z" p-id="4769" fill="#9da3b0"></path></svg> -->
 
     <input
       type="text"
@@ -35,10 +31,7 @@
 
     <div class="quick-search" @click="quickSearch">⌘K</div>
 
-    <ul
-      class="search-list absolute w-[300px] z-9999 top-[27px] p-0"
-      v-show="data.searchList.length > 0"
-    >
+    <ul class="search-list" v-show="data.searchList.length > 0">
       <li
         :class="data.searchCurName == item.name ? 'cur' : ''"
         @click="checklist(item)"
@@ -200,6 +193,12 @@ export default defineComponent({
 }
 
 .search-list {
+  position: absolute;
+  width: 300px;
+  z-index: 9999;
+  top: 27px;
+  padding: 0;
+  background-color: #252529;
   li {
     height: 40px;
     line-height: 40px;
@@ -211,20 +210,20 @@ export default defineComponent({
       width: 100%;
       padding-left: 40px;
       text-decoration: none;
-      color: #666;
+      color: #fff;
     }
 
     &:hover {
-      color: #38bdf8;
+      color: #646cff;
 
       a {
-        color: #38bdf8;
+        color: #646cff;
       }
     }
   }
 
   .cur {
-    background: #38bdf8;
+    background: #646cff;
     color: #fff;
 
     &:hover {
@@ -252,6 +251,19 @@ export default defineComponent({
   background: transparent;
 }
 .search-bar {
+  display: flex;
+  align-items: center;
   border-color: #666;
+  border: 1px solid #666;
+  border-radius: 1.5rem;
+  height: 34px;
+  min-width: 300px;
+  position: relative;
+  > svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    position: absolute;
+    left: 2.5rem;
+  }
 }
 </style>

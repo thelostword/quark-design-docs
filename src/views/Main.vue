@@ -15,10 +15,26 @@
 
           <div class="actions">
             <div class="action">
-              <a class="get-started" href="/guide/">Get Started</a>
+              <a
+                class="get-started"
+                :href="`${
+                  isZhLang
+                    ? `#/zh-CN/guide/quickstart`
+                    : `#/en-US/guide/quickstart`
+                }`"
+                >Get Started</a
+              >
             </div>
             <div class="action">
-              <a class="why-quark" href="/guide/why.html">Why Quark?</a>
+              <a
+                class="why-quark"
+                :href="`${
+                  isZhLang
+                    ? `#/zh-CN/guide/introduction`
+                    : `#/en-US/guide/introduction`
+                }`"
+                >Why Quark?</a
+              >
             </div>
           </div>
         </div>
@@ -82,6 +98,20 @@
           This allows the front-end group library to actually find that the
           technology stack has nothing to do.
         </p>
+        <div class="actions" style="margin-top: 1.5rem; justify-content: left">
+          <div class="action">
+            <!-- TODO: link to playground -->
+            <a
+              class="get-started"
+              :href="`${
+                isZhLang
+                  ? `#/zh-CN/guide/quickstart`
+                  : `#/en-US/guide/quickstart`
+              }`"
+              >Have a try</a
+            >
+          </div>
+        </div>
       </div>
     </section>
   </main>
