@@ -249,6 +249,7 @@ export default defineComponent({
   left: 2.5rem;
   position: absolute;
   background: transparent;
+  color: var(--text-font-color);
 }
 .search-bar {
   display: flex;
