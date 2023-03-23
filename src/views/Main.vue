@@ -149,7 +149,6 @@ export default defineComponent({
       }
 
       const intersectionObserver = new IntersectionObserver((entries) => {
-        console.log(entries);
         // 进入视窗
         if (entries[0].isIntersecting) {
           document.querySelector("#scroll-down").style.opacity = 0;

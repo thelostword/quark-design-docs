@@ -221,19 +221,10 @@ export default defineComponent({
           height: 48px;
           line-height: 48px;
           display: flex;
-          color: #fff;
 
           &.router-link-active,
           &.active {
             color: #646cff;
-          }
-
-          &:hover {
-            color: #646cff;
-
-            &:visited {
-              color: #646cff;
-            }
           }
 
           b {
@@ -253,11 +244,9 @@ export default defineComponent({
   z-index: 1;
   top: 0px;
   position: sticky;
-  background-color: #1e1e20;
   nav {
     padding-left: 0.25rem;
     padding-right: 0.25rem;
-    /* background-color: #f4f4f5; */
     border-radius: 0.25rem;
     justify-content: space-between;
     align-items: center;
@@ -270,13 +259,12 @@ export default defineComponent({
       text-align: center;
       padding-left: 10px;
       padding-right: 10px;
-      /* background-color: rgb(255 255 255); */
       border-radius: 0.25rem;
       cursor: pointer;
       position: relative;
     }
     .sticky-nav-active {
-      color: #646cff;
+      color: var(--brand-color);
     }
   }
 }
@@ -284,7 +272,6 @@ export default defineComponent({
 .sticky-nav-shadow {
   padding-left: 2rem;
   padding-right: 2rem;
-  background-image: linear-gradient(to bottom, #1e1e1e, rgb(0 0 0 / 0%));
   top: 56px;
   height: 2rem;
   z-index: 1;

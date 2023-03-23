@@ -181,18 +181,3 @@
     justify-content: center;
   }
 }
-
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #fff;
-  }
-  .action .why-quark {
-    background-color: #fff;
-    color: #213547;
-    &:hover {
-      background-color: #f6f6f6;
-    }
-  }
-}
