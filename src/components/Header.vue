@@ -84,8 +84,9 @@
             </svg>
           </a>
 
-          <a class="nav-item-a-link theme-mode" href="javascript:void(0)"> </a>
-          <dark-light-mode></dark-light-mode>
+          <a class="nav-item-a-link theme-mode" href="javascript:void(0)">
+            <dark-light-mode />
+          </a>
         </div>
       </div>
     </div>
@@ -95,7 +96,6 @@
 <script lang="ts">
 import { defineComponent, reactive, computed, onBeforeMount, ref } from "vue";
 import Search from "./Search.vue";
-import "./dark-light-mode.mjs";
 import { header, versions, nav, docs } from "@/config/index";
 import { version as defaultVersion } from "@/docs_vue/config.json";
 import { useRoute } from "vue-router";
@@ -204,19 +204,14 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .header {
-  backdrop-filter: blur(8px) var(--tw-backdrop-brightness)
-    var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale)
-    var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)
-    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate)
-    var(--tw-backdrop-sepia);
   height: 72px;
   z-index: 30;
   top: 0px;
   position: relative;
+  min-width: 860px;
 
   &.sticky {
     position: sticky;
-    /* background: #1e1e20; */
   }
 
   > div {

@@ -95,52 +95,17 @@ template.innerHTML = `<style>
   </div>
 `;
 
-function turnOnLight(e) {
-  console.log("on");
-  //   const { width, height } = document.documentElement.getBoundingClientRect();
-  //   const style = document.createElement("style");
-  //   style.id = "dark-light-mode-style";
-  //   style.innerHTML = `body::after {
-  //     content: "";
-  //     position:absolute;
-  //     top: 0;
-  //     left: 0;
-  //     height: ${height}px;
-  //     width: ${width}px;
-  //     min-height: 100vh;
-  //     min-width: 100vw;
-  //     pointer-events: none;
-  //     background: radial-gradient(
-  //       circle at
-  //       var(--dark-light-mode-x, ${e.pageX}px)
-  //       var(--dark-light-mode-y, ${e.pageY}px),
-  //       rgb(255, 255, 0, 0.3),
-  //       rgb(0, 0, 0, 1) 200px
-  //     );
-  //   }`;
-  //   document.head.appendChild(style);
-  //   ["mousemove", "touchstart", "touchmove", "touchend"].forEach((x) => {
-  //     document.addEventListener(x, updateLight, false);
-  //   });
-  document.documentElement.mode = "dark2";
+function turnDark() {
+  console.log("turn on");
+  document.documentElement.classList.add("dark");
+  // localStorage.removeItem("theme"); // default is light
 }
 
-function turnOffLight() {
-  console.log("off");
-  //   const el = document.querySelector("#dark-light-mode-style");
-  //   el.parentNode.removeChild(el);
-  //   ["mousemove", "touchstart", "touchmove", "touchend"].forEach((x) => {
-  //     document.removeEventListener(x, updateLight, false);
-  //   });
+function turnLight() {
+  console.log("turn off");
+  //   localStorage.setItem("theme", "dark");
+  document.documentElement.classList.remove("dark");
 }
-
-// function updateLight(e) {
-//   if (!e.pageX || !e.pageY) return;
-//   const root = document.documentElement;
-//   root.style.setProperty("--dark-light-mode-x", `${e.pageX}px`);
-//   root.style.setProperty("--dark-light-mode-y", `${e.pageY}px`);
-// }
-
 class DarkLightMode extends HTMLElement {
   constructor() {
     super();
@@ -150,14 +115,20 @@ class DarkLightMode extends HTMLElement {
     const shadowRoot = this.attachShadow({ mode: "closed" });
     shadowRoot.appendChild(template.content.cloneNode(true));
 
+    // if (localStorage.theme === "dark" || "theme" in localStorage) {
+    //   document.documentElement.classList.add("dark");
+    // } else {
+    //   document.documentElement.classList.remove("dark");
+    // }
+
     const toggle = shadowRoot.querySelector(".toggle");
     toggle.addEventListener("click", (e) => {
       toggle.classList.toggle("dark");
 
       if (toggle.classList.contains("dark")) {
-        turnOnLight(e);
+        turnDark(e);
       } else {
-        turnOffLight();
+        turnLight();
       }
     });
   }

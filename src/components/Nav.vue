@@ -227,14 +227,6 @@ export default defineComponent({
             color: #646cff;
           }
 
-          /* &:hover {
-            color: #646cff;
-
-            &:visited {
-              color: #646cff;
-            }
-          } */
-
           b {
             font-weight: normal;
             font-size: 12px;
@@ -272,7 +264,7 @@ export default defineComponent({
       position: relative;
     }
     .sticky-nav-active {
-      color: #646cff;
+      color: var(--brand-color);
     }
   }
 }
@@ -280,7 +272,6 @@ export default defineComponent({
 .sticky-nav-shadow {
   padding-left: 2rem;
   padding-right: 2rem;
-  background-image: linear-gradient(to bottom, #1e1e1e, rgb(0 0 0 / 0%));
   top: 56px;
   height: 2rem;
   z-index: 1;
