@@ -106,7 +106,6 @@ function turnDark() {
 function turnLight() {
   console.log("turn light");
   document.documentElement.classList.remove("dark");
-  // localStorage.removeItem("theme");
   localStorage.setItem("theme", "light");
 }
 class DarkLightMode extends HTMLElement {
@@ -131,7 +130,6 @@ class DarkLightMode extends HTMLElement {
     }
 
     toggle.addEventListener("click", (e) => {
-      console.log(1);
       toggle.classList.toggle("dark");
 
       if (toggle.classList.contains("dark")) {

@@ -48,7 +48,12 @@
         <span>{{ t("scrollDown") }}</span>
         <!-- <span class="arrow" id="arrow">&gt;</span> -->
         <span class="arrow">
-          <img src="/src/assets/images/arrow.png" alt="arrow" />
+          <img
+            v-if="darkMode"
+            src="/src/assets/images/arrow-light.png"
+            alt="arrow"
+          />
+          <img v-else src="/src/assets/images/arrow.png" alt="arrow" />
         </span>
       </a>
     </section>
@@ -57,13 +62,18 @@
         <h2>
           {{ t("weBelieve") }}
           <img
+            v-if="darkMode"
             class="down-icon"
             alt="down-icon"
-            :src="`${
-              darkMode
-                ? '/src/assets/images/i-down.png'
-                : '/src/assets/images/i-down-light.png'
-            }`"
+            src="/src/assets/images/i-down-light.png"
+            height="34"
+            width="36"
+          />
+          <img
+            v-else
+            class="down-icon"
+            alt="down-icon"
+            src="/src/assets/images/i-down-light.png"
             height="34"
             width="36"
           />
@@ -84,9 +94,18 @@
         <h2>
           {{ t("whatWeDo") }}
           <img
+            v-if="darkMode"
             class="down-icon"
             alt="down-icon"
-            src="/src/assets/images/i-down.svg"
+            src="/src/assets/images/i-down-light.png"
+            height="34"
+            width="36"
+          />
+          <img
+            v-else
+            class="down-icon"
+            alt="down-icon"
+            src="/src/assets/images/i-down-light.png"
             height="34"
             width="36"
           />

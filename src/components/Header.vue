@@ -120,14 +120,6 @@ export default defineComponent({
       isShowSelect: false,
     });
 
-    const handleFocus = () => {
-      console.log(1);
-    };
-
-    const handleFocusOut = () => {
-      data.isShowSelect = false;
-    };
-
     const isActive = computed(() => {
       return function (name: string) {
         const lName = name.toLowerCase();
@@ -167,8 +159,6 @@ export default defineComponent({
       version,
       data,
       isActive,
-      handleFocus,
-      handleFocusOut,
       switchLang,
       isHomePage,
     };
