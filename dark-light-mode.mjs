@@ -106,6 +106,7 @@ function turnDark() {
 function turnLight() {
   console.log("turn light");
   document.documentElement.classList.remove("dark");
+  // localStorage.removeItem("theme");
   localStorage.setItem("theme", "light");
 }
 class DarkLightMode extends HTMLElement {
