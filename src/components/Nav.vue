@@ -1,37 +1,22 @@
 <template>
-  <div
-    v-if="isShowSideBar()"
-    class="doc-nav w-[260px] border-r border-solid border-gray-200 dark:border-gray-800 overflow-auto fixed left-0 bottom-0 z-10 transition-all"
-    :class="{ 'fixed-class': fixed }"
-  >
+  <div v-if="isShowSideBar()" class="doc-nav" :class="{ 'fixed-class': fixed }">
     <!-- Doc‘s Switch -->
-    <div class="sticky bg-white dark:bg-gray-900 top-0 pt-4 px-2 z-[1]">
-      <div
-        v-if="isShow()"
-        class="grid items-center justify-between h-[40px] rounded bg-zinc-100 dark:bg-gray-700 px-1 grid-cols-2"
-      >
+    <div class="sticky-nav">
+      <nav v-if="isShow()">
         <div
-          :class="
-            curKey === item.key
-              ? 'bg-white dark:bg-gray-900'
-              : 'bg-zinc-100 dark:bg-gray-700 dark:text-gray-400'
-          "
+          :class="curKey === item.key ? 'sticky-nav-active' : ''"
           :key="item.key"
-          class="tab-item relative px-[10px] leading-8 cursor-pointer text-base rounded text-center dark:text-gray-400"
           v-for="item in tabs"
           @click="handleTabs(item.key)"
         >
           {{ item.text }}
         </div>
-      </div>
+      </nav>
     </div>
-    <div
-      v-if="isShow()"
-      class="sticky top-[56px] px-8 z-[1] h-8 bg-gradient-to-b from-white dark:from-slate-900"
-    ></div>
+    <div v-if="isShow()" class="sticky-nav-shadow"></div>
 
     <!-- Docs' nav -->
-    <ol class="pl-[32px] mb-6 dark:text-gray-400" v-if="isGuideNav">
+    <ol class="side-bar" v-if="isGuideNav">
       <ul>
         <li
           :class="{ active: isActive(_package.name) }"
@@ -39,10 +24,7 @@
           :key="_package"
           v-show="_package.show"
         >
-          <router-link
-            :to="_package.name.toLowerCase()"
-            class="dark:text-gray-400"
-          >
+          <router-link :to="_package.name.toLowerCase()">
             {{ isZhLang ? _package.cName : _package.name }}
           </router-link>
         </li>
@@ -51,11 +33,7 @@
 
     <!-- Components' nav -->
     <template v-else>
-      <ol
-        class="pl-[32px] mb-6 dark:text-gray-400"
-        v-for="_nav in nav"
-        :key="_nav"
-      >
+      <ol class="side-bar" v-for="_nav in nav" :key="_nav">
         <li>{{ isZhLang ? _nav.name : _nav.enName }}</li>
         <ul>
           <template
@@ -71,7 +49,6 @@
                     : `${_package.name.toLowerCase()}-react`
                 "
                 :class="{ active: isActive(_package.name) }"
-                class="dark:text-gray-400 dark:dark-router-link-active"
               >
                 {{ _package.name }}&nbsp;&nbsp;<b v-if="isZhLang">{{
                   _package.cName
@@ -193,6 +170,18 @@ export default defineComponent({
 <style lang="scss">
 .doc-nav {
   top: 75px;
+  border-right: 1px solid #333;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  bottom: 0px;
+  left: 0px;
+  z-index: 10;
+  width: 260px;
+  position: fixed;
+  top: 75px;
+  overflow: auto;
+
   &.fixed-class {
     top: 0;
   }
@@ -224,7 +213,7 @@ export default defineComponent({
 
         &:hover {
           a {
-            color: #38bdf8;
+            color: #646cff;
           }
         }
 
@@ -232,17 +221,18 @@ export default defineComponent({
           height: 48px;
           line-height: 48px;
           display: flex;
+          color: #fff;
 
           &.router-link-active,
           &.active {
-            color: #38bdf8;
+            color: #646cff;
           }
 
           &:hover {
-            color: #38bdf8;
+            color: #646cff;
 
             &:visited {
-              color: #38bdf8;
+              color: #646cff;
             }
           }
 
@@ -254,5 +244,55 @@ export default defineComponent({
       }
     }
   }
+}
+
+.sticky-nav {
+  padding-top: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  z-index: 1;
+  top: 0px;
+  position: sticky;
+  background-color: #1e1e20;
+  nav {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    /* background-color: #f4f4f5; */
+    border-radius: 0.25rem;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    height: 40px;
+    display: grid;
+    > div {
+      line-height: 2rem;
+      font-size: 1rem;
+      text-align: center;
+      padding-left: 10px;
+      padding-right: 10px;
+      /* background-color: rgb(255 255 255); */
+      border-radius: 0.25rem;
+      cursor: pointer;
+      position: relative;
+    }
+    .sticky-nav-active {
+      color: #646cff;
+    }
+  }
+}
+
+.sticky-nav-shadow {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-image: linear-gradient(to bottom, #1e1e1e, rgb(0 0 0 / 0%));
+  top: 56px;
+  height: 2rem;
+  z-index: 1;
+  position: sticky;
+}
+
+.side-bar {
+  padding-left: 32px;
+  margin-bottom: 20px;
 }
 </style>

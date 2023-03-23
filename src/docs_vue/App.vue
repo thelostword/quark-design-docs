@@ -19,12 +19,8 @@ export default defineComponent({
 
 <style lang="scss">
 ::selection {
-  background: #38bdf8;
+  /* background: #646cff; */
+  background: #646cff;
   color: #fff;
-}
-#doc {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
 }
 </style>

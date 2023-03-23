@@ -3,12 +3,8 @@
 
   <doc-nav :fixed="fixed"></doc-nav>
 
-  <div
-    :class="{ 'pr-[390px]': isShow() }"
-    class="flex flex-col ml-[260px] doc-content"
-    id="doc-content"
-  >
-    <div class="min-h-[800px] bg-white dark:bg-gray-900 doc-content-document">
+  <div :class="{ 'pr-390': isShow() }" class="doc-content" id="doc-content">
+    <div class="doc-content-document">
       <router-view />
     </div>
 
@@ -156,10 +152,9 @@ export default defineComponent({
   overflow: auto;
   display: flex;
   flex-direction: column;
+  margin-left: 260px;
 }
-
-.doc-content-document {
-  min-height: 800px;
-  flex-shrink: 0;
+.pr-390 {
+  padding-right: 390px;
 }
 </style>

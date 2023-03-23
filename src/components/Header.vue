@@ -1,33 +1,25 @@
 <template>
   <!-- <header class="sticky top-0 z-30 h-[72px] bg-whitebg-opacity-5 backdrop-blur backdrop-filter firefox:bg-opacity-90"> -->
-  <header
-    :class="{ sticky: isHomePage() }"
-    class="relative top-0 z-30 h-[72px] backdrop-blur backdrop-filter firefox:bg-opacity-90"
-  >
-    <div class="mx-auto max-w-8xl xl:px-8">
-      <div
-        class="flex items-center justify-between border-b border-solid border-gray-200 dark:border-gray-800 px-4 py-5 sm:px-6 lg:px-8 xl:px-0"
-      >
-        <div class="flex items-center justify-between">
-          <a class="flex items-center mr-2 text-gray-500" href="/#/">
-            <img class="h-8" src="/src/assets/images/quark-logo.png" alt="" />
+  <header :class="{ sticky: isHomePage() }" class="header">
+    <div>
+      <div class="container">
+        <div class="left-bar">
+          <a href="/#/">
+            <img src="/src/assets/images/quark-logo.png" alt="" />
           </a>
-          <span class="flex items-center mr-8 text-gray-500" href="/">
+          <span href="/">
             {{ version }}
           </span>
+
+          <!-- 搜索 -->
           <Search />
         </div>
 
-        <div class="flex items-center justify-between gap-8">
+        <div class="menu">
           <!-- 其它技术栈文档 -->
           <div class="nav-item">
             <a
-              class="transition-colors hover:text-gray-700 dark:hover:text-gray-400"
-              :class="
-                isActive('pages')
-                  ? 'text-gray-900 dark:text-gray-400'
-                  : 'text-gray-400 dark:text-gray-500'
-              "
+              :class="isActive('pages') ? 'nav-active' : ''"
               :href="`${
                 isZhLang ? `#/zh-CN/pages/otherdocs` : `#/en-US/pages/otherdocs`
               }`"
@@ -40,12 +32,7 @@
           <div class="nav-item" v-for="item in header" :key="item.name">
             <template v-if="docMd === 'react' && item.name === 'Components'">
               <a
-                class="transition-colors hover:text-gray-700 dark:hover:text-gray-400"
-                :class="
-                  isActive(item.type)
-                    ? 'text-gray-900 dark:text-gray-400'
-                    : 'text-gray-400 dark:text-gray-500'
-                "
+                :class="isActive(item.type) ? 'nav-active' : ''"
                 :href="`${
                   isZhLang
                     ? `${item.pathName}-react`
@@ -57,12 +44,7 @@
             </template>
             <template v-else>
               <a
-                class="transition-colors hover:text-gray-700 dark:hover:text-gray-400"
-                :class="
-                  isActive(item.type)
-                    ? 'text-gray-900 dark:text-gray-400'
-                    : 'text-gray-400 dark:text-gray-500'
-                "
+                :class="isActive(item.type) ? 'nav-active' : ''"
                 :href="`${isZhLang ? item.pathName : item.pathEnName}`"
               >
                 {{ isZhLang ? item.cName : item.name }}
@@ -71,39 +53,23 @@
           </div>
 
           <a
-            class="nav-item-a-link flex items-center justify-between text-gray-400 dark:text-gray-500 transition-colors hover:text-gray-700 dark:hover:text-gray-400"
             href="https://github.com/hellof2e/quark-design"
-            target="_blank"
+            class="github-link"
           >
-            GitHub
-            <svg
-              class="ml-1"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              x="0px"
-              y="0px"
-              viewBox="0 0 100 100"
-              width="15"
-              height="15"
-            >
+            <span class="sr-only">GitHub repository</span>
+            <svg viewBox="0 0 16 16" fill="currentColor">
               <path
-                fill="currentColor"
-                d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
               ></path>
-              <polygon
-                fill="currentColor"
-                points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"
-              ></polygon>
             </svg>
           </a>
 
           <a
-            class="nav-item-a-link text-gray-400 dark:text-white transition-colors hover:text-gray-500"
+            class="nav-item-a-link translate-lang"
             href="javascript:void(0);"
             @click="switchLang"
           >
             <svg
-              class="w-6 h-6"
               t="1660733385126"
               viewBox="0 0 1024 1024"
               version="1.1"
@@ -121,12 +87,12 @@
           </a>
 
           <a
-            class="nav-item-a-link"
+            class="nav-item-a-link theme-mode"
             href="javascript:void(0)"
             @click="switchMode"
           >
-            <span class="dark:hidden">
-              <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6 mr-2">
+            <span>
+              <svg viewBox="0 0 24 24" fill="none">
                 <path
                   fill-rule="evenodd"
                   clip-rule="evenodd"
@@ -135,21 +101,20 @@
                 ></path>
                 <path
                   d="m17.715 15.15.95.316a1 1 0 0 0-1.445-1.185l.495.869ZM9 6.035l.846.534a1 1 0 0 0-1.14-1.49L9 6.035Zm8.221 8.246a5.47 5.47 0 0 1-2.72.718v2a7.47 7.47 0 0 0 3.71-.98l-.99-1.738Zm-2.72.718A5.5 5.5 0 0 1 9 9.5H7a7.5 7.5 0 0 0 7.5 7.5v-2ZM9 9.5c0-1.079.31-2.082.845-2.93L8.153 5.5A7.47 7.47 0 0 0 7 9.5h2Zm-4 3.368C5 10.089 6.815 7.75 9.292 6.99L8.706 5.08C5.397 6.094 3 9.201 3 12.867h2Zm6.042 6.136C7.718 19.003 5 16.268 5 12.867H3c0 4.48 3.588 8.136 8.042 8.136v-2Zm5.725-4.17c-.81 2.433-3.074 4.17-5.725 4.17v2c3.552 0 6.553-2.327 7.622-5.537l-1.897-.632Z"
-                  class="fill-slate-400 dark:fill-slate-500"
+                  class="fill-slate-400"
                 ></path>
                 <path
                   fill-rule="evenodd"
                   clip-rule="evenodd"
                   d="M17 3a1 1 0 0 1 1 1 2 2 0 0 0 2 2 1 1 0 1 1 0 2 2 2 0 0 0-2 2 1 1 0 1 1-2 0 2 2 0 0 0-2-2 1 1 0 1 1 0-2 2 2 0 0 0 2-2 1 1 0 0 1 1-1Z"
-                  class="fill-slate-400 dark:fill-slate-500"
+                  class="fill-slate-400"
                 ></path>
               </svg>
             </span>
-            <span class="hidden dark:inline">
+            <span class="hidden">
               <svg
                 viewBox="0 0 24 24"
                 fill="none"
-                class="w-6 h-6 mr-2"
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
@@ -279,10 +244,122 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+.header {
+  backdrop-filter: blur(8px) var(--tw-backdrop-brightness)
+    var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale)
+    var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)
+    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate)
+    var(--tw-backdrop-sepia);
+  height: 72px;
+  z-index: 30;
+  top: 0px;
+  position: relative;
+
+  &.sticky {
+    position: sticky;
+    background: #1e1e20;
+  }
+
+  > div {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container {
+    margin: 0 auto;
+    padding: 1.25rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 1376px;
+  }
+  .menu,
+  .left-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .menu {
+    gap: 2rem;
+  }
+  .left-bar a {
+    color: rgb(107 114 128);
+    display: flex;
+    align-items: center;
+    margin-right: 0.5rem;
+    img {
+      height: 2rem;
+    }
+  }
+  .left-bar span {
+    display: flex;
+    margin-right: 2rem;
+    align-items: center;
+    color: rgb(156 163 175);
+  }
+}
 .nav-item a {
   font-size: 14px;
+  transition-property: color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  color: rgba(255 255 255 / 0.5);
+}
+.nav-item a:hover {
+  color: rgba(255 255 255 / 1);
+}
+.nav-item .nav-active {
+  color: #fff;
 }
 .nav-item-a-link {
   font-size: 14px;
+}
+
+.github-link {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: rgba(255, 255, 255, 0.5);
+
+  &:hover {
+    color: rgba(255 255 255 / 1);
+  }
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+}
+
+.translate-lang {
+  transition-property: color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  color: rgba(255 255 255 / 0.5);
+  > svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  &:hover {
+    color: rgba(255 255 255 / 1);
+  }
+}
+
+.theme-mode {
+  > span svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+  }
+  &:hover {
+    color: rgba(255 255 255 / 1);
+  }
 }
 </style>

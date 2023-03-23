@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="min-h-[800px] bg-white dark:bg-gray-900 doc-content-document full"
-  >
+  <div class="doc-content-document">
     <blockquote>
       <p>
         {{
@@ -143,4 +141,3 @@ export default defineComponent({
   },
 });
 </script>
-<style src="./index.scss"></style>
