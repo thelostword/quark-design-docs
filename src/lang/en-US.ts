@@ -1,11 +1,22 @@
 export default {
-  banner: {
-    title: "Quark",
-    content:
-      "Quark is a cross-frame UI component library based on Web Components.",
-    desc: "It can be used in any framework or no framework.",
-    //  at the same time like React, Vue, Preact, Angular or native JS.
-  },
+  homeTitle: "Next-gen frontend component library",
+  homeSubtitle: "it can be used in any framework or no framework.",
+  getStarted: "Get Started",
+  whyQuark: "Why Quark?",
+  scrollDown: "Scroll Down",
+  weBelieve: "WE BELIEVE",
+  weBelieveDesc1:
+    "The component library can exist without relying on the technical framework.",
+  weBelieveDesc2:
+    "If this can be done, then the component library can go through ups anddowns and go through a long period of time!",
+  weBelieveDesc3:
+    "It does not need to be updated with the update of the technology stack.",
+  whatWeDo: "WHAT WE DO",
+  whatWeDoDesc1:
+    "Benefiting from the native support of web components in browsers, we developed Quark Design using this technology.",
+  whatWeDoDesc2:
+    "This allows the front-end group library to actually find that the technology stack has nothing to do.",
+
   codeExample: {
     title: "Example code",
   },

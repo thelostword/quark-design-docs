@@ -8,9 +8,9 @@
           <div class="home-logo">
             <img src="/src/assets/images/quark-logo.png" alt="" />
           </div>
-          <h1 class="home-title">Next-gen frontend component library</h1>
+          <h1 class="home-title">{{ t("homeTitle") }}</h1>
           <p class="home-subtitle">
-            it can be used in any framework or no framework.
+            {{ t("homeSubtitle") }}
           </p>
 
           <div class="actions">
@@ -22,7 +22,7 @@
                     ? `#/zh-CN/guide/quickstart`
                     : `#/en-US/guide/quickstart`
                 }`"
-                >Get Started</a
+                >{{ t("getStarted") }}</a
               >
             </div>
             <div class="action">
@@ -33,7 +33,7 @@
                     ? `#/zh-CN/guide/introduction`
                     : `#/en-US/guide/introduction`
                 }`"
-                >Why Quark?</a
+                >{{ t("whyQuark") }}</a
               >
             </div>
           </div>
@@ -45,7 +45,7 @@
         href="#we-believe"
         style="opacity: 1"
       >
-        <span>Scroll down</span>
+        <span>{{ t("scrollDown") }}</span>
         <!-- <span class="arrow" id="arrow">&gt;</span> -->
         <span class="arrow">
           <img src="/src/assets/images/arrow.png" alt="arrow" />
@@ -55,7 +55,7 @@
     <section class="we-believe" id="we-believe">
       <div class="wrap">
         <h2>
-          WE BELIEVE
+          {{ t("weBelieve") }}
           <img
             class="down-icon"
             alt="down-icon"
@@ -65,23 +65,20 @@
           />
         </h2>
         <p>
-          The component library can exist without relying on the technical
-          framework.
+          {{ t("weBelieveDesc1") }}
         </p>
         <p style="margin-top: 1.5rem">
-          If this can be done, then the component library can go through ups and
-          downs and go through a long period of time!
+          {{ t("weBelieveDesc2") }}
         </p>
         <p style="margin-top: 1.5rem">
-          It does not need to be updated with the update of the technology
-          stack.
+          {{ t("weBelieveDesc3") }}
         </p>
       </div>
     </section>
     <section class="what-we-do" id="what-we-do">
       <div class="wrap">
         <h2>
-          WHAT WE DO
+          {{ t("whatWeDo") }}
           <img
             class="down-icon"
             alt="down-icon"
@@ -91,12 +88,10 @@
           />
         </h2>
         <p>
-          Benefiting from the native support of web components in browsers, we
-          developed Quark Design using this technology.
+          {{ t("whatWeDoDesc1") }}
         </p>
         <p style="margin-top: 1.5rem">
-          This allows the front-end group library to actually find that the
-          technology stack has nothing to do.
+          {{ t("whatWeDoDesc2") }}
         </p>
         <div class="actions" style="margin-top: 1.5rem; justify-content: left">
           <div class="action">
