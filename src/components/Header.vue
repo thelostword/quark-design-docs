@@ -94,17 +94,11 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, reactive, computed, onBeforeMount, ref } from "vue";
+import { defineComponent, reactive, computed, ref } from "vue";
 import Search from "./Search.vue";
-import { header, versions, nav, docs } from "@/config/index";
+import { header, versions, nav } from "@/config/index";
 import { version as defaultVersion } from "@/docs_vue/config.json";
 import { useRoute } from "vue-router";
-
-const sdk = window.HBConfigSDKclient.default;
-const client = new sdk({
-  project: "QuarkDesign",
-  env: "pro",
-});
 
 export default defineComponent({
   name: "doc-header",
@@ -112,16 +106,13 @@ export default defineComponent({
     Search,
   },
   setup() {
-    const version = ref();
+    const version = ref(defaultVersion);
     const isZhLang = localStorage.getItem("language") === "zh-CN";
     const route = useRoute();
     let packages = [];
     nav.forEach((item) => {
       packages.push(...item.packages);
     });
-
-    // let docsList = [];
-    // docsList = docs.packages.map((item) => item.name.toLowerCase());
 
     const data = reactive({
       navIndex: 0,
@@ -132,13 +123,6 @@ export default defineComponent({
     const handleFocus = () => {
       console.log(1);
     };
-    const getVersion = async () => {
-      const res = (await client.get("info")) || {};
-      if (res.version) version.value = res.version;
-    };
-    onBeforeMount(() => {
-      getVersion();
-    });
 
     const handleFocusOut = () => {
       data.isShowSelect = false;
@@ -175,15 +159,6 @@ export default defineComponent({
       window.location.reload();
     };
 
-    // const switchTheme = () => {
-    //   if (localStorage.getItem("theme") !== "dark") {
-    //     localStorage.setItem("theme", "dark");
-    //   } else {
-    //     localStorage.removeItem("theme");
-    //   }
-    //   // window.location.reload();
-    // };
-
     return {
       docMd: localStorage.getItem("docMd"),
       isZhLang,
@@ -195,7 +170,6 @@ export default defineComponent({
       handleFocus,
       handleFocusOut,
       switchLang,
-      // switchTheme,
       isHomePage,
     };
   },

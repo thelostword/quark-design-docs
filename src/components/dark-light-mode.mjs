@@ -96,15 +96,15 @@ template.innerHTML = `<style>
 `;
 
 function turnDark() {
-  console.log("turn on");
+  // console.log("turn on");
   document.documentElement.classList.add("dark");
-  // localStorage.removeItem("theme"); // default is light
+  localStorage.setItem("theme", "dark");
 }
 
 function turnLight() {
-  console.log("turn off");
-  //   localStorage.setItem("theme", "dark");
+  // console.log("turn off");
   document.documentElement.classList.remove("dark");
+  localStorage.removeItem("theme");
 }
 class DarkLightMode extends HTMLElement {
   constructor() {
@@ -115,11 +115,11 @@ class DarkLightMode extends HTMLElement {
     const shadowRoot = this.attachShadow({ mode: "closed" });
     shadowRoot.appendChild(template.content.cloneNode(true));
 
-    // if (localStorage.theme === "dark" || "theme" in localStorage) {
-    //   document.documentElement.classList.add("dark");
-    // } else {
-    //   document.documentElement.classList.remove("dark");
-    // }
+    if (localStorage.theme === "dark" || "theme" in localStorage) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
 
     const toggle = shadowRoot.querySelector(".toggle");
     toggle.addEventListener("click", (e) => {
