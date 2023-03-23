@@ -26,8 +26,6 @@ export default defineConfig({
       // see: https://markdown-it.github.io/markdown-it/
       markdownItOptions: {
         highlight: function (str, lang) {
-          console.log(str, lang, 222);
-
           if (lang && hljs.getLanguage(lang)) {
             try {
               return hljs.highlight(lang, str).value;
