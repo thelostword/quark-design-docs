@@ -166,9 +166,8 @@ export default defineComponent({
       if (localStorage.getItem("docMd") === null) {
         localStorage.setItem("docMd", "vue");
       }
-      console.log(document.documentElement.classList, 222);
+
       if (document.documentElement.classList.contains("dark")) {
-        // console.log( 33);
         darkMode.value = true;
       }
 
