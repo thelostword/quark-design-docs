@@ -37,8 +37,9 @@ template.innerHTML = `<style>
         height: 24px;
         padding: 0;
         border-radius: 30px;
-        background-color: #0f1114;
+        background-color: #313136;
         transition: all .2s ease;
+        border: 1px solid rgba(82, 82, 89, .68);
     }
     .toggle .track .check, .toggle .track .x {
         position: absolute;
@@ -96,13 +97,11 @@ template.innerHTML = `<style>
 `;
 
 function turnDark() {
-  // console.log("turn on");
   document.documentElement.classList.add("dark");
   localStorage.setItem("theme", "dark");
 }
 
 function turnLight() {
-  // console.log("turn off");
   document.documentElement.classList.remove("dark");
   localStorage.removeItem("theme");
 }
