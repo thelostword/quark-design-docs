@@ -1,3 +1,4 @@
+// enjoy it
 const template = document.createElement("template");
 template.innerHTML = `<style>
     *,::after,::before{
