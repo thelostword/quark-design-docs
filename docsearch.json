@@ -1,13 +1,12 @@
 {
   "index_name": "Demo",
-  "start_urls": ["https://www.baidu.com/"],
+  "start_urls": ["https://juejin.cn/"],
   "selectors": {
     "lvl0": {
       "selector": "",
       "default_value": "Documentation"
     },
-    "lvl1": ".wrapper_new h1",
-    "lvl2": ".content a"
+    "lvl1": ".entry-list a"
   },
   "rateLimit": 8,
   "maxDepth": 10
