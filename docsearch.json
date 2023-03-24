@@ -1,12 +1,12 @@
 {
   "index_name": "Demo",
-  "start_urls": ["https://quark-design.hellobike.com/#/"],
+  "start_urls": ["https://quark-design.hellobike.com/demo/demo.html#/"],
   "selectors": {
     "lvl0": {
       "selector": "",
       "default_value": "Documentation"
     },
-    "lvl1": "body h1"
+    "lvl1": ".index-components a"
   },
   "rateLimit": 8,
   "maxDepth": 10
