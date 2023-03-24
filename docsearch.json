@@ -1,6 +1,6 @@
 {
     "index_name": "Why",
-    "start_urls": ["https://mingyuli97.github.io/blog"],
+    "start_urls": ["https://quark-design.hellobike.com"],
     "rateLimit": 8,
     "maxDepth": 10,
     "selectors": {
