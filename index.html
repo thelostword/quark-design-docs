@@ -17,6 +17,20 @@
 
       gtag('config', 'G-Q2S3B5S36R');
     </script>
+
+    <script>
+      const insightsMiddleware = instantsearch.middlewares.createInsightsMiddleware({
+        insightsClient: window.aa,
+      });
+
+      search.use(insightsMiddleware);
+
+      const userToken = // Get the user token (synchronously or asynchronously).
+
+      // The `insights` middleware receives a notification
+      // and attaches the `userToken` to search calls onwards.
+      window.aa('setUserToken', userToken);
+    </script>
   </head>
   <body>
     <div id="doc"></div>
