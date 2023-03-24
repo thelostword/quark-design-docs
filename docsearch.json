@@ -1,12 +1,12 @@
 {
   "index_name": "Demo",
-  "start_urls": ["https://juejin.cn/"],
+  "start_urls": ["https://www.hello-inc.com/"],
   "selectors": {
     "lvl0": {
       "selector": "",
       "default_value": "Documentation"
     },
-    "lvl1": ".entry-list a"
+    "lvl1": ".header__menu a"
   },
   "rateLimit": 8,
   "maxDepth": 10
