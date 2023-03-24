@@ -1,5 +1,5 @@
 {
-  "index_name": "Why",
+  "index_name": "Demo",
   "start_urls": ["https://www.baidu.com/"],
   "selectors": {
     "lvl0": {
