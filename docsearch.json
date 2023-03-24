@@ -1,6 +1,6 @@
 {
     "index_name": "Why",
-    "start_urls": ["https://quark-design.hellobike.com/#/"],
+    "start_urls": ["https://quark-design.hellobike.com/#/zh-CN/component/button"],
     "rateLimit": 8,
     "maxDepth": 10,
     "selectors": {
