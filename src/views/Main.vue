@@ -141,15 +141,6 @@
       </div>
     </footer>
   </div>
-
-  <div class="content" style="visibility: hidden">
-    <h1>button</h1>
-    <h2>button desc</h2>
-    <h3>button desc2</h3>
-    <h4>test</h4>
-    <h5>testeste</h5>
-    <p>testtestetefs</p>
-  </div>
 </template>
 
 <script lang="ts">
