@@ -187,6 +187,8 @@ export default defineComponent({
   }
   ol {
     margin-bottom: 20px;
+    padding-left: 32px;
+
     li {
       font-size: 14px;
       font-weight: bold;
@@ -207,8 +209,10 @@ export default defineComponent({
     }
 
     > ul {
+      padding-left: 26px;
+
       li {
-        padding-left: 29px;
+        /* padding-left: 29px; */
         cursor: pointer;
 
         &:hover {
@@ -276,10 +280,5 @@ export default defineComponent({
   height: 2rem;
   z-index: 1;
   position: sticky;
-}
-
-.side-bar {
-  padding-left: 32px;
-  margin-bottom: 20px;
 }
 </style>
