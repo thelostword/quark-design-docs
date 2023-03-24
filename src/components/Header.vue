@@ -159,7 +159,7 @@ export default defineComponent({
       docsearch({
         container: "#docsearch",
         appId: "EA4BY59U66",
-        indexName: "Why",
+        indexName: "Demo",
         apiKey: "5d1fd7c976a98a74421011f1374dd200",
         debug: true,
       });
