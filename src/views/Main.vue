@@ -141,6 +141,11 @@
       </div>
     </footer>
   </div>
+
+  <div class="content">
+    <h1>button</h1>
+    <h2>button desc</h2>
+  </div>
 </template>
 
 <script lang="ts">
