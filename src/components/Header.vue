@@ -10,7 +10,8 @@
             {{ version }}
           </span>
 
-          <Search />
+          <!-- <Search /> -->
+          <div id="docsearch"></div>
         </div>
 
         <div class="menu">
@@ -87,8 +88,6 @@
           <a class="nav-item-a-link theme-mode" href="javascript:void(0)">
             <dark-light-mode />
           </a>
-
-          <div id="docsearch"></div>
         </div>
       </div>
     </div>
