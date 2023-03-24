@@ -1,11 +1,7 @@
 {
-  "index_name": "CNDoc",
-  "start_urls": [
-    "https://quark-design.hellobike.com/"
-  ],
-  "stop_urls": [
-    "/tests"
-  ],
+  "index_name": "quark-design-hellobike",
+  "start_urls": ["https://quark-design.hellobike.com/"],
+  "stop_urls": ["/tests"],
   "selectors": {
     "lvl0": {
       "selector": "",
@@ -16,12 +12,7 @@
   "strip_chars": " .,;:#",
   "custom_settings": {
     "separatorsToIndex": "_",
-    "attributesForFaceting": [
-      "language",
-      "version",
-      "type",
-      "docusaurus_tag"
-    ],
+    "attributesForFaceting": ["language", "version", "type", "docusaurus_tag"],
     "attributesToRetrieve": [
       "hierarchy",
       "content",
