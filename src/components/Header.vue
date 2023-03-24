@@ -87,6 +87,8 @@
           <a class="nav-item-a-link theme-mode" href="javascript:void(0)">
             <dark-light-mode />
           </a>
+
+          <div id="docsearch"></div>
         </div>
       </div>
     </div>
@@ -94,11 +96,14 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, reactive, computed, ref } from "vue";
+import { onMounted, defineComponent, reactive, computed, ref } from "vue";
 import Search from "./Search.vue";
 import { header, versions, nav } from "@/config/index";
 import { version as defaultVersion } from "@/docs_vue/config.json";
 import { useRoute } from "vue-router";
+
+import docsearch from "@docsearch/js";
+import "@docsearch/css";
 
 export default defineComponent({
   name: "doc-header",
@@ -150,6 +155,15 @@ export default defineComponent({
       location.href = href;
       window.location.reload();
     };
+
+    onMounted(() => {
+      docsearch({
+        container: "#docsearch",
+        appId: "EA4BY59U66",
+        indexName: "Why",
+        apiKey: "5d1fd7c976a98a74421011f1374dd200",
+      });
+    });
 
     return {
       docMd: localStorage.getItem("docMd"),
