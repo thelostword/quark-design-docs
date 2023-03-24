@@ -161,6 +161,7 @@ export default defineComponent({
         appId: "EA4BY59U66",
         indexName: "Why",
         apiKey: "5d1fd7c976a98a74421011f1374dd200",
+        debug: true,
       });
     });
 
