@@ -1,14 +1,12 @@
 {
-  "index_name": "Demo",
-  "start_urls": ["https://quark-design.hellobike.com/#/zh-CN/component/button",
-  "https://quark-design.hellobike.com/#/en-US/component/button"],
+  "index_name": "CNDoc",
+  "start_urls": ["https://quark-design.hellobike.com/"],
   "selectors": {
     "lvl0": {
       "selector": "",
       "default_value": "Documentation"
     },
-    "lvl1": ".doc-content-document h1",
-    "lvl2": ".doc-content-document h2"
+    "lvl1": ".menu a"
   },
   "rateLimit": 8,
   "maxDepth": 10
