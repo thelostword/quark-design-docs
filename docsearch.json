@@ -9,12 +9,9 @@
   "selectors": {
     "lvl0": {
       "selector": "",
-      "type": "xpath",
-      "global": true,
       "default_value": "Documentation"
     },
-    "lvl1": ".menu a",
-    "lvl2": "h2"
+    "lvl1": ".menu a"
   },
   "strip_chars": " .,;:#",
   "custom_settings": {
