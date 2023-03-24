@@ -9,6 +9,10 @@
         "defaultValue": "Documentation"
       },
       "lvl1": ".markdown-body h1",
-      "content": ".markdown-body p"
+      "lvl2": ".markdown-body h1",
+      "lvl3": ".markdown-body h1",
+      "lvl4": ".markdown-body h1",
+      "lvl5": ".markdown-body h1",
+      "content": ".markdown-body p, .markdown-body li"
     }
   }
