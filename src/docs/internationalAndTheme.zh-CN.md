@@ -2,11 +2,11 @@
 
 ## 介绍
 
-Quark 采用中文作为默认语言，同时支持多语言切换，请按照下方教程进行国际化设置。
+Quarkd 采用中文作为默认语言，同时支持多语言切换，请按照下方教程进行国际化设置。
 
 ## 多语言切换
 
-Quark 通过 Locale 组件实现多语言支持，使用 Locale.use 方法可以切换当前使用的语言。
+Quarkd 通过 Locale 组件实现多语言支持，使用 Locale.use 方法可以切换当前使用的语言。
 
 ```ts
 import Locale, { enUS } from "quarkd/lib/locale";
@@ -79,7 +79,7 @@ export default {
 
 # 主题定制
 
-Quark 默认提供一套 UI 主题，同时允许在一定程度上定制新的主题，以满足业务的多样化视觉需求。
+Quarkd 默认提供一套 UI 主题，同时允许在一定程度上定制新的主题，以满足业务的多样化视觉需求。
 
 <div>
 <br>
@@ -91,7 +91,7 @@ Quark 默认提供一套 UI 主题，同时允许在一定程度上定制新的�
 
 ## 样式变量
 
-不同于一些框架采用`less`、`sass`等预处理器， Quark 采用 `CSS`[自定义属性](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Using_CSS_custom_properties) 实现。
+不同于一些框架采用`less`、`sass`等预处理器， Quarkd 采用 `CSS`[自定义属性](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Using_CSS_custom_properties) 实现。
 
 您只需要在您的项目中设置以下变量即可轻松修改主题样式：
 

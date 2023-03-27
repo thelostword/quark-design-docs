@@ -2,11 +2,11 @@
 
 ## Intro
 
-Quark uses Chinese as the default language and supports multi-language switching. Please follow the tutorial below to set internationalization.
+Quarkd uses Chinese as the default language and supports multi-language switching. Please follow the tutorial below to set internationalization.
 
 ## Multi-language switch
 
-Quark implements multi-language support through the Locale component, and you can use the Locale.use method to switch the currently used language.
+Quarkd implements multi-language support through the Locale component, and you can use the Locale.use method to switch the currently used language.
 
 ```ts
 import Locale, { zhCN } from "quarkd/lib/locale";
@@ -85,13 +85,13 @@ This can be done using `i18n`.
 
 # Custom Themes
 
-Quark provides a set of UI themes by default, while allowing new themes to be customized to a certain extent to meet the diverse visual needs of the business.
+Quarkd provides a set of UI themes by default, while allowing new themes to be customized to a certain extent to meet the diverse visual needs of the business.
 
 <div>
 <br>
-<img src="https://m.hellobike.com/resource/helloyun/13459/9FyYX_2.jpg?x-oss-process=image/quality,q_80" width="260" alt="quark Custom Themes">
+<img src="https://m.hellobike.com/resource/helloyun/13459/9FyYX_2.jpg?x-oss-process=image/quality,q_80" width="260" alt="quarkd Custom Themes">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="https://m.hellobike.com/resource/helloyun/13459/hrmSH_1.jpeg?x-oss-process=image/quality,q_80" width="260" alt="quark Custom Themes">
+<img src="https://m.hellobike.com/resource/helloyun/13459/hrmSH_1.jpeg?x-oss-process=image/quality,q_80" width="260" alt="quarkd Custom Themes">
 <br>
 </div>
 

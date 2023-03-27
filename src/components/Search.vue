@@ -22,7 +22,7 @@
     <input
       type="text"
       class="search-input"
-      :placeholder="isZhLang ? '在 Quark 中搜索...' : 'Search in Quark...'"
+      :placeholder="isZhLang ? '在 Quarkd 中搜索...' : 'Search in Quarkd...'"
       v-model="data.searchVal"
       ref="refInput"
       @blur="onblur"
