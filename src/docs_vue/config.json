@@ -527,13 +527,13 @@
         "show": true
       },
       {
-        "name": "Name",
-        "cName": "缘何此名？",
+        "name": "QuickStart",
+        "cName": "快速上手",
         "show": true
       },
       {
-        "name": "QuickStart",
-        "cName": "快速上手",
+        "name": "Notice",
+        "cName": "常见问题",
         "show": true
       },
       {
@@ -552,8 +552,8 @@
         "show": true
       },
       {
-        "name": "Notice",
-        "cName": "常见问题",
+        "name": "Name",
+        "cName": "缘何此名？",
         "show": true
       },
       {
