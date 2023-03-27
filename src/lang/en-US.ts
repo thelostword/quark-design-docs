@@ -1,6 +1,7 @@
 export default {
-  homeTitle: "Next-gen frontend component library",
-  homeSubtitle: "it can be used in any framework or no framework.",
+  homeTitle: "Next-gen browser-native component library",
+  homeSubtitle:
+    "It can be used in any frame or frameless at the same time (ps: frameless component library)",
   getStarted: "Get Started",
   whyQuark: "Why Quark?",
   scrollDown: "Scroll Down",
