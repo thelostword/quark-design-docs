@@ -1,8 +1,8 @@
-# Quark
+# Quark Design
 
-Quark 是一套基于 Web Components 的跨框架 UI 组件库，输出标准的 Custom Element，组件可以同时在 React、Vue、Preact、Angular 或原生 JS 等任意框架或无框架中使用。
+Quark Design (Quarkd) 是一套基于 `Web Components` 的跨框架 UI 组件库，输出标准的 `Custom Element`，组件可以同时在 `React、Vue、Preact、Angular` 或原生 JS 等任意框架或无框架中使用。
 
-<div style="margin:30px 0;"><img src="https://m.hellobike.com/resource/helloyun/13459/CnYU2_quark-logo.png?x-oss-process=image/quality,q_80" width="150" /></div>
+<div style="margin:30px 0;"><img src="https://m.hellobike.com/resource/helloyun/13459/AOAJV_quark-logo2.png?x-oss-process=image/quality,q_80" width="150" /></div>
 
 ## 特性
 
@@ -31,6 +31,13 @@ Quark 是一套基于 Web Components 的跨框架 UI 组件库，输出标准的
 
 - es
 - umd
+
+
+## 缘何此名
+
+物理学科名词，夸克（英语：Quark）意译为层子，是一种基本粒子，也是构成物质的基本单元。夸克互相结合，形成一种复合粒子，叫强子，它们是构成原子核的单元。
+
+对于 Web 开发者来说，UI 组件是构建页面可复用代码的最小单元（可交互、可复用、跨技术栈的最小单元），它能像原生标签一样运行在各种框架或无框架的应用中。因此我们将它命名为 Quark！
 
 ## 开源协议
 
