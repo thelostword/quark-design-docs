@@ -1,7 +1,6 @@
 {
   "index_name": "quark-design-hellobike",
   "start_urls": ["https://quark-design.hellobike.com/#/"],
-  "stop_urls": ["/tests"],
   "selectors": {
     "lvl0": {
       "selector": "",
@@ -9,17 +8,6 @@
     },
     "lvl1": ".home-section h1"
   },
-  "strip_chars": " .,;:#",
-  "custom_settings": {
-    "separatorsToIndex": "_",
-    "attributesForFaceting": ["language", "version", "type", "docusaurus_tag"],
-    "attributesToRetrieve": [
-      "hierarchy",
-      "content",
-      "anchor",
-      "url",
-      "url_without_anchor",
-      "type"
-    ]
-  }
+  "rateLimit": 8,
+  "maxDepth": 10
 }
