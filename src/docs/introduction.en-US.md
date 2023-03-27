@@ -1,6 +1,8 @@
 # Quark Design
 
-Quark Design(Quarkd) is a set of cross-frame UI component library based on `Web Components`, which outputs standard Custom Element. Components can be used in any framework or no framework such as `React`, `Vue`, `Preact`, `Angular` or native JS at the same time.
+Quark Design(Quarkd) is a set of cross-frame UI component library based on `Web Components`, outputs standard Custom Element.
+
+Components can be used in any framework or no framework such as `React`, `Vue`, `Preact`, `Angular` or native JS at the same time.
 
 <div style="margin:30px 0;"><img src="https://m.hellobike.com/resource/helloyun/13459/AOAJV_quark-logo2.png?x-oss-process=image/quality,q_80" width="150" /></div>
 

@@ -1,6 +1,8 @@
 # Quark Design
 
-Quark Design (Quarkd) 是一套基于 `Web Components` 的跨框架 UI 组件库，输出标准的 `Custom Element`，组件可以同时在 `React、Vue、Preact、Angular` 或原生 JS 等任意框架或无框架中使用。
+Quark Design (Quarkd) 是一套基于 `Web Components` 的跨框架 UI 组件库，输出标准的 `Custom Element`。
+
+所有组件可以同时在 `React、Vue、Preact、Angular` 或原生 JS 等任意框架或无框架中使用。
 
 <div style="margin:30px 0;"><img src="https://m.hellobike.com/resource/helloyun/13459/AOAJV_quark-logo2.png?x-oss-process=image/quality,q_80" width="150" /></div>
 
