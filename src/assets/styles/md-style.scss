@@ -180,11 +180,9 @@
   blockquote {
     margin: 16px 0px;
     padding: 16px;
-    background-color: #fff4f0;
-    background-color: #252529;
-    border-left: 6px solid #fa2c19;
-    border-left: 6px solid #646cff;
-    border-radius: 3px;
+    background-color: rgba(100, 108, 255, .08);
+    border: 1px solid var(--brand-color);
+    border-radius: 8px;
     p {
       color: #fff;
     }

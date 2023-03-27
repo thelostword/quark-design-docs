@@ -537,12 +537,7 @@
         "show": true
       },
       {
-        "name": "Internationalization",
-        "cName": "国际化",
-        "show": true
-      },
-      {
-        "name": "InternationalAndThemeSetting",
+        "name": "InternationalAndTheme",
         "cName": "国际化/主题设置",
         "show": true
       },

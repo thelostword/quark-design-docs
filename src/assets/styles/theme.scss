@@ -159,6 +159,17 @@ html.dark {
   .doc-content-document strong {
     color: var(--text-font-color);
   }
+  .doc-content-document blockquote p {
+    color: #bcc0ff;
+  }
+  .doc-content-document a {
+    color: #9499ff;
+    text-decoration: underline;
+  }
+  .doc-content-document a:hover {
+    color: #bcc0ff;
+  }
+
   .doc-content-document table {
     border: 1px solid #333;
   }
