@@ -12,11 +12,14 @@ Unknown custom element:
   sure to provide the "name" option.
 
 <!-- vue@3.x -->
-[Vue warn]: Failed to resolve component: quark-icon
+[Vue warn]: Failed to resolve component: quark-button
 </quark-button>
 ```
 
-Don't worry, this is because the syntax part of Vue components refers to custom elements, in order to avoid conflicts with Vue components, custom elements need to be ignored! Please inject the following code into the project:
+Don't worry, this is because the syntax part of Vue components refers to custom elements, in order to avoid conflicts with Vue components, custom elements need to be ignored! 
+
+Please inject the following code into the project:
+[Vue Official document description](https://vuejs.org/guide/extras/web-components.html)
 
 ```tsx
 // vue@2.x

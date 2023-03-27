@@ -12,11 +12,13 @@ Unknown custom element:
   sure to provide the "name" option.
 
 <!-- vue@3.x -->
-[Vue warn]: Failed to resolve component: quark-icon
-</quark-button>
+[Vue warn]: Failed to resolve component: quark-button
 ```
 
-不用担心，这是由于 Vue 组件的语法部分参考了自定义元素，为了避免与 Vue 组件产生冲突，需要将自定义元素忽略！请在工程中注入如下代码即可：
+不用担心，这是由于 Vue 组件的语法部分参考了自定义元素，为了避免与 Vue 组件产生冲突，需要将自定义元素忽略！
+
+请在工程中注入如下代码即可：
+[Vue 官方文档说明](https://vuejs.org/guide/extras/web-components.html)
 
 ```tsx
 // vue@2.x
