@@ -49,7 +49,10 @@ img, video {
 }
 
 a {
-  color: #000;
+  color: #4c4c52;
+}
+a:hover {
+  color: var(--brand-color);
 }
 
 svg {
