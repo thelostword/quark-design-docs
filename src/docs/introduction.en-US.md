@@ -14,7 +14,7 @@ Components can be used in any framework or no framework such as `React`, `Vue`, 
 - Extensive documentation and examples
 - Unit test coverage
 - Support TypeScript
-- Support for custom themes (in development)
+- Support for custom themes
 
 ## Examples H5
 
