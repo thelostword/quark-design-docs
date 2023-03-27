@@ -72,9 +72,7 @@ import "quarkd/lib/button";
 ```html
 <quark-button loading type="danger" loadtype="circular">加载中...</quark-button>
 <quark-button loading type="warning">加载中...</quark-button>
-<quark-button @click="handleChange" :loading="isLoading" type="success"
-  >Click me!</quark-button
->
+<quark-button @click="handleChange" :loading="isLoading" type="success">Click me!</quark-button>
 ```
 
 ```js

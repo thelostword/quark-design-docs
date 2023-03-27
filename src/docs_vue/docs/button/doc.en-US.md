@@ -75,9 +75,7 @@ A loading indicator can be added to a button by setting `loading` prop on the Bu
   >Loading...</quark-button
 >
 <quark-button loading type="warning">Loading...</quark-button>
-<quark-button @click="changeLoading" :loading="isLoading" type="success"
-  >Click me!</quark-button
->
+<quark-button @click="changeLoading" :loading="isLoading" type="success">Click me!</quark-button>
 ```
 
 ```js
