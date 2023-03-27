@@ -1,6 +1,6 @@
 {
   "index_name": "quark-design-hellobike",
-  "start_urls": ["https://quark-design.hellobike.com/"],
+  "start_urls": ["https://quark-design.hellobike.com/#/**"],
   "stop_urls": ["/tests"],
   "selectors": {
     "lvl0": {
