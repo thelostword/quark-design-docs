@@ -8,7 +8,7 @@ Components can be used in any framework or no framework such as `React`, `Vue`, 
 
 ## Features
 
-- Supports Vue, React, Angular, etc. / no framework
+- Supports Vue, React, Angular, Svelte, etc. no framework
 - 30+ high-quality components (continuous development)
 - Support on-demand citation
 - Extensive documentation and examples
