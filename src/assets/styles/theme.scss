@@ -87,6 +87,9 @@ a {
   color: var(--text-code-font-color);
   background-color: var(--mute-light);
 }
+.doc-content-document strong {
+  color: var(--text-font-color);
+}
 .doc-content-document blockquote {
   background-color: rgba(100, 108, 255, .08);
 }
@@ -94,11 +97,10 @@ a {
   color: #454ce1;
 }
 
-// .doc-content-document ul li,
-// .doc-content-document ol li,
-// .doc-content-document strong {
-//   color: var(--text-font-color-light);
-// }
+.doc-content-document ul li,
+.doc-content-document ol li,{
+  color: var(--text-font-color);
+}
 
 
 html.dark {
@@ -157,6 +159,9 @@ html.dark {
   .doc-content-document p > code {
     color: var(--text-code-font-color);
   }
+  .doc-content-document strong {
+    color: var(--text-font-color);
+  }
   .doc-content-document table {
     border: 1px solid #333;
   }
@@ -169,11 +174,11 @@ html.dark {
     border-top: 1px solid #333;
   }
 
-  // .doc-content-document ul li,
-  // .doc-content-document ol li
-  //  .doc-content-document strong {
-  //   color: var(--text-font-color); 
-  // }
+  .doc-content-document ul li,
+  .doc-content-document ol li
+   .doc-content-document strong {
+    color: var(--text-font-color); 
+  }
 
   .action .why-quark {
     background-color: #313136;

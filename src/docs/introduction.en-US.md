@@ -12,7 +12,6 @@ Quark is a set of cross-frame UI component library based on Web Components, whic
 - Extensive documentation and examples
 - Unit test coverage
 - Support TypeScript
-- Support server rendering (on test)
 - Support for custom themes (in development)
 
 ## Examples H5

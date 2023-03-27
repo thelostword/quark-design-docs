@@ -13,7 +13,6 @@ Quark 是一套基于 Web Components 的跨框架 UI 组件库，输出标准的
 - 单元测试覆盖
 - 支持 TypeScript
 - 支持定制主题
-- 支持服务端渲染（Bate）
 
 ## 示例 H5
 
