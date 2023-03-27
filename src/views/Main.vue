@@ -89,6 +89,7 @@
         </p>
       </div>
     </section>
+
     <section class="what-we-do" id="what-we-do">
       <div class="wrap">
         <h2>
@@ -172,13 +173,18 @@ export default defineComponent({
       }
 
       const intersectionObserver = new IntersectionObserver((entries) => {
+        console.log(entries[0].target.className, 111);
         // 进入视窗
-        if (entries[0].isIntersecting) {
+        if (
+          entries[0].isIntersecting &&
+          entries[0].target.className === "we-believe"
+        ) {
           document.querySelector("#scroll-down").style.opacity = 0;
         } else {
           document.querySelector("#scroll-down").style.opacity = 1;
         }
       });
+      intersectionObserver.observe(document.querySelector("#we-believe"));
       intersectionObserver.observe(document.querySelector("#we-believe"));
     });
 
