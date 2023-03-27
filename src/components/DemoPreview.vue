@@ -22,11 +22,6 @@ export default defineComponent({
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-  /* box-shadow: 0px 0px 11px 0px #eee; */
-  /* --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
-    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow); */
-
-  border-radius: 0.75rem;
   overflow: hidden;
   position: fixed;
   right: 30px;
@@ -36,6 +31,7 @@ export default defineComponent({
   iframe {
     height: 590px;
     width: 100%;
+    border-radius: 12px;
   }
 }
 .fixed-class {
