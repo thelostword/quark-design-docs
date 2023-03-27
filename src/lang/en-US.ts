@@ -15,7 +15,7 @@ export default {
   whatWeDoDesc1:
     "Benefiting from the native support of web components in browsers, we developed Quark Design using this technology.",
   whatWeDoDesc2:
-    "This allows the front-end group library to actually find that the technology stack has nothing to do.",
+    "This makes the front-end component library truly independent of the technology stack.",
 
   codeExample: {
     title: "Example code",
