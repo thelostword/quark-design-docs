@@ -16,7 +16,7 @@ import "quarkd/lib/button";
 import { Button } from "@quarkd/quark-react";
 ```
 
-在 `.babelrc` 这样配置
+在 `.babelrc` 配置如下：
 
 ```js
 module.exports = {
@@ -24,7 +24,7 @@ module.exports = {
 };
 ```
 
-或者也可以采用手动按需加载的方式，但不推荐。
+或者您也可以采用手动按需加载的方式。
 
 ```js
 import Button from "@quarkd/quark-react/lib/button";

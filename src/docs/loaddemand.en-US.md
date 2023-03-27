@@ -24,7 +24,7 @@ module.exports = {
 };
 ```
 
-or you can manually introduce component，but not recommend.
+or you can manually introduce component.
 
 ```js
 import Button from "@quarkd/quark-react/lib/button";
