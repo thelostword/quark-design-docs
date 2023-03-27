@@ -7,13 +7,13 @@ Vue 工程中使用 `quark` 组件可能会出现**告警**：
 ```html
 <!-- vue@2.x: -->
 Unknown custom element:
-<quark-card>
+<quark-button>
   - did you register the component correctly? For recursive components, make
   sure to provide the "name" option.
 
 <!-- vue@3.x -->
 [Vue warn]: Failed to resolve component: quark-icon
-</quark-card>
+</quark-button>
 ```
 
 不用担心，这是由于 Vue 组件的语法部分参考了自定义元素，为了避免与 Vue 组件产生冲突，需要将自定义元素忽略！请在工程中注入如下代码即可：

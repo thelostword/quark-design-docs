@@ -7,13 +7,13 @@ Vue project using `quark` component may appear **warning**：
 ```html
 <!-- vue@2.x: -->
 Unknown custom element:
-<quark-card>
+<quark-button>
   - did you register the component correctly? For recursive components, make
   sure to provide the "name" option.
 
 <!-- vue@3.x -->
 [Vue warn]: Failed to resolve component: quark-icon
-</quark-card>
+</quark-button>
 ```
 
 Don't worry, this is because the syntax part of Vue components refers to custom elements, in order to avoid conflicts with Vue components, custom elements need to be ignored! Please inject the following code into the project:
