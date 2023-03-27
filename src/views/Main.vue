@@ -117,18 +117,36 @@
         <p style="margin-top: 1.5rem">
           {{ t("whatWeDoDesc2") }}
         </p>
-        <div class="actions" style="margin-top: 1.5rem; justify-content: left">
-          <div class="action">
-            <!-- TODO: link to playground -->
-            <a
-              class="get-started"
-              :href="`${
-                isZhLang
-                  ? `#/zh-CN/guide/quickstart`
-                  : `#/en-US/guide/quickstart`
-              }`"
-              >Have a try</a
-            >
+
+        <div class="code-demo-tab-group">
+          <button
+            v-for="item in tabs"
+            :key="item"
+            @click="handleTabSwitch(item)"
+            :class="activeTab === item ? 'active-tab' : ''"
+          >
+            {{ item }}
+          </button>
+        </div>
+
+        <div class="code-demo-container">
+          <div class="code-demo relative">
+            <div>
+              <div class="editor-skin-header">
+                <div class="editor-skin-header-btn-group">
+                  <span class="editor-skin-header-btn red"></span>
+                  <span class="editor-skin-header-btn yellow"></span>
+                  <span class="editor-skin-header-btn green"></span>
+                </div>
+              </div>
+              <CodeDemo :tabName="activeTab" />
+            </div>
+
+            <div class="preview">
+              <quark-button size="big" :loading="isLoading" @click="handleClick"
+                >Button</quark-button
+              >
+            </div>
           </div>
         </div>
       </div>
@@ -145,18 +163,26 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, ref } from "vue";
+import { defineComponent, onMounted, ref, toRefs, reactive } from "vue";
 import { useI18n } from "vue-i18n";
 import Header from "@/components/Header.vue";
+import CodeDemo from "./components/codedemo/index.vue";
 
 export default defineComponent({
   name: "Main",
   components: {
     [Header.name]: Header,
+    CodeDemo,
   },
   setup() {
     const { t } = useI18n();
     let darkMode = ref(false);
+    const isLoading = ref(false);
+    const data = reactive({
+      tabs: ["React", "Vue", "Angular", "Html"],
+      activeTab: "React",
+      tabIndex: 1,
+    });
 
     onMounted(() => {
       // 默认中文
@@ -188,10 +214,25 @@ export default defineComponent({
       intersectionObserver.observe(document.querySelector("#we-believe"));
     });
 
+    const handleTabSwitch = (tab) => {
+      console.log(tab, 13);
+      data.activeTab = tab;
+    };
+
+    const handleClick = () => {
+      isLoading.value = true;
+      setTimeout(() => {
+        isLoading.value = false;
+      }, 2000); // 点击2s后loading消失
+    };
+
     return {
       isZhLang: localStorage.getItem("language") === "zh-CN",
       t,
       darkMode,
+      ...toRefs(data),
+      handleClick,
+      handleTabSwitch,
     };
   },
 });

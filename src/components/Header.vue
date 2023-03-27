@@ -16,7 +16,7 @@
 
         <div class="menu">
           <!-- 其它技术栈文档 -->
-          <div class="nav-item">
+          <!-- <div class="nav-item">
             <a
               :class="isActive('pages') ? 'nav-active' : ''"
               :href="`${
@@ -25,7 +25,7 @@
             >
               {{ isZhLang ? "其它技术文档" : "Other documents" }}
             </a>
-          </div>
+          </div> -->
 
           <!-- 指南 / 组件 -->
           <div class="nav-item" v-for="item in header" :key="item.name">

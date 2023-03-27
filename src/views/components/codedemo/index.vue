@@ -4,7 +4,7 @@
     disabled
     foldGutter
     :dark="true"
-    :style="{ height: '500px' }"
+    :style="{ height: '460px' }"
     :indent-with-tab="true"
     :tab-size="2"
     :extensions="extensions"
@@ -100,10 +100,8 @@ export default defineComponent({
     const code = ref(codes["React"]);
     const extensions = reactive([html(), oneDark]);
 
-    onMounted(() => {});
-
     watch(tabName, () => {
-      code.value = codes[tabName.value + ""];
+      code.value = codes[tabName.value];
 
       if (tabName.value === "React" || tabName.value === "Angular") {
         extensions[0] = [javascript(), oneDark];
@@ -114,10 +112,9 @@ export default defineComponent({
 
     return {
       code,
-      tabName,
       extensions,
     };
   },
 });
 </script>
-<style src="./index.scss"></style>
+<style src="./index.scss" scoped></style>
