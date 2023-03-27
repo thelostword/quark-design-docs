@@ -231,6 +231,7 @@ export default defineComponent({
       t,
       darkMode,
       ...toRefs(data),
+      isLoading,
       handleClick,
       handleTabSwitch,
     };
