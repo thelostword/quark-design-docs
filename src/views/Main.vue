@@ -179,8 +179,8 @@ export default defineComponent({
     let darkMode = ref(false);
     const isLoading = ref(false);
     const data = reactive({
-      tabs: ["React", "Vue", "Angular", "Html"],
-      activeTab: "React",
+      tabs: ["Vue", "React", "Angular", "Html"],
+      activeTab: "Vue",
       tabIndex: 1,
     });
 

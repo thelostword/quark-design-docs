@@ -97,12 +97,11 @@ export default defineComponent({
   },
   setup(props) {
     const { tabName } = toRefs(props);
-    const code = ref(codes["React"]);
+    const code = ref(codes["Vue"]);
     const extensions = reactive([html(), oneDark]);
 
     watch(tabName, () => {
       code.value = codes[tabName.value];
-
       if (tabName.value === "React" || tabName.value === "Angular") {
         extensions[0] = [javascript(), oneDark];
       } else {
