@@ -29,7 +29,7 @@ npm i quarkd
 
 ## 使用示例
 
-### Vue
+### Vue 按需加载
 
 ```tsx
 <template>
@@ -42,7 +42,7 @@ npm i quarkd
 </script>
 ```
 
-### Angular
+### Angular 按需加载
 
 ```
 import { Component } from '@angular/core
@@ -55,7 +55,7 @@ import "quarkd/lib/button"
 })
 ```
 
-### 无框架/Jquery 等
+### 无框架/Jquery 等，全部加载
 
 ```html
 <!DOCTYPE html>

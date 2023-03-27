@@ -537,23 +537,13 @@
         "show": true
       },
       {
-        "name": "LoadDemand",
-        "cName": "按需加载",
-        "show": true
-      },
-      {
         "name": "Internationalization",
         "cName": "国际化",
         "show": true
       },
       {
-        "name": "Theme",
-        "cName": "主题设置",
-        "show": true
-      },
-      {
-        "name": "Name",
-        "cName": "缘何此名？",
+        "name": "InternationalAndThemeSetting",
+        "cName": "国际化/主题设置",
         "show": true
       },
       {
