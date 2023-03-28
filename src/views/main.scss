@@ -81,8 +81,6 @@
     transition: color .25s,border-color .25s,background-color .25s;
   }
   .get-started{
-    // background-color: #a550fa;
-    // background-color: #15b4f9;
     min-width: 100px;
     background-color: #646cff;
     color: #fff;
@@ -91,12 +89,7 @@
     }
   }
   .why-quark {
-    // background-color: #313136;
     border-color: #525259;
-    // color: #fff;
-    // &:hover{
-    //   background-color: #0a0a0a;
-    // }
   }
 }
 
@@ -139,7 +132,8 @@
 }
 
 .we-believe,
-.what-we-do {
+.what-we-do,
+.advantage {
   padding-top: 175px;
   padding-bottom: 175px;
 }
@@ -189,20 +183,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    --tw-gradient-to: #6366f1;
-    --tw-gradient-from: #a855f7;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-    background-image: linear-gradient(to right, var(--tw-gradient-stops));
-    // border-radius: 0.75rem;
+    background-image: linear-gradient(to right,  #a855f7, #6366f1);
     height: 500px;
 
     quark-button {
       width: 108px;
       height: 40px;
-      --tw-text-opacity: 1;
-      color: rgb(255 255 255 / var(--tw-text-opacity));
-      --tw-bg-opacity: 0.2;
-      background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+      color: rgb(255 255 255 / 1);
+      background-color: rgb(0 0 0 / .2);
 
       font-size: 16px;
       --button-icon-hspacing: 6px;
@@ -270,7 +258,91 @@
   }
 }
 
+.box-group {
+  display: grid;
+  // grid-template-columns: repeat(auto-fill, 33%);
+  grid-column-gap: 1em;
+  grid-row-gap: 5em;
 
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:
+    "one one two two three three"
+    "what what what how how how";
+
+  >div {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    border-bottom: none;
+    border-radius: 6px;
+    h2 {
+      padding: 0;
+      margin: 0 0 0.5em 0;
+      font-size: 30px;
+      color: #fff;
+      text-align: left;
+    }
+    
+  }
+  .box1,
+  .box2,
+  .box3 {
+    p{
+      font-size: 18px;
+      color: #fff;
+    }
+  }
+  .box1 {
+    background-color: #ae46fb;
+    grid-area: one / one / one / one;
+  }
+  .box2 {
+    background-color: #40b3ff;
+    grid-area: two / two / two / two;
+  }
+  .box3 {
+    background-color: #676778;
+    grid-area: three / three / three / three;
+  }
+  .what {
+    grid-area: what;
+    >div {
+      padding: 0;
+    }
+    p{
+      font-size: 19px;
+      margin: 0 0 10px 0;
+    }
+    a {
+      color: #646cff;
+      text-decoration-line: underline;
+    }
+  }
+  .how {
+    grid-area: how;
+
+    .bash-code {
+      grid-area: start;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+
+      background-color: #141f31;
+      background-color: #f6fafd;
+
+      border: 1px solid rgba(68, 68, 68, .12);
+      border-radius: 4px;
+    }
+
+    pre {
+      padding: 20px;
+    }
+
+    .language-bash {
+      margin: 0 0 1em 0; min-width: 0; min-height: 0
+    }
+  }
+}
 
 .footer-container {
   margin-left: auto;

@@ -151,6 +151,67 @@
         </div>
       </div>
     </section>
+
+    <section class="advantage" id="advantage">
+      <div class="wrap">
+        <h2>
+          {{ t("advantage") }}
+          <img
+            v-if="darkMode"
+            class="down-icon"
+            alt="down-icon"
+            src="/src/assets/images/i-down.png"
+            height="34"
+            width="36"
+          />
+          <img
+            v-else
+            class="down-icon"
+            alt="down-icon"
+            src="/src/assets/images/i-down-light.png"
+            height="34"
+            width="36"
+          />
+        </h2>
+        <div class="box-group">
+          <div class="box1">
+            <h2>{{ t("box1Title") }}</h2>
+            <p>{{ t("box1Desc") }}</p>
+          </div>
+          <div class="box2">
+            <h2>{{ t("box2Title") }}</h2>
+            <p>{{ t("box2Desc") }}</p>
+          </div>
+          <div class="box3">
+            <h2>{{ t("box3Title") }}</h2>
+            <p>{{ t("box3Desc") }}</p>
+          </div>
+          <div class="what">
+            <p>{{ t("whatDesc1") }}</p>
+            <p>{{ t("whatDesc2") }}</p>
+            <p>
+              <a href="https://github.com/hellof2e/quark-cli" target="_blank"
+                >阅读此篇</a
+              >
+              了解更多信息。
+            </p>
+          </div>
+          <div class="how">
+            <div class="bash-code">
+              <pre class="language-bash">
+npm i -g @quarkd/quark-cli
+
+npx create-quark
+cd quark-project
+
+npm install
+npm start
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <div class="footer-container">

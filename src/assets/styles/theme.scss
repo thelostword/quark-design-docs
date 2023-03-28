@@ -135,6 +135,10 @@ html.dark {
     color: rgba(255, 255, 255, 0.5);
   }
 
+  pre {
+    color: #1e1e20;
+  }
+  
   .sticky-nav-shadow {
     background-image: linear-gradient(to bottom, #1e1e1e, rgb(0 0 0 / 0%));
   }
