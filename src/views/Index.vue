@@ -133,11 +133,12 @@ export default defineComponent({
       componentTitle(to);
       document.getElementById("doc-content")?.scrollTo({ top: 0 });
     });
+
     const demoUrl =
       import.meta.env.VITE_ENV === "dev"
         ? "https://quark-design.hellobike.com/demo/demo.html#"
         : defaultUrl;
-    // console.log(import.meta.env, "ENV");
+
     return {
       ...toRefs(state),
       ...toRefs(data),

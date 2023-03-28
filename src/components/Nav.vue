@@ -169,11 +169,6 @@ export default defineComponent({
 
 <style lang="scss">
 .doc-nav {
-  top: 75px;
-  border-right: 1px solid #333;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
   bottom: 0px;
   left: 0px;
   z-index: 10;
@@ -181,6 +176,7 @@ export default defineComponent({
   position: fixed;
   top: 75px;
   overflow: auto;
+  transition: all 150ms;
 
   &.fixed-class {
     top: 0;
