@@ -14,99 +14,98 @@
           <div id="docsearch"></div>
         </div>
 
-        <div class="menu">
-          <!-- 其它技术栈文档 -->
-          <!-- <div class="nav-item">
-            <a
-              :class="isActive('pages') ? 'nav-active' : ''"
-              :href="`${
-                isZhLang ? `#/zh-CN/pages/otherdocs` : `#/en-US/pages/otherdocs`
-              }`"
-            >
-              {{ isZhLang ? "其它技术文档" : "Other documents" }}
-            </a>
-          </div> -->
-
-          <!-- 指南 / 组件 -->
-          <div class="nav-item" v-for="item in header" :key="item.name">
-            <template v-if="docMd === 'react' && item.name === 'Components'">
-              <a
-                :class="isActive(item.type) ? 'nav-active' : ''"
-                :href="`${
-                  isZhLang
-                    ? `${item.pathName}-react`
-                    : `${item.pathEnName}-react`
-                }`"
-              >
-                {{ isZhLang ? item.cName : item.name }}
-              </a>
-            </template>
-            <template v-else>
-              <a
-                :class="isActive(item.type) ? 'nav-active' : ''"
-                :href="`${isZhLang ? item.pathName : item.pathEnName}`"
-              >
-                {{ isZhLang ? item.cName : item.name }}
-              </a>
-            </template>
+        <div class="toper-bar">
+          <div class="menu-group">
+            <!-- 指南 / 组件 -->
+            <div class="nav-item menu" v-for="item in header" :key="item.name">
+              <template v-if="docMd === 'react' && item.name === 'Components'">
+                <a
+                  :class="isActive(item.type) ? 'nav-active' : ''"
+                  :href="`${
+                    isZhLang
+                      ? `${item.pathName}-react`
+                      : `${item.pathEnName}-react`
+                  }`"
+                >
+                  {{ isZhLang ? item.cName : item.name }}
+                </a>
+              </template>
+              <template v-else>
+                <a
+                  :class="isActive(item.type) ? 'nav-active' : ''"
+                  :href="`${isZhLang ? item.pathName : item.pathEnName}`"
+                >
+                  {{ isZhLang ? item.cName : item.name }}
+                </a>
+              </template>
+            </div>
           </div>
 
-          <a
-            class="translate-lang"
-            href="javascript:void(0);"
-            @click="switchLang"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              focusable="false"
-              viewBox="0 0 24 24"
+          <div class="translations">
+            <a
+              class="translate-lang"
+              href="javascript:void(0);"
+              @click="switchLang"
             >
-              <path d="M0 0h24v24H0z" fill="none"></path>
-              <path
-                d=" M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z "
-                class="css-c4d79v"
-              ></path>
-            </svg>
-          </a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d=" M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z "
+                  class="css-c4d79v"
+                ></path>
+              </svg>
+            </a>
+          </div>
 
-          <a class="nav-item-a-link theme-mode" href="javascript:void(0)">
+          <div class="appearance">
             <dark-light-mode />
-          </a>
+          </div>
 
-          <a
-            href="https://github.com/hellof2e/quark-design/discussions"
-            class="github-link"
-            target="_blank"
-          >
-            <span class="sr-only">GitHub discussion</span>
-            <svg
-              aria-hidden="true"
-              height="16"
-              viewBox="0 0 16 16"
-              version="1.1"
-              width="16"
-              data-view-component="true"
-              class="octicon octicon-comment-discussion UnderlineNav-octicon"
+          <div class="social-links">
+            <a
+              href="https://github.com/hellof2e/quark-design/discussions"
+              class="github-link"
+              target="_blank"
             >
-              <path
-                d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1ZM1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25Zm13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z"
-              ></path>
-            </svg>
-          </a>
+              <svg
+                t="1679995277175"
+                class="icon"
+                viewBox="0 0 1024 1024"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                p-id="5433"
+                width="200"
+                height="200"
+              >
+                <path
+                  d="M860.16 430.08c0-223.744-192-402.944-431.616-402.944C191.488 27.136 0 209.408 0 430.08c0 73.728 22.528 143.872 57.344 201.216l-41.472 140.8c-9.728 35.328 9.728 51.2 41.472 41.472l134.144-44.544c67.072 41.472 146.944 64 233.472 64 243.2 3.072 435.2-179.2 435.2-402.944z m-214.528-54.272c28.672 0 54.272 25.6 54.272 54.272s-25.6 54.272-54.272 54.272-54.272-25.6-54.272-54.272 25.6-54.272 54.272-54.272zM214.016 484.352c-28.672 0-54.272-25.6-54.272-54.272s25.6-54.272 54.272-54.272 54.272 25.6 54.272 54.272-22.016 54.272-54.272 54.272z m163.328-54.272c0-28.672 25.6-54.272 54.272-54.272s54.272 25.6 54.272 54.272-25.6 54.272-54.272 54.272-54.272-22.528-54.272-54.272z m0 0"
+                  p-id="5434"
+                ></path>
+                <path
+                  d="M965.632 794.624c35.328-60.928 57.344-128 57.344-201.216 0-112.128-48.128-210.944-124.928-284.672 12.8 38.4 18.944 79.872 18.944 124.928v35.328c18.944 38.4 28.672 82.944 28.672 128 0 57.344-15.872 112.128-44.544 159.744l-18.944 28.672 9.728 35.328 15.872 54.272-51.2-15.872-35.328-12.8-31.744 18.944c-57.344 35.328-124.928 54.272-192 54.272-51.2 0-99.328-9.728-140.8-28.672H437.76c-54.272 0-108.544-9.728-156.672-25.6 79.872 79.872 192 131.072 320 131.072 86.528 0 166.4-25.6 233.472-64l143.872 48.128c28.672 9.728 44.544-6.144 35.328-35.328l-48.128-150.528z m0 0"
+                  p-id="5435"
+                ></path>
+              </svg>
+            </a>
 
-          <a
-            href="https://github.com/hellof2e/quark-design"
-            class="github-link"
-            target="_blank"
-          >
-            <span class="sr-only">GitHub repository</span>
-            <svg viewBox="0 0 16 16" fill="currentColor">
-              <path
-                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
-              ></path>
-            </svg>
-          </a>
+            <a
+              href="https://github.com/hellof2e/quark-design"
+              class="github-link"
+              target="_blank"
+            >
+              <!-- <span class="sr-only">GitHub repository</span> -->
+              <svg viewBox="0 0 16 16" fill="currentColor">
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+                ></path>
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -160,6 +159,7 @@ export default defineComponent({
       };
     });
 
+    // lang switch
     const switchLang = () => {
       let href = "";
       if (localStorage.getItem("language") === "en-US") {
@@ -200,7 +200,7 @@ export default defineComponent({
 });
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .header {
   height: 72px;
   z-index: 30;
@@ -223,15 +223,16 @@ export default defineComponent({
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     max-width: 1376px;
   }
-  .menu,
+  .toper-bar,
   .left-bar {
     display: flex;
     align-items: center;
   }
-  .menu {
+
+  .menu-group {
+    display: flex;
     gap: 2rem;
   }
   .left-bar a {
@@ -252,57 +253,39 @@ export default defineComponent({
 }
 .nav-item a {
   font-size: 14px;
-  transition-property: color, fill, stroke;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
 }
 
-.nav-item-a-link {
-  font-size: 14px;
-}
+.translations,
+.appearance,
+.social-links {
+  display: flex;
 
-.github-link {
-  width: 1.25rem;
-  height: 1.25rem;
-
-  .sr-only {
-    position: absolute;
+  &:before {
+    margin: 0 16px;
     width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border-width: 0;
+    height: 24px;
+    background-color: rgba(60, 60, 67, 0.12);
+    content: "";
   }
 }
 
+.social-links,
 .translate-lang {
-  width: 1.25rem;
-  height: 1.25rem;
+  display: flex;
+  align-items: center;
 
-  .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border-width: 0;
+  a {
+    width: 40px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-}
 
-.theme-mode {
-  > span svg {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-right: 0.5rem;
-  }
-  &:hover {
-    color: rgba(255 255 255 / 1);
+  svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
   }
 }
 </style>

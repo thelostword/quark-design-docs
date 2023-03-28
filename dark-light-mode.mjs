@@ -34,8 +34,8 @@ template.innerHTML = `<style>
         -webkit-tap-highlight-color: transparent;
     }
     .toggle .track {
-        width: 50px;
-        height: 24px;
+        width: 48px;
+        height: 22px;
         padding: 0;
         border-radius: 30px;
         background-color: #313136;
@@ -71,8 +71,8 @@ template.innerHTML = `<style>
         position: absolute;
         top: 1px;
         left: 1px;
-        width: 22px;
-        height: 22px;
+        width: 20px;
+        height: 20px;
         border-radius: 50%;
         background-color: #fafafa;
         box-sizing: border-box;

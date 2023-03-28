@@ -6,13 +6,13 @@ const i18n = createI18n({
   legacy: false,
   globalInjection: true,
   locale:
-    localStorage.getItem("language") === "en_US" ||
+    localStorage.getItem("language") === "en-US" ||
     localStorage.getItem("language") === null
       ? "en_US"
-      : "zh_CN", // 默认中文
+      : "zh_CN",
   messages: {
-    zh_CN,
     en_US,
+    zh_CN,
   },
 });
 

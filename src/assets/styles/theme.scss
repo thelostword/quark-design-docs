@@ -38,12 +38,14 @@
 .nav-item a:hover {
   color: var(--brand-color);
 }
-.github-link {
-  color: var(--text-font-color-light);
+.social-links a,
+.translate-lang a {
+  color: rgba(60, 60, 67, .7);
 }
-.github-link:hover svg,
-.translate-lang:hover svg{
-  color: var(--brand-color);
+.social-links a:hover svg,
+.translate-lang a:hover svg{
+  color: rgba(60, 60, 67, .92);
+  transition: color .25s;
 }
 .header .container {
   border-bottom: 1px solid var(--line-light);
@@ -142,15 +144,25 @@ html.dark {
   .nav-item .nav-active {
     color: #fff;
   }
-  .github-link:hover {
-    color: rgba(255 255 255 / 1);
+
+  .social-links a:hover svg{
+    color: #fff;
   }
+  .translate-lang:hover {
+    color: #fff;
+  }
+
   .doc-nav a {
     color: #fff;
   }
   .doc-nav a:hover {
     color: var(--brand-color);
   }
+
+  .translations:before, .appearance:before, .social-links:before {
+    background-color: rgba(60, 60, 67, 0.92);
+  }
+  
   .sticky-nav {
     background-color: var(--main-bg);
   }
