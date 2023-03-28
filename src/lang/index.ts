@@ -6,10 +6,10 @@ const i18n = createI18n({
   legacy: false,
   globalInjection: true,
   locale:
-    localStorage.getItem("language") === "zh-CN" ||
+    localStorage.getItem("language") === "en_US" ||
     localStorage.getItem("language") === null
-      ? "zh_CN"
-      : "en_US", // 默认中文
+      ? "en_US"
+      : "zh_CN", // 默认中文
   messages: {
     zh_CN,
     en_US,

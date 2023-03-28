@@ -187,7 +187,7 @@ export default defineComponent({
     onMounted(() => {
       // 默认中文
       if (localStorage.getItem("language") === null) {
-        localStorage.setItem("language", "zh-CN");
+        localStorage.setItem("language", "en-US");
       }
       // 默认 vue 文档
       if (localStorage.getItem("docMd") === null) {
