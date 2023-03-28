@@ -105,30 +105,19 @@
 
 
 html.dark {
-  --link-font-color-dark: rgba(255, 255, 255, 0.87); 
-  
+  --link-font-color-dark: rgba(255, 255, 255, 0.87);   
   --main-bg: #1e1e20;
   --text-font-color: rgba(255, 255, 255, 0.87);
-  
   --header-bg-light: #fff; 
   --line-light: rgba(60, 60, 67, .12);
   --text-font-color-light: rgba(60, 60, 67, .92);
   --text-code-font-color: #c9def1;
-
   --brand-color: #646cff;
-
   --brand-color-light: #bcc0ff; // hover color
-  
   --mute-light: #313136; // tag background
-
   --line-light: rgba(82, 82, 89, .32);
-
-
   font-family: var(--font-family-base);
-  line-height: 1.5;
-  font-weight: 400;
   color: var(--link-font-color-dark);
-  
   background-color: var(--main-bg);
 
   a {
