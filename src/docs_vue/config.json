@@ -1,5 +1,5 @@
 {
-  "version": "1.0.50",
+  "version": "1.0.51",
   "nav": [
     {
       "name": "基础组件",
@@ -527,18 +527,33 @@
         "show": true
       },
       {
+        "name": "Name",
+        "cName": "缘何此名？",
+        "show": true
+      },
+      {
         "name": "QuickStart",
         "cName": "快速上手",
         "show": true
       },
       {
-        "name": "Notice",
-        "cName": "常见问题",
+        "name": "LoadDemand",
+        "cName": "按需加载",
         "show": true
       },
       {
-        "name": "InternationalAndTheme",
-        "cName": "国际化/主题设置",
+        "name": "Internationalization",
+        "cName": "国际化",
+        "show": true
+      },
+      {
+        "name": "Theme",
+        "cName": "主题设置",
+        "show": true
+      },
+      {
+        "name": "Notice",
+        "cName": "常见问题",
         "show": true
       },
       {
