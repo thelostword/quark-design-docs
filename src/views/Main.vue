@@ -199,10 +199,10 @@
           <div class="how">
             <div class="bash-code">
               <pre class="language-bash">
-npm i -g @quarkd/quark-cli
+npm i -g @quarkd/cli
 
-npx create-quark
-cd quark-project
+npx create-quark-element
+cd my-element
 
 npm install
 npm start
