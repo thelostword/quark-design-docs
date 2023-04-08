@@ -32,13 +32,13 @@ Locale.add({
 
 ## Currently supported languages
 
-| Languages           | File  | Version    |
-| ------------------- | ----- | ---------- |
-| English             | en-US | `v1.0.0`   |
-| Simplified Chinese  | zh-CN | `v1.0.0`   |
-| Traditional Chinese | zh-TW | waiting PR |
-| Indonesian          | id-ID | waiting PR |
-| Thai                | th-TH | waiting PR |
+| Languages           | File  | Version  |
+| ------------------- | ----- | -------- |
+| English             | en-US | `v1.0.0` |
+| Simplified Chinese  | zh-CN | `v1.0.0` |
+| Traditional Chinese | zh-TW | `v1.0.0` |
+| Indonesian          | id-ID | `v1.0.0` |
+| Thai                | th-TH | `v1.0.0` |
 
 <br>
 <br>
