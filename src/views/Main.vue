@@ -199,7 +199,7 @@
           <div class="how">
             <div class="bash-code">
               <pre class="language-bash">
-npx create-quark-element create project-name
+npx create-quark-app create project-name
 cd project-name
 
 npm install
