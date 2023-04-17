@@ -98,7 +98,6 @@ template.innerHTML = `<style>
 `;
 
 function turnDark() {
-  console.log("turn dark");
   document.documentElement.classList.add("dark");
   localStorage.setItem("theme", "dark");
 }

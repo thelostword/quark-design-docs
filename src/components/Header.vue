@@ -144,6 +144,7 @@ export default defineComponent({
 
     const isActive = computed(() => {
       return function (name: string) {
+        console.log(name, 22);
         const lName = name.toLowerCase();
         return route.path.includes(lName);
       };
