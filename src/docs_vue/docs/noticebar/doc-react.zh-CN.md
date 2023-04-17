@@ -98,9 +98,9 @@ import { Marquee } from "@quarkd/quark-react";
 
 组件提供了以下[CSS 变量](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Using_CSS_custom_properties)，可用于自定义样式，使用方法请参考[主题定制](#/zh-CN/guide/theme)。
 
-| 名称                      | 说明         | 默认值 |
-| ------------------------- | ------------ | ------ |
-| `--noticebar-border-radius`  | 组件倒圆角 |  0px  |
-| `--noticebar-padding`  | 内边距 |  10px  |
-| `--noticebar-left-color`  | 左侧图标颜色 | `继承` |
-| `--noticebar-right-color` | 右侧图标颜色 | `继承` |
+| 名称                        | 说明         | 默认值 |
+| --------------------------- | ------------ | ------ |
+| `--noticebar-border-radius` | 组件倒圆角   | 0px    |
+| `--noticebar-padding`       | 内边距       | 10px   |
+| `--noticebar-left-color`    | 左侧图标颜色 | `继承` |
+| `--noticebar-right-color`   | 右侧图标颜色 | `继承` |

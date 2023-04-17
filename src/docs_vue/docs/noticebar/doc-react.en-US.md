@@ -100,9 +100,9 @@ To custom left or right content, set `slot="left"` or `slot="right"` on the spec
 
 The component provides the following [CSS variables](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Using_CSS_custom_properties), which can be used to customize styles. Please refer to [ConfigProvider component](#/zh-CN/guide/theme).
 
-| Name                      | Description      | Default   |
-| ------------------------- | ---------------- | --------- |
-| `--noticebar-border-radius`  | component border-radius |  0px  |
-| `--noticebar-padding`  | component padding |  10px  |
-| `--noticebar-left-color`  | Left icon color  | `inherit` |
-| `--noticebar-right-color` | Right icon color | `inherit` |
+| Name                        | Description             | Default   |
+| --------------------------- | ----------------------- | --------- |
+| `--noticebar-border-radius` | component border-radius | 0px       |
+| `--noticebar-padding`       | component padding       | 10px      |
+| `--noticebar-left-color`    | Left icon color         | `inherit` |
+| `--noticebar-right-color`   | Right icon color        | `inherit` |

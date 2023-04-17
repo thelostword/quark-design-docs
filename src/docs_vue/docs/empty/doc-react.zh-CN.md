@@ -60,9 +60,9 @@ import { Empty } from "@quarkd/quark-react";
 
 ### Props
 
-| 参数      | 说明     | 类型      | 默认值 |
-| --------- | -------- | --------- | ------ |
-| title     | 标题文字 | `string`  |        |
+| 参数      | 说明     | 类型     | 默认值 |
+| --------- | -------- | -------- | ------ |
+| title     | 标题文字 | `string` |        |
 | desc      | 描述文字 | `string` |        |
 | image     | 图片 url | `string` |        |
 | imagesize | 图片大小 | `string` |        |
@@ -73,9 +73,9 @@ import { Empty } from "@quarkd/quark-react";
 
 | 名称                        | 说明             | 默认值     |
 | --------------------------- | ---------------- | ---------- |
-| `--empty-padding` | 空白页容器内边距  | `32px 0`     |
+| `--empty-padding`           | 空白页容器内边距 | `32px 0`   |
 | `--empty-title-font-size`   | 标题字体大小     | `16px`     |
-| `--empty-image-width`       | 图片宽度         | `191px`     |
+| `--empty-image-width`       | 图片宽度         | `191px`    |
 | `--empty-title-color`       | 标题字体颜色     | `#242729`  |
 | `--empty-title-line-height` | 标题字体行高     | `22px`     |
 | `--empty-title-white-space` | 标题是否换行     | `pre-wrap` |

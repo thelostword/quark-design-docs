@@ -53,20 +53,20 @@ methods: {
 
 ### Props
 
-| Arribute        | Description                | Type      | Default      |
-| --------------- | -------------------------- | --------- | ------------ |
-| itemheight      | List item height, unit px  | `number`  | `50`         |
-| containerheight | Container height, unit px  | `number`  | `500`        |
+| Arribute        | Description               | Type     | Default |
+| --------------- | ------------------------- | -------- | ------- |
+| itemheight      | List item height, unit px | `number` | `50`    |
+| containerheight | Container height, unit px | `number` | `500`   |
 
 ### Event
 
-| Event  | Description                            | Type         |
-| ------ | -------------------------------------- | ------------ |
-| load   | Triggered when scrolling to the bottom | `() => void` |
+| Event | Description                            | Type         |
+| ----- | -------------------------------------- | ------------ |
+| load  | Triggered when scrolling to the bottom | `() => void` |
 
 ### Methods
 
-| Name          | Description                      | Type      |
-| ------------- | -------------------------------- | --------- |
-| setListData   | Used to set all data of the list | `(listData: any[]) => void` |
+| Name          | Description                                                                       | Type                        |
+| ------------- | --------------------------------------------------------------------------------- | --------------------------- |
+| setListData   | Used to set all data of the list                                                  | `(listData: any[]) => void` |
 | setRenderItem | The rendering function used to set the list items, which needs to return a string | `(itemData: any) => string` |

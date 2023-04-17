@@ -39,7 +39,9 @@ import "quarkd/lib/empty";
 通过 `image` 属性中传入任意图片 URL。
 
 ```html
-<quark-empty image="https://m.hellobike.com/resource/helloyun/13459/fkntv_custom-empty-image.png"/>
+<quark-empty
+  image="https://m.hellobike.com/resource/helloyun/13459/fkntv_custom-empty-image.png"
+/>
 ```
 
 ### 自定义底部
@@ -48,7 +50,7 @@ import "quarkd/lib/empty";
 
 ```html
 <quark-empty>
-  <div slot="footer"> 自定义底部 🎉🎉🎉 </div>
+  <div slot="footer">自定义底部 🎉🎉🎉</div>
 </quark-empty>
 ```
 
@@ -56,9 +58,9 @@ import "quarkd/lib/empty";
 
 ### Props
 
-| 参数      | 说明     | 类型      | 默认值 |
-| --------- | -------- | --------- | ------ |
-| title     | 标题文字 | `string`  |        |
+| 参数      | 说明     | 类型     | 默认值 |
+| --------- | -------- | -------- | ------ |
+| title     | 标题文字 | `string` |        |
 | desc      | 描述文字 | `string` |        |
 | image     | 图片 url | `string` |        |
 | imagesize | 图片大小 | `string` |        |
@@ -69,9 +71,9 @@ import "quarkd/lib/empty";
 
 | 名称                        | 说明             | 默认值     |
 | --------------------------- | ---------------- | ---------- |
-| `--empty-padding` | 空白页容器内边距  | `32px 0`     |
+| `--empty-padding`           | 空白页容器内边距 | `32px 0`   |
 | `--empty-title-font-size`   | 标题字体大小     | `16px`     |
-| `--empty-image-width`       | 图片宽度         | `191px`     |
+| `--empty-image-width`       | 图片宽度         | `191px`    |
 | `--empty-title-color`       | 标题字体颜色     | `#242729`  |
 | `--empty-title-line-height` | 标题字体行高     | `22px`     |
 | `--empty-title-white-space` | 标题是否换行     | `pre-wrap` |
