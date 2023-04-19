@@ -110,7 +110,7 @@
 
                     <div class="menu-item-group">
                       <p class="menu-group-title">
-                        {{ ecosystemLangs.resource }}
+                        {{ ecosystemLangs.resources }}
                       </p>
                       <a
                         target="_blank"
@@ -144,7 +144,7 @@
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        {{ ecosystemLangs.gitHubForum }}
+                        {{ ecosystemLangs.gitHubDiscussions }}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           aria-hidden="true"
@@ -268,20 +268,20 @@ export default defineComponent({
         officialLibrary: "官方库",
         stack: "用 Quark 构建跨技术栈组件",
         noFrame: "用 Quark 构建无框架应用（beta）",
-        resource: "资源",
+        resources: "资源",
         vscodePlugin: "VSCode 插件",
         help: "帮助",
-        gitHubForum: "GitHub 论坛",
+        gitHubDiscussions: "GitHub 论坛",
       },
       "en-US": {
         ecosystem: "Ecosystem",
-        officialLibrary: "Official Library",
+        officialLibrary: "OFFICIAL LIBRARIES",
         stack: "Building cross-technology-stack components with Quark",
         noFrame: "Building frameworkless applications with Quark (beta)",
-        resource: "Resource",
-        vscodePlugin: "VSCode plugins",
-        help: "Help",
-        gitHubForum: "GitHub forum",
+        resources: "RESOURCES",
+        vscodePlugin: "VSCode Plugin",
+        help: "HELP",
+        gitHubDiscussions: "GitHub Discussions",
       },
     };
     const ecosystemLangs = computed(() => {
