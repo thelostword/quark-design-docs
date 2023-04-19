@@ -42,7 +42,7 @@
 
             <div class="nav-item flyout">
               <button type="button">
-                <span>{{ isZhLang ? "生态系统" : "Ecosystem" }}</span>
+                <span>{{ ecosystemLangs.ecosystem }}</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   aria-hidden="true"
@@ -59,14 +59,16 @@
                 <div class="menu-wrap">
                   <div class="menu-items">
                     <div class="menu-item-group">
-                      <p class="menu-group-title">官方库</p>
+                      <p class="menu-group-title">
+                        {{ ecosystemLangs.officialLibrary }}
+                      </p>
                       <a
                         class="link menu-link"
                         href="https://quark.hellobike.com"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        用 Quark 构建跨技术栈组件
+                        {{ ecosystemLangs.stack }}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           aria-hidden="true"
@@ -88,7 +90,7 @@
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        用 Quark 构建无框架应用（beta）
+                        {{ ecosystemLangs.noFrame }}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           aria-hidden="true"
@@ -107,14 +109,16 @@
                     </div>
 
                     <div class="menu-item-group">
-                      <p class="menu-group-title">资源</p>
+                      <p class="menu-group-title">
+                        {{ ecosystemLangs.resource }}
+                      </p>
                       <a
                         target="_blank"
                         rel="noopener noreferrer"
                         class="link menu-link"
                         href="https://marketplace.visualstudio.com/items?itemName=quarkd.quarkd-vscode-extension"
                       >
-                        VSCode 插件
+                        {{ ecosystemLangs.vscodePlugin }}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           aria-hidden="true"
@@ -133,14 +137,14 @@
                     </div>
 
                     <div class="menu-item-group">
-                      <p class="menu-group-title">帮助</p>
+                      <p class="menu-group-title">{{ ecosystemLangs.help }}</p>
                       <a
                         class="link menu-link"
                         href="https://github.com/hellof2e/quark-design/discussions"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        GitHub 论坛
+                        {{ ecosystemLangs.gitHubForum }}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           aria-hidden="true"
@@ -258,6 +262,32 @@ export default defineComponent({
       packages.push(...item.packages);
     });
 
+    const langs = {
+      "zh-CN": {
+        ecosystem: "生态系统",
+        officialLibrary: "官方库",
+        stack: "用 Quark 构建跨技术栈组件",
+        noFrame: "用 Quark 构建无框架应用（beta）",
+        resource: "资源",
+        vscodePlugin: "VSCode 插件",
+        help: "帮助",
+        gitHubForum: "GitHub 论坛",
+      },
+      "en-US": {
+        ecosystem: "Ecosystem",
+        officialLibrary: "Official Library",
+        stack: "Building cross-technology-stack components with Quark",
+        noFrame: "Building frameworkless applications with Quark (beat)",
+        resource: "Resource",
+        vscodePlugin: "VSCode plugins",
+        help: "Help",
+        gitHubForum: "GitHub forum",
+      },
+    };
+    const ecosystemLangs = computed(() => {
+      return isZhLang ? langs["zh-CN"] : langs["en-US"];
+    });
+
     const data = reactive({
       navIndex: 0,
       activeIndex: 0,
@@ -317,6 +347,7 @@ export default defineComponent({
       isActive,
       switchLang,
       isHomePage,
+      ecosystemLangs,
     };
   },
 });
