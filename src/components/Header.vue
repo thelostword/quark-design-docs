@@ -39,6 +39,128 @@
                 </a>
               </template>
             </div>
+
+            <div class="nav-item flyout">
+              <button type="button">
+                <span>{{ isZhLang ? "生态系统" : "Ecosystem" }}</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  class="flyout-button-text-icon"
+                >
+                  <path
+                    d="M12,16c-0.3,0-0.5-0.1-0.7-0.3l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.3,5.3l5.3-5.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-6,6C12.5,15.9,12.3,16,12,16z"
+                  ></path>
+                </svg>
+              </button>
+              <div class="flyout-menu">
+                <div class="menu-wrap">
+                  <div class="menu-items">
+                    <div class="menu-item-group">
+                      <p class="menu-group-title">资源</p>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="link menu-link"
+                        href="https://marketplace.visualstudio.com/items?itemName=quarkd.quarkd-vscode-extension"
+                      >
+                        VSCode 插件
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
+                          focusable="false"
+                          height="24px"
+                          viewBox="0 0 24 24"
+                          width="24px"
+                          class="link-icon"
+                        >
+                          <path d="M0 0h24v24H0V0z" fill="none"></path>
+                          <path
+                            d="M9 5v2h6.59L4 18.59 5.41 20 17 8.41V15h2V5H9z"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+
+                    <div class="menu-item-group">
+                      <p class="menu-group-title">官方库</p>
+                      <a
+                        class="link menu-link"
+                        href="https://quark.hellobike.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        用 Quark 构建跨技术栈组件
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
+                          focusable="false"
+                          height="24px"
+                          viewBox="0 0 24 24"
+                          width="24px"
+                          class="link-icon"
+                        >
+                          <path d="M0 0h24v24H0V0z" fill="none"></path>
+                          <path
+                            d="M9 5v2h6.59L4 18.59 5.41 20 17 8.41V15h2V5H9z"
+                          ></path>
+                        </svg>
+                      </a>
+                      <a
+                        class="link menu-link"
+                        href="https://github.com/hellof2e/quark-cli"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        用 Quark 构建无框架应用（beta）
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
+                          focusable="false"
+                          height="24px"
+                          viewBox="0 0 24 24"
+                          width="24px"
+                          class="link-icon"
+                        >
+                          <path d="M0 0h24v24H0V0z" fill="none"></path>
+                          <path
+                            d="M9 5v2h6.59L4 18.59 5.41 20 17 8.41V15h2V5H9z"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+
+                    <div class="menu-item-group">
+                      <p class="menu-group-title">帮助</p>
+                      <a
+                        class="link menu-link"
+                        href="https://github.com/hellof2e/quark-design/discussions"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        GitHub 论坛
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
+                          focusable="false"
+                          height="24px"
+                          viewBox="0 0 24 24"
+                          width="24px"
+                          class="link-icon"
+                        >
+                          <path d="M0 0h24v24H0V0z" fill="none"></path>
+                          <path
+                            d="M9 5v2h6.59L4 18.59 5.41 20 17 8.41V15h2V5H9z"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div class="translations">
@@ -144,8 +266,8 @@ export default defineComponent({
 
     const isActive = computed(() => {
       return function (name: string) {
-        console.log(name, 22);
         const lName = name.toLowerCase();
+        console.log(route.path.includes(lName), 88);
         return route.path.includes(lName);
       };
     });
@@ -235,6 +357,7 @@ export default defineComponent({
     display: flex;
     gap: 2rem;
   }
+
   .left-bar a {
     color: rgb(107 114 128);
     display: flex;
@@ -244,6 +367,7 @@ export default defineComponent({
       height: 2rem;
     }
   }
+
   .left-bar span {
     display: flex;
     margin-right: 2rem;
@@ -251,8 +375,18 @@ export default defineComponent({
     color: rgb(156 163 175);
   }
 }
+
 .nav-item a {
   font-size: 14px;
+}
+
+.nav-item button {
+  color: var(--text-font-color-light);
+  font-family: var(--font-family-base);
+  transition: color 0.5s;
+  &:hover {
+    color: rgba(60, 60, 60, 0.7);
+  }
 }
 
 .translations,
@@ -287,5 +421,75 @@ export default defineComponent({
     height: 20px;
     fill: currentColor;
   }
+}
+
+.flyout {
+  position: relative;
+  a {
+    display: flex;
+    align-items: center;
+  }
+
+  svg {
+    margin-left: 4px;
+    width: 14pxpx;
+    height: 14px;
+    fill: currentColor;
+  }
+}
+.flyout-menu {
+  position: absolute;
+  top: calc(var(--nav-height) / 2 + 15px);
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4px);
+  transition: opacity 0.25s, visibility 0.25s, transform 0.25s;
+
+  .menu-wrap {
+    border-radius: 8px;
+    padding: 12px 0;
+    min-width: 192px;
+    border: 1px solid transparent;
+    background: var(--main-bg);
+    box-shadow: var(--main-shadow);
+    transition: background-color 0.5s;
+  }
+
+  .menu-items {
+    transition: border-color 0.5s;
+  }
+
+  .flyout-menu .menu-wrap .menu-item-group {
+    padding: 0 0 12px;
+  }
+
+  .menu-group-title {
+    padding: 0 18px;
+    line-height: 28px;
+    font-size: 10px;
+    font-weight: 600;
+    color: #cacaca;
+    text-transform: uppercase;
+    transition: color 0.25s;
+  }
+
+  .menu-link {
+    display: block;
+    padding: 0 18px;
+    line-height: 28px;
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--c-text-1);
+    white-space: nowrap;
+    transition: color 0.25s;
+  }
+}
+
+.flyout:hover .flyout-menu,
+.flyout-button + .flyout-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 </style>
