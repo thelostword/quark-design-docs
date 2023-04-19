@@ -59,32 +59,6 @@
                 <div class="menu-wrap">
                   <div class="menu-items">
                     <div class="menu-item-group">
-                      <p class="menu-group-title">资源</p>
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="link menu-link"
-                        href="https://marketplace.visualstudio.com/items?itemName=quarkd.quarkd-vscode-extension"
-                      >
-                        VSCode 插件
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          aria-hidden="true"
-                          focusable="false"
-                          height="24px"
-                          viewBox="0 0 24 24"
-                          width="24px"
-                          class="link-icon"
-                        >
-                          <path d="M0 0h24v24H0V0z" fill="none"></path>
-                          <path
-                            d="M9 5v2h6.59L4 18.59 5.41 20 17 8.41V15h2V5H9z"
-                          ></path>
-                        </svg>
-                      </a>
-                    </div>
-
-                    <div class="menu-item-group">
                       <p class="menu-group-title">官方库</p>
                       <a
                         class="link menu-link"
@@ -115,6 +89,32 @@
                         rel="noopener noreferrer"
                       >
                         用 Quark 构建无框架应用（beta）
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
+                          focusable="false"
+                          height="24px"
+                          viewBox="0 0 24 24"
+                          width="24px"
+                          class="link-icon"
+                        >
+                          <path d="M0 0h24v24H0V0z" fill="none"></path>
+                          <path
+                            d="M9 5v2h6.59L4 18.59 5.41 20 17 8.41V15h2V5H9z"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+
+                    <div class="menu-item-group">
+                      <p class="menu-group-title">资源</p>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="link menu-link"
+                        href="https://marketplace.visualstudio.com/items?itemName=quarkd.quarkd-vscode-extension"
+                      >
+                        VSCode 插件
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           aria-hidden="true"
