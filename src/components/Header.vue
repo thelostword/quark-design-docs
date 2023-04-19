@@ -277,7 +277,7 @@ export default defineComponent({
         ecosystem: "Ecosystem",
         officialLibrary: "Official Library",
         stack: "Building cross-technology-stack components with Quark",
-        noFrame: "Building frameworkless applications with Quark (beat)",
+        noFrame: "Building frameworkless applications with Quark (beta)",
         resource: "Resource",
         vscodePlugin: "VSCode plugins",
         help: "Help",
