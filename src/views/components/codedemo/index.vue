@@ -11,7 +11,7 @@
   />
 </template>
 <script lang="ts">
-import { defineComponent, onMounted, reactive, ref, toRefs, watch } from "vue";
+import { defineComponent, reactive, ref, toRefs, watch } from "vue";
 
 import { Codemirror } from "vue-codemirror";
 import { javascript } from "@codemirror/lang-javascript";

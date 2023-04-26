@@ -25,7 +25,10 @@ if (isMobile) {
 }
 
 const app = createApp(App);
-app.config.compilerOptions.isCustomElement = (tag) => tag.startsWith("quark-");
+
+app.config.compilerOptions.isCustomElement = (tag) =>
+  ["dark-", "quark-"].includes(tag);
+
 app.use(i18n);
 app.use(router);
 app.mount("#doc");

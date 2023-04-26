@@ -2,6 +2,7 @@ export default {
   homeTitle: "下一代浏览器原生组件库",
   homeSubtitle:
     "它可以同时在任意框架或无框架中使用（跨技术栈组件库、无框架组件库）",
+  homeSubtitle2: "它可以被运行在",
   getStarted: "开始",
   whyQuark: "为什么选择 Quark？",
   scrollDown: "Scroll Down",

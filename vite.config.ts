@@ -20,6 +20,11 @@ export default defineConfig({
   plugins: [
     vue({
       include: [/\.vue$/, /\.md$/],
+      template: {
+        compilerOptions: {
+          isCustomElement: (tag) => ["dark-", "quark-"].includes(tag),
+        },
+      },
     }),
     Markdown({
       // default options passed to markdown-it

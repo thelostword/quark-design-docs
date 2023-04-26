@@ -2,6 +2,7 @@ export default {
   homeTitle: "Next-gen browser-native component library",
   homeSubtitle:
     "It can be used in any frame or frameless at the same time (ps: frameless component library)",
+  homeSubtitle2: "It can be run on",
   getStarted: "Get Started",
   whyQuark: "Why Quark?",
   scrollDown: "Scroll Down",

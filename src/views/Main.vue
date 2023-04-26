@@ -8,10 +8,18 @@
           <div class="home-logo">
             <img src="/src/assets/images/quark-logo.png" alt="" />
           </div>
-          <h1 class="home-title">{{ t("homeTitle") }}</h1>
-          <p class="home-subtitle">
-            {{ t("homeSubtitle") }}
+          <h1 class="home-title">
+            {{ t("homeTitle") }}
+          </h1>
+          <p class="home-subtitle2 text-grad">
+            {{ t("homeSubtitle2") }}
+            <span class="tech-name text-grad">{{
+              framework[activeFwIndex]
+            }}</span>
           </p>
+          <!-- <p class="home-subtitle">
+            {{ t("homeSubtitle") }}
+          </p> -->
 
           <div class="actions">
             <div class="action">
@@ -222,7 +230,15 @@ npm start
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, ref, toRefs, reactive } from "vue";
+import {
+  defineComponent,
+  onMounted,
+  ref,
+  toRefs,
+  reactive,
+  watch,
+  onUnmounted,
+} from "vue";
 import { useI18n } from "vue-i18n";
 import Header from "@/components/Header.vue";
 import CodeDemo from "./components/codedemo/index.vue";
@@ -237,13 +253,28 @@ export default defineComponent({
     const { t } = useI18n();
     let darkMode = ref(false);
     const isLoading = ref(false);
+
     const data = reactive({
       tabs: ["Vue", "React", "Angular", "Html"],
       activeTab: "Vue",
       tabIndex: 1,
+      framework: ["Vue2.x", "Vue3.x", "React", "Angular", "Svelte"],
+    });
+
+    let activeFwIndex = ref(0);
+    const state = reactive({
+      timeInter: null, //定义定时器
     });
 
     onMounted(() => {
+      state.timeInter = setInterval(() => {
+        if (activeFwIndex.value >= 4) {
+          activeFwIndex.value = 0;
+        } else {
+          activeFwIndex.value++;
+        }
+      }, 3000);
+
       // 默认 vue 文档
       if (localStorage.getItem("docMd") === null) {
         localStorage.setItem("docMd", "vue");
@@ -265,7 +296,6 @@ export default defineComponent({
     });
 
     const handleTabSwitch = (tab) => {
-      console.log(tab, 13);
       data.activeTab = tab;
     };
 
@@ -273,13 +303,25 @@ export default defineComponent({
       isLoading.value = true;
       setTimeout(() => {
         isLoading.value = false;
-      }, 2000); // 点击2s后loading消失
+      }, 3000); // 点击2s后loading消失
     };
+
+    watch(activeFwIndex, (val) => {
+      console.log(val, 999);
+      document.querySelector(".tech-name").style.animation =
+        "3s infinite text-alter";
+    });
+
+    onUnmounted(() => {
+      clearInterval(state.timeInter); //销毁
+      state.timeInter = null;
+    });
 
     return {
       isZhLang: localStorage.getItem("language") === "zh-CN",
       t,
       darkMode,
+      activeFwIndex,
       ...toRefs(data),
       isLoading,
       handleClick,
