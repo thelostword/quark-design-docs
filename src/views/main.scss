@@ -87,11 +87,11 @@
 }
 
 @keyframes text-alter {
-  0%, 20%{
+  0%{
     opacity: 0;
     transform: translateY(25%);
   }
-  50%, 75% {
+  10%, 80% {
     opacity: 1;
     transform: translateY(0);
   }

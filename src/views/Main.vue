@@ -268,7 +268,7 @@ export default defineComponent({
 
     onMounted(() => {
       state.timeInter = setInterval(() => {
-        if (activeFwIndex.value >= data.framework.length) {
+        if (activeFwIndex.value >= 5) {
           activeFwIndex.value = 0;
         } else {
           activeFwIndex.value++;
