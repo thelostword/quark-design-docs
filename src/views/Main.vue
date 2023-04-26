@@ -306,8 +306,7 @@ export default defineComponent({
       }, 3000); // 点击2s后loading消失
     };
 
-    watch(activeFwIndex, (val) => {
-      console.log(val, 999);
+    watch(activeFwIndex, () => {
       document.querySelector(".tech-name").style.animation =
         "3s infinite text-alter";
     });
