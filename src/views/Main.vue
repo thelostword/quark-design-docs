@@ -258,7 +258,7 @@ export default defineComponent({
       tabs: ["Vue", "React", "Angular", "Html"],
       activeTab: "Vue",
       tabIndex: 1,
-      framework: ["Vue2.x", "Vue3.x", "React", "Angular", "Svelte"],
+      framework: ["Vue2.x", "Vue3.x", "React", "Angular", "Svelte", "JQuery"],
     });
 
     let activeFwIndex = ref(0);
@@ -268,7 +268,7 @@ export default defineComponent({
 
     onMounted(() => {
       state.timeInter = setInterval(() => {
-        if (activeFwIndex.value >= 4) {
+        if (activeFwIndex.value >= data.framework.length) {
           activeFwIndex.value = 0;
         } else {
           activeFwIndex.value++;
